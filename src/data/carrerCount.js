@@ -1,6 +1,13 @@
+import VideoCount from "../utils/youtube.js";
+import { projects } from "./portfolio.js";
+
+const projectLength = projects.length;
+const year = new Date().getFullYear();
+const career = year.toString().slice(2, 4);
+
 export const carrerCountData = [
   {
-    number: 25,
+    number: career,
     title: "years of experience",
   },
   {
@@ -8,11 +15,11 @@ export const carrerCountData = [
     title: "happy customers",
   },
   {
-    number: 8000,
+    number: projectLength + 161,
     title: "projects completed",
   },
   {
-    number: 800,
+    number: VideoCount,
     title: "insightful learning resources",
   },
 ];

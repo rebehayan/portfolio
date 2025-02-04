@@ -40,7 +40,11 @@ const Header = forwardRef((_, ref) => {
     <header ref={ref}>
       <div className="area">
         <div className=" flex justify-between">
-          <h1 ref={h1Ref}>Rebehayan</h1>
+          <h1 ref={h1Ref}>
+            <a href="/">
+              <img src="/logo.svg" alt="Rebehayan" className="w-17" />
+            </a>
+          </h1>
           <GNB ref={gnbRef} />
           <button className="mobile:block tablet:hidden" aria-label="메뉴">
             <CiMenuFries />
