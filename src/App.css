@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-*: initial;
+  --breakpoint-mobile: 0;
+  --breakpoint-tablet: 1024px;
+  --breakpoint-desktop: 1280px;
+  --font-display: "Pretendard Variable";
+}
+
+@utility write-vertical {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+.area {
+  @apply relative before:absolute before:inset-[auto_0_0_0] before:border-b-[1px] before:border-gray-200;
+  > div {
+    @apply border-[1px] border-t-0 border-gray-200 mobile:w-full tablet:w-[90vw] mx-auto relative mobile:p-5 tablet:p-15
+    
+    after:absolute after:right-0 after:bottom-0 after:w-7 after:aspect-square after:rounded-full after:translate-x-[50%] after:translate-y-[50%] after:rounded-b-full
+    
+    before:absolute before:left-0 before:bottom-0 before:w-7 before:aspect-square before:rounded-full  before:translate-x-[-50%] before:translate-y-[50%] before:rounded-b-full
+    
+    mobile:before:hidden tablet:before:block
+    before:bg-[url(/src/assets/ico_plus.svg)] before:bg-white before:bg-contain before:bg-no-repeat before:box-border before:p-1.5 before:bg-origin-content
+    mobile:after:hidden tablet:after:block
+    after:bg-[url(/src/assets/ico_plus.svg)] after:bg-white after:bg-contain after:bg-no-repeat after:box-border after:p-1.5 after:bg-origin-content;
+    footer & {
+      @apply mobile:p-5 tablet:p-10;
+    }
+    header & {
+      @apply mobile:p-5 tablet:p-10;
+    }
+  }
+}
+
+body {
+}
