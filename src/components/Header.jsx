@@ -2,6 +2,7 @@ import React, { forwardRef, useEffect, useRef } from "react";
 import { CiMenuFries } from "react-icons/ci";
 import GNB from "./GNB";
 import gsap from "gsap";
+import { Link } from "react-router-dom";
 
 const Header = forwardRef((_, ref) => {
   const h1Ref = useRef();
@@ -41,9 +42,9 @@ const Header = forwardRef((_, ref) => {
       <div className="area">
         <div className=" flex justify-between">
           <h1 ref={h1Ref}>
-            <a href="/">
+            <Link to="/">
               <img src="/logo.svg" alt="Rebehayan" className="w-17" />
-            </a>
+            </Link>
           </h1>
           <GNB ref={gnbRef} />
           <button className="mobile:block tablet:hidden" aria-label="메뉴">

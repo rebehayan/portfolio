@@ -1,18 +1,26 @@
 import React from "react";
-import { gnbData } from "../data/gnb.js";
 import { forwardRef } from "react";
+import { Link } from "react-router-dom";
 
 const GNB = forwardRef((_, ref) => {
   return (
     <nav className="mobile:hidden tablet:block" ref={ref}>
       <ul className="flex gap-5">
-        {gnbData.map(({ title, link }, index) => (
-          <li key={index}>
-            <a href={link} className="uppercase text-2xl font-[teko]">
-              {title}
-            </a>
-          </li>
-        ))}
+        <li>
+          <Link to="/about" className="uppercase text-2xl font-[teko]">
+            About
+          </Link>
+        </li>
+        <li>
+          <Link to="/portfolio" className="uppercase text-2xl font-[teko]">
+            Portfolio
+          </Link>
+        </li>
+        <li>
+          <Link to="/contact" className="uppercase text-2xl font-[teko]">
+            Contact
+          </Link>
+        </li>
       </ul>
     </nav>
   );

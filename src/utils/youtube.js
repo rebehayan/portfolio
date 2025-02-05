@@ -35,3 +35,12 @@ async function getVideoCount() {
 }
 
 export default VideoCount;
+
+export async function getLatestVideos(length) {
+  const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${CHANNEL_ID}&order=date&maxResults=${length}&key=${API_KEY}`;
+
+  const response = await fetch(url);
+  const data = await response.json();
+
+  return data;
+}
