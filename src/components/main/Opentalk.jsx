@@ -6,7 +6,7 @@ const Opentalk = forwardRef((_, ref) => {
       <div>
         <h2 className="text-center text-3xl font-[teko] font-bold uppercase mb-6">🖐OpenTalk</h2>
         <p className="font-[teko] mobile:text-7xl tablet:text-[10rem] uppercase font-extrabold leading-[0.8] text-center tablet:w-[50vw] mx-auto">Would you like to talk with me?</p>
-        <div className="text-center">
+        <div className="text-center relative z-20">
           <a
             href="https://open.kakao.com/o/gOT0rthe"
             target="_blank"
