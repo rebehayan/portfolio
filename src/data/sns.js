@@ -1,4 +1,4 @@
-import { FaChalkboardTeacher, FaQuoteRight, FaTv, FaYoutube } from "react-icons/fa";
+import { FaChalkboardTeacher, FaLaptopCode, FaQuoteRight, FaTv, FaYoutube } from "react-icons/fa";
 import { SiFuturelearn, SiNaver, SiUdemy } from "react-icons/si";
 
 export const SNSList = [
@@ -18,6 +18,12 @@ export const SNSList = [
     link: "https://rebehayan.com/",
     title: "온라인강의",
     iconComponent: FaChalkboardTeacher,
+    iconCSS: "group-hover:text-cyan-800",
+  },
+  {
+    link: "https://smartstore.naver.com/rebehayan",
+    title: "오프라인강의",
+    iconComponent: FaLaptopCode,
     iconCSS: "group-hover:text-cyan-800",
   },
   {

@@ -1,8 +1,8 @@
-import React from "react";
+import React, { forwardRef } from "react";
 
-export default function Opentalk() {
+const Opentalk = forwardRef((_, ref) => {
   return (
-    <section className="area">
+    <section className="area" ref={ref}>
       <div>
         <h2 className="text-center text-3xl font-[teko] font-bold uppercase mb-6">🖐OpenTalk</h2>
         <p className="font-[teko] mobile:text-7xl tablet:text-[10rem] uppercase font-extrabold leading-[0.8] text-center tablet:w-[50vw] mx-auto">Would you like to talk with me?</p>
@@ -19,4 +19,5 @@ export default function Opentalk() {
       </div>
     </section>
   );
-}
+});
+export default Opentalk;

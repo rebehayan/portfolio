@@ -64,3 +64,43 @@
     }
   }
 }
+
+.sns-list {
+  li {
+    position: relative;
+    a:focus,
+    &:hover {
+      span {
+        footer & {
+          @apply -top-8 opacity-100;
+        }
+        aside & {
+          @apply left-8 opacity-100;
+        }
+      }
+    }
+  }
+  span {
+    @apply bg-black text-white text-sm py-1 px-2 rounded-md absolute  whitespace-nowrap transition-all duration-300 opacity-0;
+    footer & {
+      @apply -top-4 left-[50%] translate-x-[-50%];
+      &::after {
+        border-color: #000 transparent transparent transparent;
+        @apply left-[50%] -bottom-3 translate-x-[-50%];
+      }
+    }
+    aside & {
+      @apply left-10 top-[50%] translate-y-[-50%];
+      &::after {
+        @apply -left-3 top-[50%] translate-y-[-50%];
+        border-color: transparent #000 transparent transparent;
+      }
+    }
+    &::after {
+      content: "";
+      border-style: solid;
+      border-width: 0.5rem;
+      position: absolute;
+    }
+  }
+}
