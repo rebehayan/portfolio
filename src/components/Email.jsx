@@ -1,6 +1,10 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
+const serviceID = import.meta.env.VITE_EMAIL_SERVICE_ID;
+const templateID = import.meta.env.VITE_EMAIL_TEMPLATE_ID;
+const publickeyID = import.meta.env.VITE_EMAIL_PUBLICKEY;
+
 export const Email = () => {
   const form = useRef();
 
@@ -8,8 +12,8 @@ export const Email = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm("service_3hxa8vz", "template_xwupoce", form.current, {
-        publicKey: "2s58JC7h0aOQhg3kc",
+      .sendForm(serviceID, templateID, form.current, {
+        publicKey: publickeyID,
       })
       .then(
         () => {
