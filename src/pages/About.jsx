@@ -1,6 +1,7 @@
 import React from "react";
 import image from "../assets/visual.jpg";
 import { getLatestVideos } from "../utils/youtube.js";
+import { skills } from "../data/aboutSkill.js";
 
 export default function About() {
   const last = getLatestVideos(5).then((data) => {
@@ -31,9 +32,9 @@ export default function About() {
           </div>
         </div>
       </section>
-      <section className="grid grid-cols-[2.5fr_1fr_1fr] gap-3 my-20">
+      <section className="grid grid-cols-[2.5fr_1fr_1fr] gap-3 my-20 h-[50rem] grid-rows-2">
         <div className="col-start-1 col-end-2 row-start-1 row-end-3">
-          <img src={image} className="w-full h-[80vh] object-cover" alt="" />
+          <img src={image} className="w-full h-full object-cover" alt="" />
         </div>
         <div>
           <img src={image} className="w-full h-full object-cover" alt="" />
@@ -44,6 +45,28 @@ export default function About() {
           <img src={image} className="w-full h-full object-cover" alt="" />
         </div>
       </section>
+      <section className="area border-t-[1px] border-gray-200">
+        <div>
+          <div className="grid grid-cols-2 items-end">
+            <h2 className="font-[teko] mobile:text-4xl tablet:text-7xl font-extrabold text-pretty mobile:w-full tablet:w-96 uppercase leading-[0.8]">Skills & Expertise</h2>
+            <p className="font-[base]">
+              웹 퍼블리싱과 프론트엔드 개발을 경험하며, 효율적이고 유지보수하기 쉬운 웹 환경 구축에 집중해 왔습니다. 더 나은 사용자 경험을 위해 지속적으로 학습하며, 새로운 기술과 트렌드에 열린 자세로
+              임하고 있습니다.
+            </p>
+            <ul className="grid grid-cols-3 gap-10 col-span-full mt-15 font-[base]">
+              {skills.map(({ title, description, icon }, index) => (
+                <li key={index} className="flex flex-col gap-3">
+                  {React.createElement(icon, { className: "w-15 h-15 mobile:row-[1/4] tablet:row-[1/3]" })}
+                  <strong className="text-2xl font-normal">{title}</strong>
+                  <div className="break-keep font-light">{description}</div>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
+
+// https://crowdytheme.com/html/arolax/creative-agency.html#
