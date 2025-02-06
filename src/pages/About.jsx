@@ -4,10 +4,6 @@ import { getLatestVideos } from "../utils/youtube.js";
 import { skills } from "../data/aboutSkill.js";
 
 export default function About() {
-  const last = getLatestVideos(5).then((data) => {
-    console.log(data);
-  });
-
   return (
     <main>
       <section className="area">

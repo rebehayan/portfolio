@@ -1,9 +1,9 @@
-const API_KEY = "AIzaSyDI8MNdKDNjJ3iPbFInBxJirp7AYxo-OhY"; // Youtube API
-const USERNAME = "rebehayan";
-const CHANNEL_ID = "UCq7-gOh15ChDcFJ9xN9SYmg";
+const apikey = import.meta.env.REACT_APP_API_KEY;
+const username = import.meta.env.REACT_APP_USERNAME;
+const channelID = import.meta.env.REACT_APP_CHANNEL_ID;
 
 export async function getChannelId() {
-  const url = `https://www.googleapis.com/youtube/v3/search?part=id&type=channel&q=${USERNAME}&key=${API_KEY}`;
+  const url = `https://www.googleapis.com/youtube/v3/search?part=id&type=channel&q=${username}&key=${apikey}`;
 
   try {
     const response = await fetch(url);
@@ -20,7 +20,7 @@ export async function getChannelId() {
 
 let VideoCount;
 async function getVideoCount() {
-  const url = `https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${CHANNEL_ID}&key=${API_KEY}`;
+  const url = `https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${channelID}&key=${apikey}`;
 
   try {
     const response = await fetch(url);
@@ -37,7 +37,7 @@ async function getVideoCount() {
 export default VideoCount;
 
 export async function getLatestVideos(length) {
-  const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${CHANNEL_ID}&order=date&maxResults=${length}&key=${API_KEY}`;
+  const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${channelID}&order=date&maxResults=${length}&key=${apikey}`;
 
   const response = await fetch(url);
   const data = await response.json();
