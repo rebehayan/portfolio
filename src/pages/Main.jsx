@@ -272,13 +272,14 @@ const openTalkAnimation = (selector) => {
       }
     )
     .fromTo(
-      selector.querySelector("a"),
+      selector.querySelectorAll("a"),
       {
         opacity: 0,
       },
       {
         opacity: 1,
         duration: 1,
+        stagger: 0.2,
       }
     );
 };
