@@ -4,7 +4,7 @@ import { getLatestVideos } from "../utils/youtube.js";
 import { skills } from "../data/aboutSkill.js";
 import { FaHtml5 } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { IconAccessibility, IconCSS, IconGit, IconGithub, IconHTML, IconJS, IconReact, IconSCSS, IconSwiper, IconTailwind, IconTS, IconVite, IconVSCode } from "../data/icons.jsx";
+import { IconAccessibility, IconCSS, IconFigma, IconGit, IconGithub, IconHTML, IconJS, IconPs, IconReact, IconSCSS, IconSwiper, IconTailwind, IconTS, IconVite, IconVSCode } from "../data/icons.jsx";
 import { SNSList } from "../data/sns.js";
 import { Email } from "../components/Email.jsx";
 import Opentalk from "../components/main/Opentalk.jsx";
@@ -111,6 +111,8 @@ export default function About() {
           <IconAccessibility className={skillIconStyle} />
           <IconSwiper className={skillIconStyle} />
           <IconVSCode className={skillIconStyle} />
+          <IconFigma className={skillIconStyle} />
+          <IconPs className={skillIconStyle} />
         </div>
       </section>
       <Opentalk />
