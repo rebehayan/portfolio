@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import PageRouter from "./PageRouter";
 import { useLocation } from "react-router-dom";
 import Header from "./components/Header";
