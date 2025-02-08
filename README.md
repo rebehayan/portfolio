@@ -4,9 +4,7 @@
 
 ---
 
-React + Vite를 활용한 포트폴리오 사이트를 구현했습니다.<br>
-해당 사이트는 프로젝트 수주 자료로서 활용되고 있으며<br>
-포트폴리오 및 활동 내역등을 제공하고 있습니다.<br>
+매번 느끼는거지만, 중이 제머리 못깍는다는 말이 와닿습니다. 수십년간 개인 포트폴리오 사이트를 구축하려 노력했지만, 생각보다 쉽진 않네요. 포트폴리오를 보여주기 위해 수년간 블로그로 활동하고 있었지만, UI가 복잡하고 직관적이지 않아서 성격이 맞지 않다고 생각했습니다. 앞으로 Git으로 관리하며 포트폴리오 사이트를 유지하려고 합니다. 해당 사이트는 React + Vite를 활용하여 구현되었습니다. 해당 사이트는 프로젝트 수주 자료로서 활용되고 있으며 해당 사이트는 포트폴리오 및 활동 내역등을 제공하고 있습니다.<br>
 <br>
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
