@@ -13,7 +13,23 @@ import Opentalk from "../components/main/Opentalk";
 import { useTitleHook } from "../utils/useTitleHook";
 
 gsap.registerPlugin(ScrollTrigger);
-
+const headerAnimation = (selector, trigger) => {
+  gsap.fromTo(
+    selector.querySelector(".area > div"),
+    {
+      padding: "40px",
+    },
+    {
+      padding: "25px",
+      scrollTrigger: {
+        trigger: trigger,
+        start: "20% center",
+        end: "bottom center",
+        toggleActions: "play none none reverse",
+      },
+    }
+  );
+};
 const heroAnimation = (selector, follow) => {
   gsap
     .timeline()
@@ -99,32 +115,6 @@ const heroAnimation = (selector, follow) => {
       },
       "-=0.3"
     );
-};
-const headerAnimation = (selector, trigger) => {
-  gsap.fromTo(
-    selector,
-    {
-      position: "static",
-      left: 0,
-      top: 0,
-      right: 0,
-      zIndex: 1000,
-    },
-    {
-      position: "fixed",
-      left: 0,
-      top: 0,
-      right: 0,
-      backgroundColor: "#fff",
-      zIndex: 1000,
-      scrollTrigger: {
-        trigger: trigger,
-        start: "center",
-        end: "bottom center",
-        toggleActions: "play none none reverse",
-      },
-    }
-  );
 };
 const serviceAnimation = (selector) => {
   const titleRef = selector.querySelector("h2");
@@ -344,16 +334,18 @@ function Main() {
   return (
     <>
       <Header ref={headerRef} />
-      <Visual ref={triggerRef} chilrenRef={followRef} />
-      <Introduce />
-      <Service ref={serviceRef} />
-      <div className="area" ref={imageRef}>
-        <div>
-          <img src={image} alt="" className="w-full object-cover aspect-video" />
+      <main ref={triggerRef}>
+        <Visual chilrenRef={followRef} />
+        <Introduce />
+        <Service ref={serviceRef} />
+        <div className="area" ref={imageRef}>
+          <div>
+            <img src={image} alt="" className="w-full object-cover aspect-video" />
+          </div>
         </div>
-      </div>
-      <Portfolio ref={portfolioRef} />
-      <Opentalk ref={opentalkRef} />
+        <Portfolio ref={portfolioRef} />
+        <Opentalk ref={opentalkRef} />
+      </main>
       <Footer ref={footerRef} childrenRef={snsRef} />
     </>
   );

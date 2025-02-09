@@ -37,7 +37,7 @@
       @apply mobile:p-5 tablet:p-10;
     }
     header & {
-      @apply mobile:p-5 tablet:p-10;
+      @apply p-0;
     }
   }
   .detail-view {
@@ -122,4 +122,7 @@
       position: absolute;
     }
   }
+}
+main {
+  margin-top: 113px;
 }

@@ -1,17 +1,19 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
+const ID = "Rebehayan";
+
 export const useTitleHook = () => {
   const location = useLocation();
 
   useEffect(() => {
     const titleMap = {
-      "/": "Rebehayan",
-      "/about": "About Rebehayan",
-      "/portfolio": "Portfolio Rebehayan",
-      "/contact": "Contact Rebehayan",
+      "/": ID,
+      "/about": `About ${ID}`,
+      "/portfolio": `Portfolio ${ID}`,
+      "/contact": `Contact ${ID}`,
     };
 
-    document.title = titleMap[location.pathname] || "Rebehayan";
+    document.title = titleMap[location.pathname] || ID;
   }, [location.pathname]);
 };
