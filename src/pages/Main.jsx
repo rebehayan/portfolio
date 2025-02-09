@@ -10,6 +10,7 @@ import image from "../assets/visual.jpg";
 import Footer from "../components/Footer";
 import Portfolio from "../components/main/Portfolio";
 import Opentalk from "../components/main/Opentalk";
+import { useTitleHook } from "../utils/useTitleHook";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -339,6 +340,7 @@ function Main() {
     footerAnimation(footerRef.current, portfolioRef.current, snsRef.current);
   }, []);
 
+  useTitleHook();
   return (
     <>
       <Header ref={headerRef} />

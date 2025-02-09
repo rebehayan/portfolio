@@ -1,7 +1,9 @@
 import React from "react";
 import { Email } from "../components/Email";
+import { useTitleHook } from "../utils/useTitleHook";
 
 export default function Contact() {
+  useTitleHook();
   return (
     <main className="mt-[-113px]">
       <section className="pt-40 pb-5 grid grid-cols-2 gap-20 h-dvh">
@@ -15,14 +17,14 @@ export default function Contact() {
           <div className="bg-gray-200 col-start-2 col-end-3 row-start-3 row-end-5">4</div>
         </div>
       </section>
-      <section className="h-[50vh] bg-slate-100"></section>
+      <div className="h-[50vh] bg-slate-100"></div>
       <section className="area">
         <div className="grid grid-cols-2">
           <div className="font-[base] font-light">
-            <h3>
+            <h2>
               무엇이 필요하신가요?
               <br /> 언제든 편하게 문의해주세요!
-            </h3>
+            </h2>
             <ul className="mt-6 inline-grid gap-6 border-t-[1px] border-gray-300 pt-6 text-sm">
               <li>
                 <a href="" className="flex items-center gap-3">

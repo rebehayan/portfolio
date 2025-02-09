@@ -41,9 +41,9 @@
     }
   }
   .detail-view {
-    @apply absolute right-0 top-0 bottom-0 bg-white border-l-[0] border-double border-gray-300 w-0 transition-all duration-700 overflow-hidden;
+    @apply absolute right-0 top-0 bottom-0 bg-white border-l-[0] border-double border-gray-300 w-0 transition-all duration-700 overflow-hidden box-border p-10 opacity-0;
     &.show {
-      @apply w-[450px] border-l-[3px];
+      @apply w-[450px] border-l-[3px] opacity-100;
     }
   }
   > form {

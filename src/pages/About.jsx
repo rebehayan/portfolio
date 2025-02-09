@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import image from "../assets/visual.jpg";
 import { getLatestVideos } from "../utils/youtube.js";
 import { skills } from "../data/aboutSkill.js";
@@ -8,10 +8,13 @@ import { IconAccessibility, IconCSS, IconFigma, IconGit, IconGithub, IconHTML, I
 import { SNSList } from "../data/sns.js";
 import { Email } from "../components/Email.jsx";
 import Opentalk from "../components/main/Opentalk.jsx";
+import { useTitleHook } from "../utils/useTitleHook.js";
 
 const skillIconStyle = "opacity-40 hover:opacity-80 transition-all duration-500";
 
 export default function About() {
+  useTitleHook();
+
   return (
     <main>
       <section className="area">

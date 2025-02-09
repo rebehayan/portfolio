@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { projects } from "../data/portfolio";
+import { useTitleHook } from "../utils/useTitleHook";
 
 const options = () => {
   const result = projects.map((item) => {
@@ -19,7 +20,7 @@ export default function Portfolio() {
   };
 
   const selectedProject = projects.find((item) => item.id === detailID);
-
+  useTitleHook();
   return (
     <main className="portfolio">
       <div className="area">
