@@ -1,17 +1,30 @@
 import React from "react";
 import { projects } from "../data/portfolio";
 
+const options = () => {
+  const result = projects.map((item) => {
+    return item.startDate.slice(0, 4);
+  });
+  return [...new Set(result)];
+};
+
 export default function Portfolio() {
+  const optionList = options();
   return (
     <main className="portfolio">
       <div className="area">
         <form action="">
-          <fieldset>
+          <fieldset className="flex gap-2">
             <legend>포트폴리오 검색</legend>
             <input type="search" name="" id="" placeholder="search" title="포트폴리오 검색" />
-            <select name="" id="">
-              <option value="">Year</option>
-            </select>
+            <strong>연도선택</strong>
+            <div className="flex gap-3">
+              {optionList.map((item, index) => (
+                <button type="button" key={index} className="cursor-pointer">
+                  {item}
+                </button>
+              ))}
+            </div>
             <div className="results"></div>
           </fieldset>
         </form>
@@ -24,9 +37,9 @@ export default function Portfolio() {
                 <div className="text-gray-700 font-medium">
                   {name}
                   <div className="mt-[1px] flex gap-1">
-                    {tag.map((item, index) => (
-                      <span key={index} className="bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light">
-                        {item}
+                    {tag.map(({ role, className }, index) => (
+                      <span key={index} className={className}>
+                        {role}
                       </span>
                     ))}
                   </div>

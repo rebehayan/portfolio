@@ -7,7 +7,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "https://www.booxtory.ai/main",
-    tag: ["퍼블리싱"],
+    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
   },
   {
     name: "LG CultureWeek 2004",
@@ -17,7 +17,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "서비스종료",
-    tag: ["퍼블리싱"],
+    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
   },
   {
     name: "22세기 유물전",
@@ -27,7 +27,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "https://unearth22c.com/",
-    tag: ["퍼블리싱"],
+    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
   },
   {
     name: "숙박예약서비스",
@@ -37,7 +37,7 @@ export const projects = [
     company: "TFT",
     contribution: "60%",
     url: "https://github.com/rebehayan/triphotel",
-    tag: ["React", "Project Leader"],
+    tag: [{ language: "React" }, { role: "Project Leader", className: "bg-cyan-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
   },
   {
     name: "급여관리시스템",
@@ -47,7 +47,7 @@ export const projects = [
     company: "TFT",
     contribution: "60%",
     url: "https://github.com/subinsad/KDT7_FE_Toy2_team4",
-    tag: ["React", "Project Leader"],
+    tag: [{ language: "React" }, { role: "Project Leader", className: "bg-cyan-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
   },
   {
     name: "기업인트라넷",
@@ -57,7 +57,7 @@ export const projects = [
     company: "TFT",
     contribution: "60%",
     url: "https://github.com/subinsad/KDT7_FE_Toy1_team4",
-    tag: ["React", "Project Leader"],
+    tag: [{ language: "React" }, { role: "Project Leader", className: "bg-cyan-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
   },
   {
     name: "영화 검색서비스",
@@ -67,7 +67,7 @@ export const projects = [
     company: "TFT",
     contribution: "90%",
     url: "https://github.com/rebehayan/urcine",
-    tag: ["React", "Project Leader"],
+    tag: [{ language: "React" }, { role: "Project Leader", className: "bg-cyan-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
   },
   {
     name: "내드리오 리뉴얼",
@@ -77,7 +77,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "http://imakehouse.co.kr/",
-    tag: ["Vue", "퍼블리싱"],
+    tag: ["Vue", { role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
   },
   {
     name: "LG CultureWeek",
@@ -87,7 +87,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "서비스종료",
-    tag: ["퍼블리싱"],
+    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
   },
   {
     name: "아주대학교 대학원 사이트 구축",
@@ -97,7 +97,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "https://mba.ajou.ac.kr/",
-    tag: ["퍼블리싱"],
+    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
   },
   {
     name: "바이너스프레드 자사사이트 구축",
@@ -107,7 +107,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "http://www.vinus.co.kr/vinus/",
-    tag: ["퍼블리싱"],
+    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
   },
   {
     name: "미니멀웍스",
@@ -117,7 +117,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "http://www.minimalworks.co.kr",
-    tag: ["퍼블리싱"],
+    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
   },
   {
     name: "KT GenieAir",
@@ -127,7 +127,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "",
-    tag: ["퍼블리싱"],
+    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
   },
   {
     name: "휴넷CEO 구축",
@@ -137,7 +137,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "https://ceo.hunet.co.kr/",
-    tag: ["퍼블리싱"],
+    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
   },
   {
     name: "메쉬코리아 그룹웨어 구축",
@@ -147,7 +147,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "비공개",
-    tag: ["퍼블리싱"],
+    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
   },
   {
     name: "레이플시스템 자사사이트 구축",
@@ -157,7 +157,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "",
-    tag: ["퍼블리싱"],
+    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
   },
   {
     name: "LGD 힐링콘텐츠구축",
@@ -167,7 +167,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "-",
-    tag: ["퍼블리싱"],
+    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
   },
   {
     name: "GS 슈퍼마켓 어플리케이션 구축",
@@ -177,7 +177,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "-",
-    tag: ["퍼블리싱"],
+    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
   },
   {
     name: "한국교원대학교 영어교육과 운영",
@@ -187,7 +187,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "https://kees.kr",
-    tag: ["운영관리"],
+    tag: [{ role: "운영관리", className: "" }],
   },
   {
     name: "Koreanre 구축",
@@ -197,7 +197,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "-",
-    tag: ["퍼블리싱"],
+    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
   },
   {
     name: "해양수산부 접근성 향상(웹스퀘어)",
@@ -207,7 +207,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "-",
-    tag: ["퍼블리싱"],
+    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
   },
   {
     name: "신한이지 웹, 모바일, 레거시",
@@ -217,7 +217,10 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "https://www.shinhanfoundation.or.kr/easy",
-    tag: ["퍼블리싱", "Project Leader"],
+    tag: [
+      { role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "Project Leader", className: "bg-cyan-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+    ],
   },
   {
     name: "삼성병원 모바일웹 국문/러시아",
@@ -227,7 +230,10 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "https://samsunghospital.com",
-    tag: ["퍼블리싱", "Project Leader"],
+    tag: [
+      { role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "Project Leader", className: "bg-cyan-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+    ],
   },
   {
     name: "KPOP 워드프레스 테마제작",
@@ -237,7 +243,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "-",
-    tag: ["퍼블리싱"],
+    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
   },
   {
     name: "보람상조",
@@ -247,7 +253,10 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "-",
-    tag: ["퍼블리싱", "Project Leader"],
+    tag: [
+      { role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "Project Leader", className: "bg-cyan-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+    ],
   },
   {
     name: "LG디스플레이",
@@ -257,7 +266,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "30%",
     url: "-",
-    tag: ["퍼블리싱"],
+    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
   },
   {
     name: "KCC창호 기능개선",
@@ -267,7 +276,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "30%",
     url: "-",
-    tag: ["퍼블리싱"],
+    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
   },
   {
     name: "고우아이티 웹/모바일 구축",
@@ -277,7 +286,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "30%",
     url: "-",
-    tag: ["퍼블리싱"],
+    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
   },
   {
     name: "홈씨씨 브랜드 사이트",
@@ -287,7 +296,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "30%",
     url: "-",
-    tag: ["퍼블리싱"],
+    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
   },
   {
     name: "SGI UI 인터렉션",
@@ -297,7 +306,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "-",
-    tag: ["퍼블리싱"],
+    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
   },
   {
     name: "아모레퍼시픽 이노베이션 랩",
@@ -307,7 +316,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "30%",
     url: "-",
-    tag: ["퍼블리싱"],
+    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
   },
   {
     name: "질병관리본부 반응형 웹사이트 리뉴얼",
@@ -317,7 +326,7 @@ export const projects = [
     company: "플랜아이",
     contribution: "70%",
     url: "https://www.kdca.go.kr",
-    tag: ["퍼블리싱"],
+    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
   },
   {
     name: "서울직장맘지원센터 리뉴얼",
@@ -327,7 +336,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "https://workingmom.or.kr",
-    tag: ["웹접근성 컨설팅"],
+    tag: [{ role: "웹접근성 컨설팅", className: "bg-amber-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
   },
   {
     name: "우리은행 웹접근성 구축",
@@ -337,7 +346,7 @@ export const projects = [
     company: "이모션",
     contribution: "100%",
     url: "https://wooribank.co.kr",
-    tag: ["웹접근성 컨설팅"],
+    tag: [{ role: "웹접근성 컨설팅", className: "bg-amber-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
   },
   {
     name: "롯데닷컴 통합 온라인 사이트 구축",
@@ -347,7 +356,10 @@ export const projects = [
     company: "태그앤브레이스",
     contribution: "90%",
     url: "https://company.lottemart.com",
-    tag: ["퍼블리싱", "Project Leader"],
+    tag: [
+      { role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "Project Leader", className: "bg-cyan-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+    ],
   },
   {
     name: "삼성화재 반응형웹 인트라넷 구축",
@@ -357,7 +369,7 @@ export const projects = [
     company: "픽스다인",
     contribution: "40%",
     url: "-",
-    tag: ["퍼블리싱"],
+    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
   },
 ];
 
