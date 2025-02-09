@@ -1,5 +1,6 @@
 export const projects = [
   {
+    id: "20244",
     name: "boxxtory 다국어 사이트",
     startDate: "2024.12",
     endDate: "2025.02",
@@ -10,6 +11,7 @@ export const projects = [
     tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
   },
   {
+    id: "20243",
     name: "LG CultureWeek 2004",
     startDate: "2024.08",
     endDate: "2024.08",
@@ -20,6 +22,7 @@ export const projects = [
     tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
   },
   {
+    id: "20242",
     name: "22세기 유물전",
     startDate: "2024.06",
     endDate: "2024.07",
@@ -30,6 +33,7 @@ export const projects = [
     tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
   },
   {
+    id: "20241",
     name: "숙박예약서비스",
     startDate: "2024.03",
     endDate: "2024.04",
@@ -37,9 +41,13 @@ export const projects = [
     company: "TFT",
     contribution: "60%",
     url: "https://github.com/rebehayan/triphotel",
-    tag: [{ language: "React" }, { role: "Project Leader", className: "bg-cyan-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [
+      { role: "Project Leader", className: "bg-cyan-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { language: "React", className: "bg-purple-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+    ],
   },
   {
+    id: "20235",
     name: "급여관리시스템",
     startDate: "2023.02",
     endDate: "2023.02",
@@ -47,9 +55,13 @@ export const projects = [
     company: "TFT",
     contribution: "60%",
     url: "https://github.com/subinsad/KDT7_FE_Toy2_team4",
-    tag: [{ language: "React" }, { role: "Project Leader", className: "bg-cyan-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [
+      { role: "Project Leader", className: "bg-cyan-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { language: "React", className: "bg-purple-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+    ],
   },
   {
+    id: "20234",
     name: "기업인트라넷",
     startDate: "2023.01",
     endDate: "2023.01",
@@ -57,9 +69,13 @@ export const projects = [
     company: "TFT",
     contribution: "60%",
     url: "https://github.com/subinsad/KDT7_FE_Toy1_team4",
-    tag: [{ language: "React" }, { role: "Project Leader", className: "bg-cyan-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [
+      { role: "Project Leader", className: "bg-cyan-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { language: "React", className: "bg-purple-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+    ],
   },
   {
+    id: "20233",
     name: "영화 검색서비스",
     startDate: "2023.12",
     endDate: "2023.12",
@@ -67,9 +83,13 @@ export const projects = [
     company: "TFT",
     contribution: "90%",
     url: "https://github.com/rebehayan/urcine",
-    tag: [{ language: "React" }, { role: "Project Leader", className: "bg-cyan-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [
+      { role: "Project Leader", className: "bg-cyan-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { language: "React", className: "bg-purple-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+    ],
   },
   {
+    id: "20232",
     name: "내드리오 리뉴얼",
     startDate: "2023.11",
     endDate: "2023.12",
@@ -77,9 +97,13 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "http://imakehouse.co.kr/",
-    tag: ["Vue", { role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [
+      { role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { language: "Vue", className: "bg-purple-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+    ],
   },
   {
+    id: "20231",
     name: "LG CultureWeek",
     startDate: "2023.08",
     endDate: "2023.09",
@@ -90,6 +114,7 @@ export const projects = [
     tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
   },
   {
+    id: "202211",
     name: "아주대학교 대학원 사이트 구축",
     startDate: "2022.12",
     endDate: "2023.02",
@@ -100,6 +125,7 @@ export const projects = [
     tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
   },
   {
+    id: "202210",
     name: "바이너스프레드 자사사이트 구축",
     startDate: "2022.07",
     endDate: "2022.08",
@@ -110,6 +136,7 @@ export const projects = [
     tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
   },
   {
+    id: "20229",
     name: "미니멀웍스",
     startDate: "2022.10",
     endDate: "2022.11",
@@ -120,6 +147,7 @@ export const projects = [
     tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
   },
   {
+    id: "20228",
     name: "KT GenieAir",
     startDate: "2022.09",
     endDate: "2022.11",
@@ -130,6 +158,7 @@ export const projects = [
     tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
   },
   {
+    id: "20227",
     name: "휴넷CEO 구축",
     startDate: "2022.07",
     endDate: "2022.08",
@@ -140,6 +169,7 @@ export const projects = [
     tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
   },
   {
+    id: "20226",
     name: "메쉬코리아 그룹웨어 구축",
     startDate: "2022.06",
     endDate: "2022.06",
@@ -150,6 +180,7 @@ export const projects = [
     tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
   },
   {
+    id: "20225",
     name: "레이플시스템 자사사이트 구축",
     startDate: "2022.05",
     endDate: "2022.06",
@@ -160,6 +191,7 @@ export const projects = [
     tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
   },
   {
+    id: "20224",
     name: "LGD 힐링콘텐츠구축",
     startDate: "2022.05",
     endDate: "2022.06",
@@ -170,6 +202,7 @@ export const projects = [
     tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
   },
   {
+    id: "20223",
     name: "GS 슈퍼마켓 어플리케이션 구축",
     startDate: "2022.05",
     endDate: "2022.07",
@@ -180,6 +213,7 @@ export const projects = [
     tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
   },
   {
+    id: "20222",
     name: "한국교원대학교 영어교육과 운영",
     startDate: "2022",
     endDate: "진행중",
@@ -187,9 +221,10 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "https://kees.kr",
-    tag: [{ role: "운영관리", className: "" }],
+    tag: [{ role: "운영관리", className: "bg-purple-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
   },
   {
+    id: "20221",
     name: "Koreanre 구축",
     startDate: "2022.06",
     endDate: "2022.06",
@@ -200,6 +235,7 @@ export const projects = [
     tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
   },
   {
+    id: "202111",
     name: "해양수산부 접근성 향상(웹스퀘어)",
     startDate: "2021.10",
     endDate: "2021.10",
@@ -210,6 +246,7 @@ export const projects = [
     tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
   },
   {
+    id: "202110",
     name: "신한이지 웹, 모바일, 레거시",
     startDate: "2021.09",
     endDate: "2022.02",
@@ -223,6 +260,7 @@ export const projects = [
     ],
   },
   {
+    id: "20219",
     name: "삼성병원 모바일웹 국문/러시아",
     startDate: "2021.08",
     endDate: "2021.11",
@@ -236,6 +274,7 @@ export const projects = [
     ],
   },
   {
+    id: "20218",
     name: "KPOP 워드프레스 테마제작",
     startDate: "2021.07",
     endDate: "2021.07",
@@ -246,6 +285,7 @@ export const projects = [
     tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
   },
   {
+    id: "20217",
     name: "보람상조",
     startDate: "2021.06",
     endDate: "2021.08",
@@ -259,6 +299,7 @@ export const projects = [
     ],
   },
   {
+    id: "20216",
     name: "LG디스플레이",
     startDate: "2021.05",
     endDate: "2021.05",
@@ -269,6 +310,7 @@ export const projects = [
     tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
   },
   {
+    id: "20215",
     name: "KCC창호 기능개선",
     startDate: "2021.05",
     endDate: "2021.05",
@@ -279,6 +321,7 @@ export const projects = [
     tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
   },
   {
+    id: "20214",
     name: "고우아이티 웹/모바일 구축",
     startDate: "2021.05",
     endDate: "2021.06",
@@ -289,6 +332,7 @@ export const projects = [
     tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
   },
   {
+    id: "20213",
     name: "홈씨씨 브랜드 사이트",
     startDate: "2021.04",
     endDate: "2021.05",
@@ -299,6 +343,7 @@ export const projects = [
     tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
   },
   {
+    id: "20212",
     name: "SGI UI 인터렉션",
     startDate: "2021.04",
     endDate: "2021.04",
@@ -309,6 +354,7 @@ export const projects = [
     tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
   },
   {
+    id: "20211",
     name: "아모레퍼시픽 이노베이션 랩",
     startDate: "2021.04",
     endDate: "2021.04",
@@ -319,6 +365,7 @@ export const projects = [
     tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
   },
   {
+    id: "20191",
     name: "질병관리본부 반응형 웹사이트 리뉴얼",
     startDate: "2019.01",
     endDate: "2019.06",
@@ -329,6 +376,7 @@ export const projects = [
     tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
   },
   {
+    id: "20151",
     name: "서울직장맘지원센터 리뉴얼",
     startDate: "2015.09",
     endDate: "2015.09",
@@ -339,6 +387,7 @@ export const projects = [
     tag: [{ role: "웹접근성 컨설팅", className: "bg-amber-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
   },
   {
+    id: "20122",
     name: "우리은행 웹접근성 구축",
     startDate: "2012.12",
     endDate: "2013.04",
@@ -349,6 +398,7 @@ export const projects = [
     tag: [{ role: "웹접근성 컨설팅", className: "bg-amber-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
   },
   {
+    id: "20121",
     name: "롯데닷컴 통합 온라인 사이트 구축",
     startDate: "2012.05",
     endDate: "2012.08",
@@ -362,6 +412,7 @@ export const projects = [
     ],
   },
   {
+    id: "20111",
     name: "삼성화재 반응형웹 인트라넷 구축",
     startDate: "2011.06",
     endDate: "2011.11",

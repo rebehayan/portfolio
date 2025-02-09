@@ -15,7 +15,6 @@
 
 .area {
   @apply relative before:absolute before:inset-[auto_0_0_0] before:border-b-[1px] before:border-gray-200;
-  > ul,
   > form,
   > div {
     @apply border-[1px] border-t-0 border-gray-200 mobile:w-full tablet:w-[90vw] mx-auto relative mobile:p-5 tablet:p-15
@@ -28,11 +27,23 @@
     before:bg-[url(/src/assets/ico_plus.svg)] before:bg-white before:bg-contain before:bg-no-repeat before:box-border before:p-1.5 before:bg-origin-content
     mobile:after:hidden tablet:after:block
     after:bg-[url(/src/assets/ico_plus.svg)] after:bg-white after:bg-contain after:bg-no-repeat after:box-border after:p-1.5 after:bg-origin-content;
+    &.portfolio-wrap {
+      @apply p-0  transition-all duration-500;
+      &.show {
+        @apply pr-[450px];
+      }
+    }
     footer & {
       @apply mobile:p-5 tablet:p-10;
     }
     header & {
       @apply mobile:p-5 tablet:p-10;
+    }
+  }
+  .detail-view {
+    @apply absolute right-0 top-0 bottom-0 bg-white border-l-[0] border-double border-gray-300 w-0 transition-all duration-700 overflow-hidden;
+    &.show {
+      @apply w-[450px] border-l-[3px];
     }
   }
   > form {
