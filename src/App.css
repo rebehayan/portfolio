@@ -15,6 +15,8 @@
 
 .area {
   @apply relative before:absolute before:inset-[auto_0_0_0] before:border-b-[1px] before:border-gray-200;
+  > ul,
+  > form,
   > div {
     @apply border-[1px] border-t-0 border-gray-200 mobile:w-full tablet:w-[90vw] mx-auto relative mobile:p-5 tablet:p-15
     
@@ -32,6 +34,12 @@
     header & {
       @apply mobile:p-5 tablet:p-10;
     }
+  }
+  > form {
+    @apply p-3;
+  }
+  > ul {
+    @apply py-0 px-0;
   }
 }
 

@@ -64,13 +64,13 @@ export const Email = () => {
             name="message"
             id="message"
             required
-            className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-gray-900 h-40 resize-y"
+            className="block w-full min-h-40 rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-gray-900 h-40 resize-y"
           />
         </div>
         <input
           type="submit"
           value="문의하기"
-          className="rounded-md cursor-pointer bg-cyan-700 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-xs hover:bg-cyan-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-600 justify-self-start"
+          className="rounded-md cursor-pointer transition-colors bg-cyan-700 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-xs hover:bg-cyan-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-600 justify-self-start"
         />
       </fieldset>
     </form>
