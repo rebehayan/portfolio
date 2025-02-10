@@ -3,11 +3,17 @@ import Pagination from "./Pagination";
 
 export default function PortfolioList({ projectList, handleGetID }) {
   const [currentPage, setCurrentPage] = useState(1);
+  const projectPerPage = 10;
+  const totalPages = Math.ceil(projectList.length / projectPerPage);
+
+  const indexOfLastProject = currentPage * projectPerPage;
+  const indexOfFirstProject = indexOfLastProject - projectPerPage;
+  const currentProjects = projectList.slice(indexOfFirstProject, indexOfLastProject);
 
   return (
-    <>
+    <div>
       <ul className="font-[base] font-light">
-        {projectList.slice(0, 10).map(({ id, name, startDate, endDate, client, company, tag, contribution, url }, index) => (
+        {currentProjects.map(({ id, name, startDate, client, tag }, index) => (
           <li key={id} className={index === 0 ? "border-t-0" : "border-t-[1px] border-gray-300"}>
             <a
               href=""
@@ -35,7 +41,7 @@ export default function PortfolioList({ projectList, handleGetID }) {
           </li>
         ))}
       </ul>
-      <Pagination projectList={projectList} currentPage={(page) => setCurrentPage(page)} />
-    </>
+      <Pagination totalPages={totalPages} onPageChange={setCurrentPage} currentPage={currentPage} />
+    </div>
   );
 }

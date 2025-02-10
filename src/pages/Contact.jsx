@@ -5,7 +5,7 @@ import { useTitleHook } from "../utils/useTitleHook";
 export default function Contact() {
   useTitleHook();
   return (
-    <main className="mt-[-113px]">
+    <div className="mt-[-113px]">
       <section className="pt-40 pb-5 grid grid-cols-2 gap-20 h-dvh">
         <h2 className="font-[base] text-6xl font-light justify-self-end self-center leading-[1.2]">
           궁금한 점이 있으신가요? <br /> <strong className="font-bold">강의 의뢰</strong>나 <strong className="font-bold">프로젝트 문의</strong>도 <br /> 언제든지 환영합니다. <br /> 편하게 문의하세요!
@@ -78,6 +78,6 @@ export default function Contact() {
           <Email />
         </div>
       </section>
-    </main>
+    </div>
   );
 }

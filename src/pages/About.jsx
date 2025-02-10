@@ -16,7 +16,7 @@ export default function About() {
   useTitleHook();
 
   return (
-    <main>
+    <>
       <section className="area">
         <div>
           <div className="font-[base] font-bold text-5xl text-center break-keep leading-[1.1]">
@@ -119,7 +119,7 @@ export default function About() {
         </div>
       </section>
       <Opentalk />
-    </main>
+    </>
   );
 }
 

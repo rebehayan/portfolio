@@ -23,7 +23,7 @@ export default function Portfolio() {
   const selectedProject = projects.find((item) => item.id === detailID);
   useTitleHook();
   return (
-    <main className="portfolio">
+    <div className="portfolio">
       <div className="area">
         <PortfolioSearch handleYear={(year) => handleYear(year)} />
       </div>
@@ -33,6 +33,6 @@ export default function Portfolio() {
           {selectedProject && <PortfolioDetail toggle={toggleList} projectInfo={selectedProject} onClose={() => setToggleList(false)} />}
         </div>
       </div>
-    </main>
+    </div>
   );
 }

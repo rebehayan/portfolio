@@ -15,7 +15,7 @@ export const carrerCountData = [
     title: "happy customers",
   },
   {
-    number: projectLength + 161,
+    number: projectLength,
     title: "projects completed",
   },
   {

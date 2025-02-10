@@ -13,23 +13,23 @@ import Opentalk from "../components/main/Opentalk";
 import { useTitleHook } from "../utils/useTitleHook";
 
 gsap.registerPlugin(ScrollTrigger);
-const headerAnimation = (selector, trigger) => {
-  gsap.fromTo(
-    selector.querySelector(".area > div"),
-    {
-      padding: "40px",
-    },
-    {
-      padding: "25px",
-      scrollTrigger: {
-        trigger: trigger,
-        start: "20% center",
-        end: "bottom center",
-        toggleActions: "play none none reverse",
-      },
-    }
-  );
-};
+// const headerAnimation = (selector, trigger) => {
+//   gsap.fromTo(
+//     selector.querySelector(".area > div"),
+//     {
+//       padding: "40px",
+//     },
+//     {
+//       padding: "25px",
+//       scrollTrigger: {
+//         trigger: trigger,
+//         start: "20% center",
+//         end: "bottom center",
+//         toggleActions: "play none none reverse",
+//       },
+//     }
+//   );
+// };
 const heroAnimation = (selector, follow) => {
   gsap
     .timeline()
@@ -310,7 +310,7 @@ const footerAnimation = (selector, target, sns) => {
     );
 };
 function Main() {
-  const headerRef = useRef();
+  // const headerRef = useRef();
   const followRef = useRef();
   const triggerRef = useRef();
   const serviceRef = useRef();
@@ -322,7 +322,7 @@ function Main() {
 
   useEffect(() => {
     heroAnimation(triggerRef.current, followRef.current);
-    headerAnimation(headerRef.current, triggerRef.current);
+    // headerAnimation(headerRef.current, triggerRef.current);
     serviceAnimation(serviceRef.current);
     imageAnimation(imageRef.current, serviceRef.current);
     portfolioAnimation(portfolioRef.current);
@@ -333,8 +333,8 @@ function Main() {
   useTitleHook();
   return (
     <>
-      <Header ref={headerRef} />
-      <main ref={triggerRef}>
+      {/* <Header ref={headerRef} /> */}
+      <div ref={triggerRef}>
         <Visual chilrenRef={followRef} />
         <Introduce />
         <Service ref={serviceRef} />
@@ -345,7 +345,7 @@ function Main() {
         </div>
         <Portfolio ref={portfolioRef} />
         <Opentalk ref={opentalkRef} />
-      </main>
+      </div>
       <Footer ref={footerRef} childrenRef={snsRef} />
     </>
   );
