@@ -20,7 +20,7 @@ export default function PortfolioSearch({ handleYear, handleSearch }) {
     <form onSubmit={handleSearch}>
       <fieldset className="grid grid-cols-[min-content_min-content_1fr] gap-2 items-center">
         <legend className="hidden">포트폴리오 검색</legend>
-        <input type="search" name="search" className="w-70 self-stretch h-full text-xl" placeholder="search" title="포트폴리오 검색" />
+        <input type="search" name="search" className="outline-0 focus:bg-stone-100 transition-all duration-500 px-3 w-70 self-stretch h-full text-xl" placeholder="Search" title="포트폴리오 검색" />
         <div className="grid grid-cols-10 gap-x-1 gap-y-1 w-[50rem]">
           <button
             type="button"
@@ -35,7 +35,7 @@ export default function PortfolioSearch({ handleYear, handleSearch }) {
             </button>
           ))}
         </div>
-        <div className="results justify-self-end">
+        <div className="results justify-self-end self-end">
           총 <strong>{projects.length}</strong> 프로젝트
         </div>
       </fieldset>
