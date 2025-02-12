@@ -13,24 +13,22 @@ import Opentalk from "../components/main/Opentalk";
 import { useTitleHook } from "../utils/useTitleHook";
 
 gsap.registerPlugin(ScrollTrigger);
-// const headerAnimation = (selector, trigger) => {
-//   gsap.fromTo(
-//     selector.querySelector(".area > div"),
-//     {
-//       padding: "40px",
-//     },
-//     {
-//       padding: "25px",
-//       scrollTrigger: {
-//         trigger: trigger,
-//         start: "20% center",
-//         end: "bottom center",
-//         toggleActions: "play none none reverse",
-//       },
-//     }
-//   );
-// };
-const heroAnimation = (selector, follow) => {
+const heroAnimation = (selector, follow, visual) => {
+  gsap.fromTo(
+    visual.querySelector(".image img"),
+    {
+      y: 0,
+    },
+    {
+      y: -500,
+      scrollTrigger: {
+        trigger: selector,
+        start: "top center",
+        end: "bottom top",
+        scrub: 2,
+      },
+    }
+  );
   gsap
     .timeline()
     .fromTo(
@@ -279,7 +277,7 @@ const footerAnimation = (selector, target, sns) => {
     .timeline({
       scrollTrigger: {
         trigger: target,
-        start: "80% center",
+        start: "90% center",
         toggleActions: "play none none none",
         ease: "power2.inOut",
       },
@@ -310,8 +308,8 @@ const footerAnimation = (selector, target, sns) => {
     );
 };
 function Main() {
-  // const headerRef = useRef();
   const followRef = useRef();
+  const visualRef = useRef();
   const triggerRef = useRef();
   const serviceRef = useRef();
   const imageRef = useRef();
@@ -321,21 +319,19 @@ function Main() {
   const snsRef = useRef();
 
   useEffect(() => {
-    heroAnimation(triggerRef.current, followRef.current);
-    // headerAnimation(headerRef.current, triggerRef.current);
+    heroAnimation(triggerRef.current, followRef.current, visualRef.current);
     serviceAnimation(serviceRef.current);
     imageAnimation(imageRef.current, serviceRef.current);
     portfolioAnimation(portfolioRef.current);
     openTalkAnimation(opentalkRef.current);
-    footerAnimation(footerRef.current, portfolioRef.current, snsRef.current);
+    footerAnimation(footerRef.current, triggerRef.current, snsRef.current);
   }, []);
 
   useTitleHook();
   return (
     <>
-      {/* <Header ref={headerRef} /> */}
       <div ref={triggerRef}>
-        <Visual chilrenRef={followRef} />
+        <Visual childrenRef={followRef} ref={visualRef} />
         <Introduce />
         <Service ref={serviceRef} />
         <div className="area" ref={imageRef}>

@@ -17,6 +17,11 @@ const GNB = forwardRef((_, ref) => {
           </Link>
         </li>
         <li>
+          <Link to="/education" className="uppercase text-2xl font-[teko]">
+            Education
+          </Link>
+        </li>
+        <li>
           <Link to="/contact" className="uppercase text-2xl font-[teko]">
             Contact
           </Link>

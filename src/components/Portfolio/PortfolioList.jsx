@@ -3,7 +3,7 @@ import Pagination from "./Pagination";
 
 export default function PortfolioList({ projectList, handleGetID }) {
   const [currentPage, setCurrentPage] = useState(1);
-  const projectPerPage = 10;
+  const projectPerPage = 20;
   const totalPages = Math.ceil(projectList.length / projectPerPage);
   const indexOfLastProject = currentPage * projectPerPage;
   const indexOfFirstProject = indexOfLastProject - projectPerPage;
@@ -13,6 +13,7 @@ export default function PortfolioList({ projectList, handleGetID }) {
     <div>
       <ul className="font-[base] font-light">
         {currentProjects.map(({ id, name, startDate, client, tag }, index) => (
+          // <li key={id} className={index === 0 ? "border-t-0" : "border-t-[1px] border-gray-300 hover:scale-[1.02] transition-transform duration-200"}>
           <li key={id} className={index === 0 ? "border-t-0" : "border-t-[1px] border-gray-300"}>
             <a
               href=""

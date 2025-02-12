@@ -18,23 +18,20 @@ export async function getChannelId() {
   }
 }
 
-let VideoCount;
-async function getVideoCount() {
+export async function getVideoCount() {
   const url = `https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${channelID}&key=${apikey}`;
 
   try {
     const response = await fetch(url);
     const data = await response.json();
+    console.log(data);
 
-    VideoCount = data.items[0].statistics.videoCount;
-
-    return data;
+    return data.items[0].statistics.videoCount;
   } catch (error) {
     console.error("API 요청 실패:", error);
+    return null;
   }
 }
-
-export default VideoCount;
 
 export async function getLatestVideos(length) {
   const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${channelID}&order=date&maxResults=${length}&key=${apikey}`;

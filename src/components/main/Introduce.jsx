@@ -82,18 +82,19 @@ const Introduce = () => {
     <>
       <section className="area" ref={introRef}>
         <div>
-          <p className="font-[base] font-bold mobile:text-3xl tablet:text-6xl mobile:leading-[1.2] tablet:leading-[1] break-keep">
-            리베하얀은 <span className="text-gray-300">{career}년 실무 경험</span>을 바탕으로 웹 퍼블리셔와 프론트엔드 개발자를 위한 실용적이고 <span className="text-gray-300">체계적인 교육</span>을
-            제공합니다.
+          <p className="font-[base] font-medium mobile:text-3xl tablet:text-6xl mobile:leading-[1.2] tablet:leading-[1.2] break-keep">
+            웹 퍼블리셔와 프론트엔드 개발자를 위한 <span className="font-extrabold text-orange-400">실용적이고 체계적인</span> 교육을 지원합니다. 트렌드에 강하고, 실무에 바로 적용하는 당신의{" "}
+            <span className="font-extrabold">커리어</span>를 한 단계
+            <span className="font-extrabold">업그레이드</span>하세요
           </p>
           <div className="grid grid-cols-2 tablet:gap-y-20 gap-x-10 mobile:mt-10 tablet:mt-20">
             <div className="mobile:hidden tablet:block"></div>
-            <div className="text text-base font-[base] mobile:w-full tablet:w-[27rem] break-keep mobile:col-span-full tablet:col-span-1">
-              최신 웹 기술과 실무 중심 프로젝트를 통해 현업에서 바로 적용할 수 있는 노하우를 전달하며, 퍼블리싱과 개발의 경계를 허물고 더 나은 웹을 만들어가는 길을 함께합니다. 웹 퍼블리싱과 프론트엔드
-              개발을 배우고, 성장하는 여정. 리베하얀과 함께 시작하세요!
+            <div className="text text-base font-[base] mobile:w-full tablet:w-[30rem] break-keep mobile:col-span-full tablet:col-span-1">
+              바로 현장에서 써먹는
+              <br /> 실무 스킬 지금 온라인 강의에서 만나보세요
               <div className="mt-5">
                 <a href="" className="btn-goto">
-                  <span data-text="지금 시작하세요.">지금 시작하세요.</span>
+                  <span data-text="온라인강의 둘러보기">온라인강의 둘러보기</span>
                   <HiArrowLongRight />
                 </a>
               </div>
@@ -110,10 +111,10 @@ const Introduce = () => {
       <section className="area" ref={countRef}>
         <div>
           <ul className="font-[teko] mobile:grid mobile:grid-cols-2 tablet:flex tablet:justify-between translate-y-3">
-            {carrerCountData.map(({ number, title }, index) => (
-              <li key={index} className="flex items-end gap-4">
+            {carrerCountData.map(({ number, title, kor }, index) => (
+              <li key={index} className="flex items-end gap-4 hover-kor">
                 <AnimatedNumber end={number} delay={1.5} isActive={isActive} />
-                <span className="uppercase mobile:text-lg tablet:text-xl w-15 leading-[1] mobile:-translate-y-4 tablet:-translate-y-7">{title}</span>
+                <span data-kor={kor}>{title}</span>
               </li>
             ))}
           </ul>
