@@ -54,6 +54,7 @@ export const projects = [
     client: "사이드 프로젝트",
     company: "TFT",
     contribution: "60%",
+    url: "",
     // url: "https://github.com/subinsad/KDT7_FE_Toy2_team4",
     tag: [
       { role: "Project Leader", className: "bg-cyan-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
@@ -68,6 +69,7 @@ export const projects = [
     client: "사이드 프로젝트",
     company: "TFT",
     contribution: "60%",
+    url: "",
     // url: "https://github.com/subinsad/KDT7_FE_Toy1_team4",
     tag: [
       { role: "Project Leader", className: "bg-cyan-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
