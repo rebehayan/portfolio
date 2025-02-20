@@ -189,7 +189,7 @@ const portfolioAnimation = (selector) => {
       }
     )
     .fromTo(
-      selector.querySelector("ul"),
+      selector.querySelector(".swiper"),
       {
         y: 40,
         opacity: 0,
@@ -198,34 +198,6 @@ const portfolioAnimation = (selector) => {
         y: 0,
         opacity: 1,
       }
-    )
-    .fromTo(
-      selector.querySelectorAll("li div"),
-      {
-        opacity: 0,
-      },
-      {
-        opacity: 1,
-        duration: 1,
-        stagger: {
-          each: 0.2,
-          from: "random",
-        },
-      }
-    )
-    .fromTo(
-      selector.querySelectorAll(".slide > *"),
-      {
-        y: 40,
-        opacity: 0,
-      },
-      {
-        y: 0,
-        opacity: 1,
-        stagger: 0.3,
-        duration: 0.7,
-      },
-      "<"
     );
 };
 const openTalkAnimation = (selector) => {

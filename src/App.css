@@ -155,3 +155,18 @@
 main {
   margin-top: 113px;
 }
+
+.feedback {
+  /* --swiper-navigation-color:#a4f4cf; */
+  --swiper-navigation-color: #005f5a;
+
+  .swiper-pagination {
+    @apply flex gap-2 justify-center mt-10;
+    > span {
+      @apply w-2 aspect-square rounded-full bg-emerald-200;
+      &.swiper-pagination-bullet-active {
+        @apply bg-teal-800;
+      }
+    }
+  }
+}

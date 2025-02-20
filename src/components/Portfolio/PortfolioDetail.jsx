@@ -16,11 +16,16 @@ export default function PortfolioDetail({ toggle, projectInfo, onClose }) {
       <p>
         <strong>기여도:</strong> {projectInfo.contribution}
       </p>
-      {projectInfo.url && (
+      {projectInfo.url.includes("https") ? (
         <p>
+          <strong>URL : </strong>
           <a href={projectInfo.url} target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">
-            프로젝트 링크
+            {projectInfo.url}
           </a>
+        </p>
+      ) : (
+        <p>
+          <strong>URL : </strong>비공개 또는 서비스 종료된 사이트입니다.
         </p>
       )}
       <button type="button" className="absolute right-5 top-5 cursor-pointer" onClick={onClose}>

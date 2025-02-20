@@ -1,12 +1,8 @@
 import React, { useEffect } from "react";
 import image from "../assets/visual.jpg";
-import { getLatestVideos } from "../utils/youtube.js";
 import { skills } from "../data/aboutSkill.js";
-import { FaHtml5 } from "react-icons/fa";
-import { RiTailwindCssFill } from "react-icons/ri";
 import { IconAccessibility, IconCSS, IconFigma, IconGit, IconGithub, IconHTML, IconJS, IconPs, IconReact, IconSCSS, IconSwiper, IconTailwind, IconTS, IconVite, IconVSCode } from "../data/icons.jsx";
 import { SNSList } from "../data/sns.js";
-import { Email } from "../components/Email.jsx";
 import Opentalk from "../components/main/Opentalk.jsx";
 import { useTitleHook } from "../utils/useTitleHook.js";
 
@@ -20,12 +16,18 @@ export default function About() {
       <section className="area">
         <div>
           <div className="font-[base] font-bold text-5xl text-center break-keep leading-[1.1]">
-            취미로 시작한 길이 현재 저의 직업이 되었고,
-            <br />그 과정에서 멘토 없이 성장하며 수많은 시행착오를 겪었습니다.
-            <br />
-            이러한 경험을 바탕으로, 후배들이 잘못된 학습으로
-            <br />
-            시간을 낭비하지 않도록 돕는 것이 저의 목표입니다.
+            <div className="overflow-hidden">
+              <div>취미로 시작한 길이 현재 저의 직업이 되었고,</div>
+            </div>
+            <div className="overflow-hidden">
+              <div>그 과정에서 멘토 없이 성장하며 수많은 시행착오를 겪었습니다.</div>
+            </div>
+            <div className="overflow-hidden">
+              <div>이러한 경험을 바탕으로, 후배들이 잘못된 학습으로</div>
+            </div>
+            <div className="overflow-hidden">
+              <div>시간을 낭비하지 않도록 돕는 것이 저의 목표입니다.</div>
+            </div>
           </div>
           <div className="flex mx-auto mt-10 w-min font-[base] font-light text-sm items-start gap-5 ">
             <div className="flex items-center gap-5">

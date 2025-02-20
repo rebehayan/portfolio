@@ -58,7 +58,7 @@ export const Email = () => {
         <div className="col-span-full grid">
           <label htmlFor="message" className="font-[base] text-base font-light">
             문의사항
-            <span className="block text-sm text-gray-700 mb-1">첨부파일은 클라우드 링크나 Notion등의 자료 링크로 보내주시면 감사하겠습니다.</span>
+            <span className="block text-sm text-gray-700 mb-1"></span>
           </label>
           <textarea
             name="message"

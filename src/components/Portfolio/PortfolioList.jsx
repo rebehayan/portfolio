@@ -3,7 +3,7 @@ import Pagination from "./Pagination";
 
 export default function PortfolioList({ projectList, handleGetID }) {
   const [currentPage, setCurrentPage] = useState(1);
-  const projectPerPage = 20;
+  const projectPerPage = 10;
   const totalPages = Math.ceil(projectList.length / projectPerPage);
   const indexOfLastProject = currentPage * projectPerPage;
   const indexOfFirstProject = indexOfLastProject - projectPerPage;

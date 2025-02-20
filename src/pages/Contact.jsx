@@ -1,6 +1,11 @@
 import React from "react";
 import { Email } from "../components/Email";
 import { useTitleHook } from "../utils/useTitleHook";
+import liveVideo from "../assets/contact.mp4";
+import myFav1 from "../assets/myfav1.jpg";
+import myFav2 from "../assets/myfav2.png";
+import myFav3 from "../assets/myfav3.png";
+import myFav4 from "../assets/myfav4.jpg";
 
 export default function Contact() {
   useTitleHook();
@@ -11,13 +16,23 @@ export default function Contact() {
           궁금한 점이 있으신가요? <br /> <strong className="font-bold">강의 의뢰</strong>나 <strong className="font-bold">프로젝트 문의</strong>도 <br /> 언제든지 환영합니다. <br /> 편하게 문의하세요!
         </h2>
         <div className="grid grid-cols-[1fr_2fr] gap-5 grid-rows-4">
-          <div className="bg-gray-200 col-start-1 col-end-2 row-start-2 row-end-4">1</div>
-          <div className="bg-gray-200 col-start-1 col-end-2 row-start-4 row-end-5">2</div>
-          <div className="bg-gray-200 col-start-2 col-end-3 row-start-1 row-end-3">3</div>
-          <div className="bg-gray-200 col-start-2 col-end-3 row-start-3 row-end-5">4</div>
+          <div className="bg-gray-200 col-start-1 col-end-2 row-start-2 row-end-4">
+            <img src={myFav1} alt="" className="w-full h-full object-cover" />
+          </div>
+          <div className="bg-gray-200 col-start-1 col-end-2 row-start-4 row-end-5">
+            <img src={myFav4} alt="" className="w-full h-full object-cover" />
+          </div>
+          <div className="bg-gray-200 col-start-2 col-end-3 row-start-1 row-end-3">
+            <img src={myFav3} alt="" className="w-full h-full object-cover" />
+          </div>
+          <div className="bg-gray-200 col-start-2 col-end-3 row-start-3 row-end-5">
+            <img src={myFav2} alt="" className="w-full h-full object-cover" />
+          </div>
         </div>
       </section>
-      <div className="h-[50vh] bg-slate-100"></div>
+      <div className="h-[50vh] flex items-center relative bg-slate-100 overflow-hidden after:absolute after:inset-0 after:bg-black after:opacity-60 after:z-20">
+        <video src={liveVideo} loop autoPlay muted className="w-full object-cover"></video>
+      </div>
       <section className="area">
         <div className="grid grid-cols-2">
           <div className="font-[base] font-light">
