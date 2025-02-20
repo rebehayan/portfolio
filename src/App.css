@@ -139,9 +139,15 @@
     }
     aside & {
       @apply left-10 top-[50%] translate-y-[-50%];
+      @media (width < 1024px) {
+        @apply hidden;
+      }
       &::after {
         @apply -left-3 top-[50%] translate-y-[-50%];
         border-color: transparent #000 transparent transparent;
+        @media (width < 1024px) {
+          @apply hidden;
+        }
       }
     }
     &::after {

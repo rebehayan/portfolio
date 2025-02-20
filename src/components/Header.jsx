@@ -40,7 +40,7 @@ const Header = forwardRef((_, ref) => {
   return (
     <header ref={ref} className="fixed left-0 right-0 top-0 bg-white z-[1000]">
       <div className="area">
-        <div className=" flex justify-between">
+        <div className=" flex justify-between  box-border">
           <h1 ref={h1Ref}>
             <Link to="/">
               <img src="/logo.svg" alt="Rebehayan" className="w-17" />

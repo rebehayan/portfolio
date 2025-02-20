@@ -13,14 +13,14 @@ const Service = forwardRef((_, ref) => {
           {serviceList.map(({ link, linktext, title, subtitle, description, iconComponent }, index) => (
             <li key={index} className={`group ${index === 0 ? "mobile:pb-5 tablet:pb-10" : "border-t-[1px] border-gray-300 mobile:py-5 tablet:py-10"}`}>
               <Link to={link} rel="noopener noreferrer" className="group grid mobile:grid-cols-[min-content_1fr] tablet:grid-cols-[min-content_1fr_min-content] gap-x-5 gap-y-1">
-                {React.createElement(iconComponent, { className: "w-15 h-15 mobile:row-[1/4] tablet:row-[1/3]" })}
-                <strong className="font-[teko] text-3xl uppercase block">{title}</strong>
+                {React.createElement(iconComponent, { className: "mobile:w-10 mobile:h-10 tablet:w-15 tablet:h-15 mobile:row-[1/4] tablet:row-[1/3]" })}
+                <strong className="font-[teko] mobile:text-xl tablet:text-3xl uppercase block">{title}</strong>
                 <div className="w-[90%]">
-                  <strong className="font-[base] font-medium transition-colors duration-300 group-hover:text-orange-700">{subtitle}</strong>
-                  <p className="break-keep">{description}</p>
-                  <div>{linktext}</div>
+                  <strong className="font-[base] mobile:text-sm tablet:text-base font-medium transition-colors duration-300 group-hover:text-orange-700">{subtitle}</strong>
+                  <p className="break-keep  mobile:text-sm tablet:text-base">{description}</p>
+                  <div className=" mobile:text-sm mobile:mt-3 tablet:mt-0 tablet:text-base">{linktext}</div>
                 </div>
-                <span className="tablet:col-[3/4] tablet:row-[1/3] self-center w-10 h-10 flex items-center justify-center rounded-full group-hover:bg-neutral-100 transition-all duration-500">
+                <span className=" mobile:hidden tablet:col-[3/4] tablet:row-[1/3] self-center w-10 h-10 flex items-center justify-center rounded-full group-hover:bg-neutral-100 transition-all duration-500">
                   <HiArrowRight />
                 </span>
               </Link>

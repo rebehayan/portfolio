@@ -16,7 +16,7 @@ const Visual = forwardRef(({ childrenRef }, ref) => {
           <div>with Code &</div>
           <div>Creativity</div>
         </div>
-        <div className="text2 font-normal text-base font-[base] break-keep mobile:w-auto tablet:w-[28rem] justify-self-end  mobile:mt-5 tablet:mt-0">
+        <div className="text2 font-normal text-base font-[base] break-keep mobile:w-auto tablet:w-[28rem] tablet:justify-self-end  mobile:mt-5 tablet:mt-0">
           <TfiArrowRight className="mobile:hidden tablet:block w-40 h-40 rotate-45 -translate-x-7 text-gray-200 mb-10 break-keep" />
           <p>
             실무와 최신 기술이 만나는 프론트엔드, 웹퍼블리싱 교육,

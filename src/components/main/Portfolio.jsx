@@ -53,10 +53,10 @@ const Portfolio = forwardRef((_, ref) => {
           {Feedback.map(({ avatar, job, message, name }, index) => (
             <SwiperSlide key={index}>
               <div className="text-center mt-20 slide">
-                <FaQuoteRight className="mx-auto w-10 h-10" />
-                <pre className="font-[base] font-light text-gray-600 my-5 mobile:text-base tablet:text-base">{message}</pre>
-                <div className="w-20 aspect-square rounded-full border-[1px] border-stone-300 m-auto mt-5 flex items-center justify-center overflow-hidden">
-                  <img src={avatar} alt="" className={avatar.includes("svg") ? "w-15" : "w-14 translate-y-1"} />
+                <FaQuoteRight className="mx-auto mobile:w-8 mobile:h-8 tablet:w-10 tablet:h-10" />
+                <pre className="font-[base] font-light text-gray-600 my-5 mobile:text-xs tablet:text-base mobile:px-5 tablet:px-0 mobile:line-clamp-3 tablet:line-clamp-none">{message}</pre>
+                <div className="mobile:w-10 tablet:w-20 aspect-square rounded-full border-[1px] border-stone-300 m-auto mt-5 flex items-center justify-center overflow-hidden">
+                  <img src={avatar} alt="" className="mobile:w-7 tablet:w-14 translate-y-1" />
                 </div>
                 <div className="w-min whitespace-nowrap mx-auto">
                   {name}

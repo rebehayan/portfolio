@@ -1,5 +1,5 @@
-import React from "react";
-import { Route, Routes } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Route, Routes, useLocation } from "react-router-dom";
 import Main from "./pages/Main";
 import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
@@ -8,6 +8,12 @@ import Education from "./pages/Education";
 import Service from "./pages/Service";
 
 export default function PageRouter() {
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
   return (
     <>
       <Routes>

@@ -89,7 +89,7 @@ const Introduce = () => {
           </p>
           <div className="grid grid-cols-2 tablet:gap-y-20 gap-x-10 mobile:mt-10 tablet:mt-20">
             <div className="mobile:hidden tablet:block"></div>
-            <div className="text text-base font-[base] mobile:w-full tablet:w-[30rem] break-keep mobile:col-span-full tablet:col-span-1">
+            <div className="text text-base font-[base] mobile:w-full tablet:w-[30rem] break-keep mobile:col-span-full tablet:col-span-1  mobile:mb-10  tablet:mb-0">
               바로 현장에서 써먹는
               <br /> 실무 스킬 지금 온라인 강의에서 만나보세요
               <div className="mt-5">
@@ -110,7 +110,7 @@ const Introduce = () => {
       </section>
       <section className="area" ref={countRef}>
         <div>
-          <ul className="font-[teko] mobile:grid mobile:grid-cols-2 tablet:flex tablet:justify-between translate-y-3">
+          <ul className="font-[teko] mobile:grid mobile:grid-cols-1 mobile:gap-3 tablet:flex tablet:justify-between translate-y-3">
             {carrerCountData.map(({ number, title, kor }, index) => (
               <li key={index} className="flex items-end gap-4 hover-kor">
                 <AnimatedNumber end={number} delay={1.5} isActive={isActive} />
