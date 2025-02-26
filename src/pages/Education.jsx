@@ -21,7 +21,7 @@ export default function Education() {
   return (
     <>
       {/* <button onClick={handleInsert}>추가하기</button> */}
-      <div className="video min-h-[100vh] h-[1080px] bg-neutral-200 relative overflow-hidden after:absolute after:inset-0 after:bg-black after:opacity-30">
+      <div className="video min-h-[calc(100vh-113px)] h-[calc(1080px-113px)] bg-neutral-200 relative overflow-hidden after:absolute after:inset-0 after:bg-black after:opacity-30">
         <video src={me} muted autoPlay loop className="w-full h-full object-cover"></video>
         <div className="block absolute left-10 bottom-10 bg-lime-200 w-[550px] rounded-2xl p-5 font-[base] z-10">
           <h2 className="text-4xl font-bold">
@@ -74,7 +74,7 @@ export default function Education() {
       </section>
       <section className="area">
         <div>
-          <h2 className="font-[base] font-bold text-4xl">Youtube 채널 가이드</h2>
+          <h2 className="font-[base] font-bold text-4xl">Youtube 채널 재생목록</h2>
           <p className="h-10"></p>
           <ul className="grid grid-cols-4 gap-x-7 gap-y-10">
             {playLists.map((playlist) => (
@@ -87,7 +87,7 @@ export default function Education() {
                     <div className="font-[base] text-lg font-medium text-stone-800">{playlist.title}</div>
                     <div className="font-[base] text-base font-base text-stone-500">{playlist.videoCount}개 영상</div>
                   </div>
-                  <div className="font-[base] text-base font-light text-stone-500">{playlist.description}</div>
+                  {/* <div className="font-[base] text-base font-light text-stone-500">{playlist.description}</div> */}
                 </a>
               </li>
             ))}

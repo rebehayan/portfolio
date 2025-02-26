@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
-import image from "../assets/visual.jpg";
-import me1 from "../assets/me1.jpg";
+import me1 from "../assets/me3.jpg";
 import me2 from "../assets/me2.jpg";
 import me2video from "../assets/me4.mp4";
 import { skills } from "../data/aboutSkill.js";
@@ -8,8 +7,9 @@ import { IconAccessibility, IconCSS, IconFigma, IconGit, IconGithub, IconHTML, I
 import { SNSList } from "../data/sns.js";
 import Opentalk from "../components/main/Opentalk.jsx";
 import { useTitleHook } from "../utils/useTitleHook.js";
+import { projects } from "../data/portfolio.js";
 
-const skillIconStyle = "opacity-40 hover:opacity-80 transition-all duration-500";
+const skillIconStyle = "opacity-40 hover:opacity-100 transition-all duration-500";
 
 export default function About() {
   useTitleHook();
@@ -18,43 +18,55 @@ export default function About() {
     <>
       <section className="area">
         <div>
-          <div className="font-[base] font-bold text-5xl text-center break-keep leading-[1.1]">
+          <div className="font-[base] font-normal text-4xl text-center break-keep leading-[1.5]">
             <div className="overflow-hidden">
-              <div>취미로 시작한 길이 현재 저의 직업이 되었고,</div>
+              <div>독학으로 이 자리에 오기까지, 수많은 시행착오를 겪었습니다.</div>
             </div>
             <div className="overflow-hidden">
-              <div>그 과정에서 멘토 없이 성장하며 수많은 시행착오를 겪었습니다.</div>
+              <div>그 길이 결코 쉽지 않았기에, 저와 같은 고통을 겪지 않도록 돕는 것이 이제 제 목표입니다.</div>
             </div>
             <div className="overflow-hidden">
-              <div>이러한 경험을 바탕으로, 후배들이 잘못된 학습으로</div>
-            </div>
-            <div className="overflow-hidden">
-              <div>시간을 낭비하지 않도록 돕는 것이 저의 목표입니다.</div>
+              <div>제 경험이 누군가의 빛이 되길 바라며, 함께 성장하는 여정을 만들어가고 싶습니다.</div>
             </div>
           </div>
-          <div className="flex mx-auto mt-10 w-min font-[base] font-light text-sm items-start gap-5 ">
+          <div className="flex mx-auto mt-20 w-min font-[base] font-light text-sm items-start gap-5 ">
             <div className="flex items-center gap-5">
               <h2 className="whitespace-nowrap font-medium">01. 이곳에 오기까지</h2>
               <span className="w-20 border-t-[1px] border-black"></span>
             </div>
             <p className="break-keep  tablet:w-[30rem]">
-              저는 실무 경험이 탄탄한 강의가 가장 가치 있다고 믿습니다. 그래서 강의뿐만 아니라 실무를 병행하며 끊임없이 배우고 성장하고 있습니다. 이러한 노력으로 여러분이 더 빠르고 효율적으로 성장할
-              수 있도록 최선을 다하겠습니다.
+              실전에서 얻은 경험이 강의의 뼈대를 단단하게 만듭니다. 이것이 제 교육 철학입니다. 강단에 서는 시간 외에도 현장에서 끊임없이 배우고 성장하는 과정을 거듭하고 있습니다. 이 모든 여정이
+              여러분의 성장 곡선을 더 가파르고 의미 있게 만들어 드리기 위함입니다.
             </p>
           </div>
         </div>
       </section>
       <section className="grid grid-cols-[2.5fr_1fr_1fr] gap-3 my-20 h-[50rem] grid-rows-2">
         <div className="col-start-1 col-end-2 row-start-1 row-end-3 relative after:absolute after:inset-0 after:bg-black after:opacity-0">
-          <video src={me2video} muted autoPlay loop className="w-full h-full object-cover"></video>
+          <img src={me1} className="w-full h-full object-cover" alt="" />
         </div>
         <div>
           <img src={me2} className="w-full h-full object-cover" alt="" />
         </div>
-        <div>100+</div>
-        <div>We Hepled</div>
+        <div className="bg-neutral-100 relative p-10">
+          <div className="font-[base] text-lg font-light">
+            현재까지 156회
+            <br />
+            강의를 진행 했습니다.
+          </div>
+          <div className="absolute left-10 bottom-10 text-8xl font-bold font-[base]">156+</div>
+        </div>
+        <div className="bg-neutral-800 text-white p-10 relative">
+          <div className="font-[base] text-lg font-light">
+            이곳에 오기까지
+            <br />총 {projects.length}개의
+            <br />
+            프로젝트를 수행했습니다.
+          </div>
+          <div className="absolute left-10 bottom-10 text-8xl font-bold font-[base]">{projects.length}+</div>
+        </div>
         <div>
-          <img src={me1} className="w-full h-full object-cover" alt="" />
+          <video src={me2video} muted autoPlay loop className="w-full h-full object-cover"></video>
         </div>
       </section>
       <section className="area border-t-[1px] border-gray-200">
@@ -123,6 +135,7 @@ export default function About() {
           <IconPs className={skillIconStyle} />
         </div>
       </section>
+
       <Opentalk />
     </>
   );

@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import image from "../../assets/visual.jpg";
+import image from "../../assets/me3.jpg";
 import { carrerCountData } from "../../data/carrerCount";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -110,7 +110,7 @@ const Introduce = () => {
               <video src={video} muted loop autoPlay className="aspect-[16/9] w-[20rem] object-cover"></video>
             </div>
             <div className="img">
-              <img src={image} alt="" className="mobile:aspect-[3/4] tablet:aspect-[9/16] w-[20rem] object-cover" />
+              <img src={image} alt="" className="mobile:aspect-[3/4] tablet:aspect-[9/16] w-[20rem] object-cover origin-bottom-right" />
             </div>
           </div>
         </div>
