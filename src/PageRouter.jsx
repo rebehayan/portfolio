@@ -12,6 +12,11 @@ export default function PageRouter() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    // if (location.pathname.includes("portfolio")) {
+    //   document.body.classList.add("dark");
+    // } else {
+    //   document.body.classList.remove("dark");
+    // }
   }, [location]);
 
   return (

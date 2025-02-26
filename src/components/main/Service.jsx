@@ -12,7 +12,7 @@ const Service = forwardRef((_, ref) => {
         <ul className="mobile:mt-10 tablet:mt-0">
           {serviceList.map(({ link, linktext, title, subtitle, description, iconComponent }, index) => (
             <li key={index} className={`group ${index === 0 ? "mobile:pb-5 tablet:pb-10" : "border-t-[1px] border-gray-300 mobile:py-5 tablet:py-10"}`}>
-              <Link to={link} rel="noopener noreferrer" className="group grid mobile:grid-cols-[min-content_1fr] tablet:grid-cols-[min-content_1fr_min-content] gap-x-5 gap-y-1">
+              <Link to={link} rel="noopener noreferrer" className="group grid mobile:grid-cols-[min-content_1fr] tablet:grid-cols-[min-content_1fr] gap-x-5 gap-y-1">
                 {React.createElement(iconComponent, { className: "mobile:w-10 mobile:h-10 tablet:w-15 tablet:h-15 mobile:row-[1/4] tablet:row-[1/3]" })}
                 <strong className="font-[teko] mobile:text-xl tablet:text-3xl uppercase block">{title}</strong>
                 <div className="w-[90%]">

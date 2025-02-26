@@ -124,5 +124,3 @@ export default function About() {
     </>
   );
 }
-
-// https://crowdytheme.com/html/arolax/creative-agency.html#

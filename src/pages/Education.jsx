@@ -1,9 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { update, post } from "../utils/supa.js";
+import { getPlaylists } from "../utils/youtube.js";
 
 export default function Education() {
+  const [playLists, setPlayLists] = useState([]);
+  update();
+
+  useEffect(() => {
+    const handleList = async () => {
+      const list = await getPlaylists();
+      setPlayLists(list);
+    };
+    handleList();
+  }, []);
+
+  // const handleInsert = () => {
+  //   post();
+  // };
   return (
     <>
-      <div className="video h-[calc(100vh-113px)] bg-neutral-200 relative">
+      {/* <button onClick={handleInsert}>추가하기</button> */}
+      <div className="video min-h-[100vh] h-[1080px] bg-neutral-200 relative">
         <div className="block absolute left-10 bottom-10 bg-lime-200 w-[550px] rounded-2xl p-5 font-[base]">
           <h2 className="text-4xl font-bold">
             함께 고민하고
@@ -16,8 +33,8 @@ export default function Education() {
           </p>
         </div>
       </div>
-      <section className="h-[100vh] text-center flex items-center justify-center font-[base] relative">
-        <h2 className="text-9xl  leading-[1] ">
+      <section className="h-[1500px] text-center flex items-center justify-center font-[base] relative">
+        <h2 className="text-9xl font-[teko] font-extrabold leading-[1] ">
           Learning <br />
           step by step
         </h2>
@@ -55,14 +72,23 @@ export default function Education() {
       </section>
       <section className="area">
         <div>
-          <h2 className="font-[base] font-bold text-4xl">
-            Youtube
-            <br />
-            채널 가이드
-          </h2>
-          <p></p>
-          <ul>
-            <li></li>
+          <h2 className="font-[base] font-bold text-4xl">Youtube 채널 가이드</h2>
+          <p className="h-10"></p>
+          <ul className="grid grid-cols-4 gap-x-7 gap-y-10">
+            {playLists.map((playlist) => (
+              <li key={playlist.id}>
+                <a href={playlist.url} target="_blank" rel="noopener noreferrer" className="flex flex-col gap-1">
+                  <div>
+                    <img src={playlist.thumbnail} alt="" className="w-full aspect-video object-cover" />
+                  </div>
+                  <div className="flex justify-between">
+                    <div className="font-[base] text-lg font-medium text-stone-800">{playlist.title}</div>
+                    <div className="font-[base] text-base font-base text-stone-500">{playlist.videoCount}개 영상</div>
+                  </div>
+                  <div className="font-[base] text-base font-light text-stone-500">{playlist.description}</div>
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
       </section>

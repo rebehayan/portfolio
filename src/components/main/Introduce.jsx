@@ -15,67 +15,74 @@ const Introduce = () => {
   const introRef = useRef();
   const countRef = useRef();
   const [isActive, setIsActive] = useState(false);
+  const [carrerData, setCarrerData] = useState([]);
 
   useEffect(() => {
-    const timeline = gsap.timeline({
-      scrollTrigger: {
-        trigger: introRef.current,
-        start: "top center",
-        onEnter: () => setIsActive(true),
-      },
-    });
-    const title = introRef.current.querySelector("p");
-    const text = introRef.current.querySelector(".text");
-    const image = introRef.current.querySelectorAll(".img");
-    const countLi = countRef.current.querySelectorAll("li");
+    const fetchData = async () => {
+      const data = await carrerCountData();
+      setCarrerData(data);
 
-    timeline
-      .fromTo(
-        title,
-        {
-          x: -30,
-          opacity: 0,
+      const timeline = gsap.timeline({
+        scrollTrigger: {
+          trigger: introRef.current,
+          start: "top center",
+          onEnter: () => setIsActive(true),
         },
-        {
-          x: 0,
-          opacity: 1,
-        }
-      )
-      .fromTo(
-        text,
-        {
-          x: 30,
-          opacity: 0,
-        },
-        {
-          x: 0,
-          opacity: 1,
-        }
-      )
-      .fromTo(
-        image,
-        {
-          y: 30,
-          opacity: 0,
-        },
-        {
-          y: 0,
-          opacity: 1,
-          stagger: 0.2,
-        }
-      )
-      .fromTo(
-        countLi,
-        {
-          y: 30,
-          opacity: 0,
-        },
-        {
-          y: 0,
-          opacity: 1,
-          stagger: 0.2,
-        }
-      );
+      });
+      const title = introRef.current.querySelector("p");
+      const text = introRef.current.querySelector(".text");
+      const image = introRef.current.querySelectorAll(".img");
+      const countLi = countRef.current.querySelectorAll("li");
+
+      timeline
+        .fromTo(
+          title,
+          {
+            x: -30,
+            opacity: 0,
+          },
+          {
+            x: 0,
+            opacity: 1,
+          }
+        )
+        .fromTo(
+          text,
+          {
+            x: 30,
+            opacity: 0,
+          },
+          {
+            x: 0,
+            opacity: 1,
+          }
+        )
+        .fromTo(
+          image,
+          {
+            y: 30,
+            opacity: 0,
+          },
+          {
+            y: 0,
+            opacity: 1,
+            stagger: 0.2,
+          }
+        )
+        .fromTo(
+          countLi,
+          {
+            y: 30,
+            opacity: 0,
+          },
+          {
+            y: 0,
+            opacity: 1,
+            stagger: 0.2,
+          }
+        );
+    };
+    fetchData();
   }, []);
 
   return (
@@ -111,7 +118,7 @@ const Introduce = () => {
       <section className="area" ref={countRef}>
         <div>
           <ul className="font-[teko] mobile:grid mobile:grid-cols-1 mobile:gap-3 tablet:flex tablet:justify-between translate-y-3">
-            {carrerCountData.map(({ number, title, kor }, index) => (
+            {carrerData.map(({ number, title, kor }, index) => (
               <li key={index} className="flex items-end gap-4 hover-kor">
                 <AnimatedNumber end={number} delay={1.5} isActive={isActive} />
                 <span data-kor={kor}>{title}</span>

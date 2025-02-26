@@ -40,16 +40,19 @@ export default function Portfolio() {
   }, [isKeyword]);
 
   return (
-    <div className="portfolio">
-      <div className="area">
-        <PortfolioSearch handleYear={(year) => handleYear(year)} handleSearch={handleSearch} />
-      </div>
-      <div className="area">
-        <div className={`portfolio-wrap ${toggleList ? "show" : ""}`}>
-          <PortfolioList projectList={filterDataList} handleGetID={(id) => handleGetID(id)} />
-          {selectedProject && <PortfolioDetail toggle={toggleList} projectInfo={selectedProject} onClose={() => setToggleList(false)} />}
+    <>
+      <div className="portfolio dark:bg-neutral-950 z-10 relative">
+        <div className="area  dark:bg-white">
+          <div></div>
+          <PortfolioSearch handleYear={(year) => handleYear(year)} handleSearch={handleSearch} />
+        </div>
+        <div className="area">
+          <div className={`portfolio-wrap ${toggleList ? "show" : ""}`}>
+            <PortfolioList projectList={filterDataList} handleGetID={(id) => handleGetID(id)} />
+            {selectedProject && <PortfolioDetail toggle={toggleList} projectInfo={selectedProject} onClose={() => setToggleList(false)} />}
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }

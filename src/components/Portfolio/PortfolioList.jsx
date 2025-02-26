@@ -22,21 +22,20 @@ export default function PortfolioList({ projectList, handleGetID }) {
                 handleGetID(id);
               }}
               role="button"
-              className="grid grid-cols-[1fr_minmax(min-content,7vw)_minmax(8rem,10vw)] gap-4 items-center py-4 px-2 hover:bg-gray-100 transition-colors duration-300"
+              className="grid grid-cols-[50px_3fr_2fr_1fr_1fr] gap-4 items-center py-10 px-5"
             >
-              <div className="text-gray-700 font-medium">
-                {name}
-                <div className="mt-[1px] flex gap-1">
-                  {tag.map(({ role, className, language }, index) => (
-                    <React.Fragment key={index}>
-                      {role && <span className={className}>{role}</span>}
-                      {language && <span className={className}>{language}</span>}
-                    </React.Fragment>
-                  ))}
-                </div>
+              <div className="text-neutral-500 dark:text-stone-400 font-light font-[base] text-lg">{projectList.length - index - indexOfFirstProject}</div>
+              <div className="text-neutral-800 dark:text-white font-[base] text-3xl font-normal whitespace-nowrap">{name}</div>
+              <div className="mt-[1px] flex gap-1">
+                {tag.map(({ role, className, language }, index) => (
+                  <React.Fragment key={index}>
+                    {role && <span className={className}>{role}</span>}
+                    {language && <span className={className}>{language}</span>}
+                  </React.Fragment>
+                ))}
               </div>
-              <div className="text-gray-700 text-sm">{startDate}</div>
-              <div className="text-gray-700 text-sm whitespace-nowrap">{client}</div>
+              <div className="dark:text-stone-400 text-stone-600 text-sm">{startDate}</div>
+              <div className="dark:text-stone-400 text-stone-600 text-sm whitespace-nowrap">{client}</div>
             </a>
           </li>
         ))}
@@ -45,3 +44,4 @@ export default function PortfolioList({ projectList, handleGetID }) {
     </div>
   );
 }
+// https://crowdytheme.com/html/arolax/creative-agency.html

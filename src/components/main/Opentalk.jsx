@@ -2,7 +2,7 @@ import React, { forwardRef } from "react";
 
 const Opentalk = forwardRef((_, ref) => {
   return (
-    <section className="area overflow-x-hidden" ref={ref}>
+    <section className="area overflow-hidden" ref={ref}>
       <div>
         <h2 className="text-center text-3xl font-[teko] font-bold uppercase mb-6">🖐OpenTalk</h2>
         <p className="font-[teko] mobile:text-5xl tablet:text-[10rem] uppercase font-extrabold leading-[0.8] text-center tablet:w-[50vw] mx-auto">Would you like to talk with me?</p>

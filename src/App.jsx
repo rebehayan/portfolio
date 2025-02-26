@@ -17,7 +17,7 @@ const headerAnimation = (selector, trigger, respon) => {
       padding: respon < 1024 ? "15px" : "25px",
       scrollTrigger: {
         trigger: trigger,
-        start: "20% center",
+        start: "800px center",
         end: "bottom center",
         toggleActions: "play none none reverse",
       },
@@ -27,14 +27,12 @@ const headerAnimation = (selector, trigger, respon) => {
 
 export default function App() {
   const location = useLocation();
-  const [isWidth, setIsWidth] = useState("");
   const headerRef = useRef();
   const triggerRef = useRef();
-  console.log(isWidth);
+  // console.log(isWidth);
 
   useEffect(() => {
-    headerAnimation(headerRef.current, triggerRef.current, isWidth);
-    setIsWidth((isWidth) => (isWidth == window.innerWidth ? isWidth : window.innerWidth));
+    headerAnimation(headerRef.current, triggerRef.current, window.innerWidth);
   }, [location]);
 
   return (

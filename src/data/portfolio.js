@@ -8,7 +8,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "https://www.booxtory.ai/main",
-    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "퍼블리싱", className: "badge pub" }],
   },
   {
     id: "20243",
@@ -19,7 +19,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "서비스종료",
-    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
     id: "20242",
@@ -30,7 +30,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "https://unearth22c.com/",
-    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
     id: "20241",
@@ -42,8 +42,8 @@ export const projects = [
     contribution: "60%",
     url: "https://github.com/rebehayan/triphotel",
     tag: [
-      { role: "Project Leader", className: "bg-cyan-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { language: "React", className: "bg-purple-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "Project Leader", className: "badge pl" },
+      { language: "React", className: "badge react" },
     ],
   },
   {
@@ -57,8 +57,8 @@ export const projects = [
     url: "",
     // url: "https://github.com/subinsad/KDT7_FE_Toy2_team4",
     tag: [
-      { role: "Project Leader", className: "bg-cyan-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { language: "React", className: "bg-purple-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "Project Leader", className: "badge pl" },
+      { language: "React", className: "badge react" },
     ],
   },
   {
@@ -72,8 +72,8 @@ export const projects = [
     url: "",
     // url: "https://github.com/subinsad/KDT7_FE_Toy1_team4",
     tag: [
-      { role: "Project Leader", className: "bg-cyan-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { language: "React", className: "bg-purple-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "Project Leader", className: "badge pl" },
+      { language: "React", className: "badge react" },
     ],
   },
   {
@@ -86,8 +86,8 @@ export const projects = [
     contribution: "90%",
     url: "https://github.com/rebehayan/urcine",
     tag: [
-      { role: "Project Leader", className: "bg-cyan-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { language: "React", className: "bg-purple-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "Project Leader", className: "badge pl" },
+      { language: "React", className: "badge react" },
     ],
   },
   {
@@ -100,8 +100,8 @@ export const projects = [
     contribution: "100%",
     url: "http://imakehouse.co.kr/",
     tag: [
-      { role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { language: "Vue", className: "bg-purple-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "퍼블리싱", className: "pub badge" },
+      { language: "Vue", className: "badge react" },
     ],
   },
   {
@@ -113,7 +113,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "서비스종료",
-    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
     id: "202211",
@@ -124,7 +124,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "https://mba.ajou.ac.kr/",
-    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
     id: "202210",
@@ -135,7 +135,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "http://https://www.vinus.co.kr/vinus/",
-    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
     id: "20229",
@@ -146,7 +146,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "http://https://www.minimalworks.co.kr",
-    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
     id: "20228",
@@ -157,7 +157,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "",
-    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
     id: "20227",
@@ -168,7 +168,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "https://ceo.hunet.co.kr/",
-    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
     id: "20226",
@@ -179,7 +179,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "비공개",
-    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
     id: "20225",
@@ -190,7 +190,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "",
-    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
     id: "20224",
@@ -201,7 +201,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "-",
-    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
     id: "20223",
@@ -212,7 +212,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "-",
-    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
     id: "20222",
@@ -223,7 +223,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "https://kees.kr",
-    tag: [{ role: "운영관리", className: "bg-purple-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "운영관리", className: "badge react" }],
   },
   {
     id: "20221",
@@ -234,7 +234,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "-",
-    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
     id: "202111",
@@ -245,7 +245,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "-",
-    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
     id: "202110",
@@ -257,8 +257,8 @@ export const projects = [
     contribution: "100%",
     url: "https://https://www.shinhanfoundation.or.kr/easy",
     tag: [
-      { role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "Project Leader", className: "bg-cyan-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "퍼블리싱", className: "pub badge" },
+      { role: "Project Leader", className: "badge pl" },
     ],
   },
   {
@@ -271,8 +271,8 @@ export const projects = [
     contribution: "100%",
     url: "https://samsunghospital.com",
     tag: [
-      { role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "Project Leader", className: "bg-cyan-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "퍼블리싱", className: "pub badge" },
+      { role: "Project Leader", className: "badge pl" },
     ],
   },
   {
@@ -284,7 +284,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "-",
-    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
     id: "20217",
@@ -296,8 +296,8 @@ export const projects = [
     contribution: "100%",
     url: "-",
     tag: [
-      { role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "Project Leader", className: "bg-cyan-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "퍼블리싱", className: "pub badge" },
+      { role: "Project Leader", className: "badge pl" },
     ],
   },
   {
@@ -309,7 +309,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "30%",
     url: "-",
-    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
     id: "20215",
@@ -320,7 +320,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "30%",
     url: "-",
-    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
     id: "20214",
@@ -331,7 +331,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "30%",
     url: "-",
-    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
     id: "20213",
@@ -342,7 +342,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "30%",
     url: "-",
-    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
     id: "20212",
@@ -353,7 +353,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "-",
-    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
     id: "20211",
@@ -364,7 +364,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "30%",
     url: "-",
-    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
     id: "20191",
@@ -375,7 +375,7 @@ export const projects = [
     company: "플랜아이",
     contribution: "70%",
     url: "https://https://www.kdca.go.kr",
-    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
     id: "20151",
@@ -386,7 +386,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "https://workingmom.or.kr",
-    tag: [{ role: "웹접근성 컨설팅", className: "bg-amber-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "웹접근성 컨설팅", className: "badge a11y" }],
   },
   {
     id: "20122",
@@ -397,7 +397,7 @@ export const projects = [
     company: "이모션",
     contribution: "100%",
     url: "https://wooribank.co.kr",
-    tag: [{ role: "웹접근성 컨설팅", className: "bg-amber-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "웹접근성 컨설팅", className: "badge a11y" }],
   },
   {
     id: "20121",
@@ -409,8 +409,8 @@ export const projects = [
     contribution: "90%",
     url: "https://company.lottemart.com",
     tag: [
-      { role: "Project Leader", className: "bg-cyan-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "Project Leader", className: "badge pl" },
+      { role: "퍼블리싱", className: "pub badge" },
     ],
   },
   {
@@ -422,7 +422,7 @@ export const projects = [
     company: "픽스다인",
     contribution: "40%",
     url: "-",
-    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
     id: "20210401",
@@ -433,7 +433,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "-",
-    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
     id: "20210402",
@@ -444,7 +444,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "30%",
     url: "-",
-    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
     id: "20200201",
@@ -455,7 +455,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "-",
-    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
     id: "20200202",
@@ -466,7 +466,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "비공개",
-    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
     id: "20191201",
@@ -477,7 +477,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "-",
-    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
     id: "20190101",
@@ -488,7 +488,7 @@ export const projects = [
     company: "플랜아이",
     contribution: "70%",
     url: "https://www.kdca.go.kr",
-    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
     id: "20181201",
@@ -499,7 +499,7 @@ export const projects = [
     company: "중외제약",
     contribution: "100%",
     url: "비공개",
-    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
     id: "20180901",
@@ -510,7 +510,7 @@ export const projects = [
     company: "중외제약",
     contribution: "100%",
     url: "비공개",
-    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
     id: "20170601",
@@ -522,8 +522,8 @@ export const projects = [
     contribution: "80%",
     url: "KT App",
     tag: [
-      { role: "Project Leader", className: "bg-cyan-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "Project Leader", className: "badge pl" },
+      { role: "퍼블리싱", className: "pub badge" },
     ],
   },
   {
@@ -535,7 +535,7 @@ export const projects = [
     company: "없음",
     contribution: "100%",
     url: ["https://purunetedu.com", "https://ischool.purunet.com"],
-    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
     id: "20160501",
@@ -547,8 +547,8 @@ export const projects = [
     contribution: "100%",
     url: "kaneitei.com",
     tag: [
-      { role: "기획", className: "bg-indigo-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-lightbg-purple-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "기획", className: "badge plan" },
+      { role: "퍼블리싱", className: "pub badge" },
     ],
   },
   {
@@ -560,7 +560,7 @@ export const projects = [
     company: "없음",
     contribution: "100%",
     url: "https://www.etis.or.kr",
-    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
     id: "20160101",
@@ -571,7 +571,7 @@ export const projects = [
     company: "없음",
     contribution: "80%",
     url: "비공개",
-    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
     id: "20151101",
@@ -582,7 +582,7 @@ export const projects = [
     company: "UNIVISTA",
     contribution: "100%",
     url: "https://www.caffemuseo.co.kr",
-    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
     id: "20151102",
@@ -593,7 +593,7 @@ export const projects = [
     company: "UNIVISTA",
     contribution: "100%",
     url: "https://www.univista.co.kr",
-    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
     id: "20151103",
@@ -604,7 +604,7 @@ export const projects = [
     company: "UNIVISTA",
     contribution: "100%",
     url: "비공개",
-    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
     id: "20151001",
@@ -615,7 +615,7 @@ export const projects = [
     company: "UNIVISTA",
     contribution: "100%",
     url: "비공개",
-    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
     id: "20151002",
@@ -626,7 +626,7 @@ export const projects = [
     company: "UNIVISTA",
     contribution: "100%",
     url: "비공개",
-    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
     id: "20150901",
@@ -637,7 +637,7 @@ export const projects = [
     company: "UNIVISTA",
     contribution: "100%",
     url: "비공개",
-    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
     id: "20150902",
@@ -648,7 +648,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "https://www.workingmom.or.kr",
-    tag: [{ role: "웹접근성컨설턴트", className: "bg-cyan-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "웹접근성컨설턴트", className: "badge pl" }],
   },
   {
     id: "20150701",
@@ -660,8 +660,8 @@ export const projects = [
     contribution: "100%",
     url: "petcometome.com",
     tag: [
-      { role: "Project Leader", className: "bg-cyan-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "Project Leader", className: "badge pl" },
+      { role: "퍼블리싱", className: "pub badge" },
     ],
   },
   {
@@ -674,8 +674,8 @@ export const projects = [
     contribution: "100%",
     url: "비공개",
     tag: [
-      { role: "Project Leader", className: "bg-cyan-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "Project Leader", className: "badge pl" },
+      { role: "퍼블리싱", className: "pub badge" },
     ],
   },
   {
@@ -688,8 +688,8 @@ export const projects = [
     contribution: "20%",
     url: "비공개",
     tag: [
-      { role: "Project Leader", className: "bg-cyan-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "Project Leader", className: "badge pl" },
+      { role: "퍼블리싱", className: "pub badge" },
     ],
   },
   {
@@ -701,7 +701,7 @@ export const projects = [
     company: "유플리트",
     contribution: "30%",
     url: "어플리케이션",
-    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
     id: "20140301",
@@ -713,8 +713,8 @@ export const projects = [
     contribution: "10%",
     url: "https://www.axa.co.kr",
     tag: [
-      { role: "Project Leader", className: "bg-cyan-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "Project Leader", className: "badge pl" },
+      { role: "퍼블리싱", className: "pub badge" },
     ],
   },
   {
@@ -727,8 +727,8 @@ export const projects = [
     contribution: "95%",
     url: "https://www.choroc.com",
     tag: [
-      { role: "Project Leader", className: "bg-cyan-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "Project Leader", className: "badge pl" },
+      { role: "퍼블리싱", className: "pub badge" },
     ],
   },
   {
@@ -740,7 +740,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "https://www.hanil.com",
-    tag: [{ role: "웹접근성 컨설팅", className: "bg-cyan-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "웹접근성 컨설팅", className: "badge pl" }],
   },
   {
     id: "20130401",
@@ -751,7 +751,7 @@ export const projects = [
     company: "이모션",
     contribution: "50%",
     url: "비공개",
-    tag: [{ role: "웹접근성 컨설팅", className: "bg-cyan-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "웹접근성 컨설팅", className: "badge pl" }],
   },
   {
     id: "20121201",
@@ -762,7 +762,7 @@ export const projects = [
     company: "이모션",
     contribution: "100%",
     url: "https://www.wooribank.co.kr",
-    tag: [{ role: "웹접근성 컨설팅", className: "bg-cyan-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "웹접근성 컨설팅", className: "badge pl" }],
   },
   {
     id: "20121001",
@@ -773,7 +773,7 @@ export const projects = [
     company: "태그앤브레이스",
     contribution: "50%",
     url: "https://www.giro.or.kr",
-    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
     id: "20120501",
@@ -785,8 +785,8 @@ export const projects = [
     contribution: "90%",
     url: "https://company.lottemart.com",
     tag: [
-      { role: "Project Leader", className: "bg-cyan-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "Project Leader", className: "badge pl" },
+      { role: "퍼블리싱", className: "pub badge" },
     ],
   },
   {
@@ -798,7 +798,7 @@ export const projects = [
     company: "태그앤브레이스",
     contribution: "10%",
     url: "https://open.shinhan.com",
-    tag: [{ role: "웹접근성 컨설팅", className: "bg-cyan-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "웹접근성 컨설팅", className: "badge pl" }],
   },
   {
     id: "20120101",
@@ -809,7 +809,7 @@ export const projects = [
     company: "더크림유니언",
     contribution: "10%",
     url: "https://www.homeplus.co.kr",
-    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
     id: "20110601",
@@ -820,7 +820,7 @@ export const projects = [
     company: "픽스다인",
     contribution: "40%",
     url: "비공개",
-    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
     id: "20110101",
@@ -831,7 +831,7 @@ export const projects = [
     company: "플립커뮤니케이션",
     contribution: "100%",
     url: "https://www.mini.ibk.co.kr",
-    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
     id: "20110102",
@@ -842,7 +842,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "https://www.job114.or.kr",
-    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
     id: "20110103",
@@ -854,8 +854,8 @@ export const projects = [
     contribution: "100%",
     url: "비공개",
     tag: [
-      { role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "디자인", className: "badge design" },
+      { role: "퍼블리싱", className: "pub badge" },
     ],
   },
   {
@@ -868,8 +868,8 @@ export const projects = [
     contribution: "100%",
     url: "https://www.hypoclean.co.kr",
     tag: [
-      { role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "디자인", className: "badge design" },
+      { role: "퍼블리싱", className: "pub badge" },
     ],
   },
   {
@@ -881,7 +881,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "비공개",
-    tag: [{ role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "디자인", className: "badge design" }],
   },
   {
     id: "201012",
@@ -892,7 +892,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "비공개",
-    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
     id: "201011",
@@ -903,7 +903,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "비공개",
-    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
     id: "201010",
@@ -914,7 +914,7 @@ export const projects = [
     company: "플립커뮤니케이션",
     contribution: "50%",
     url: "https://www.kumc.or.kr",
-    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
     id: "201009",
@@ -925,7 +925,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "비공개",
-    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
     id: "201008",
@@ -936,7 +936,7 @@ export const projects = [
     company: "-",
     contribution: "50%",
     url: "https://www.seoulartspace.or.kr",
-    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
     id: "201007",
@@ -947,7 +947,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "https://www.energy.mofat.go.kr",
-    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
 
   {
@@ -959,7 +959,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "비공개",
-    tag: [{ role: "기획", className: "bg-indigo-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "기획", className: "badge plan" }],
   },
   {
     id: "201005",
@@ -970,7 +970,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "https://www.fta.go.kr",
-    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
     id: "201004",
@@ -981,7 +981,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "https://www.duolac.co.kr",
-    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
     id: "201003",
@@ -992,7 +992,7 @@ export const projects = [
     company: "아이파트너즈",
     contribution: "50%",
     url: "https://apps.samsung.com",
-    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
     id: "201002",
@@ -1003,7 +1003,7 @@ export const projects = [
     company: "아이파트너즈",
     contribution: "20%",
     url: "https://www.bhands.com",
-    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
     id: "201001",
@@ -1014,7 +1014,7 @@ export const projects = [
     company: "아이파트너즈",
     contribution: "100%",
     url: "비공개",
-    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
     name: "철도시설공단 감사시스템",
@@ -1025,8 +1025,8 @@ export const projects = [
     contribution: "100%",
     url: "비공개",
     tag: [
-      { role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "퍼블리싱", className: "pub badge" },
+      { role: "디자인", className: "badge design" },
     ],
   },
   {
@@ -1037,7 +1037,7 @@ export const projects = [
     company: "㈜플랜아이",
     contribution: "100%",
     url: "https://www.dd.innopolis.or.kr",
-    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
     name: "(주)두레경영컨설팅 성과관리 시스템",
@@ -1048,8 +1048,8 @@ export const projects = [
     contribution: "100%",
     url: "비공개",
     tag: [
-      { role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "Flex Builder", className: "bg-yellow-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "디자인", className: "badge design" },
+      { role: "Flex Builder", className: "badge flex" },
     ],
   },
   {
@@ -1061,8 +1061,8 @@ export const projects = [
     contribution: "50%",
     url: "https://www.kaist.ac.kr",
     tag: [
-      { role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "Project Leader", className: "bg-cyan-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "퍼블리싱", className: "pub badge" },
+      { role: "Project Leader", className: "badge pl" },
     ],
   },
   {
@@ -1074,10 +1074,10 @@ export const projects = [
     contribution: "100%",
     url: "https://www.i815.or.kr",
     tag: [
-      { role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "Project Leader", className: "bg-cyan-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "Flash", className: "bg-stone-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "퍼블리싱", className: "pub badge" },
+      { role: "Project Leader", className: "badge pl" },
+      { role: "디자인", className: "badge design" },
+      { role: "Flash", className: "badge flash" },
     ],
   },
   {
@@ -1089,8 +1089,8 @@ export const projects = [
     contribution: "100%",
     url: "https://www.knfc.co.kr",
     tag: [
-      { role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "Project Leader", className: "bg-cyan-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "퍼블리싱", className: "pub badge" },
+      { role: "Project Leader", className: "badge pl" },
     ],
   },
   {
@@ -1101,7 +1101,7 @@ export const projects = [
     company: "플랜아이",
     contribution: "100%",
     url: "https://www.kgpa.or.kr",
-    tag: [{ role: "Flash", className: "bg-stone-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "Flash", className: "badge flash" }],
   },
   {
     name: "원자력국제협력 통합정보시스템",
@@ -1111,7 +1111,7 @@ export const projects = [
     company: "플랜아이",
     contribution: "100%",
     url: "비공개",
-    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
     name: "GIST 학과통합 프로젝트",
@@ -1121,7 +1121,7 @@ export const projects = [
     company: "플랜아이",
     contribution: "100%",
     url: "비공개",
-    tag: [{ role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "디자인", className: "badge design" }],
   },
   {
     name: "넷클래스 컴퍼넌트 디자인",
@@ -1131,7 +1131,7 @@ export const projects = [
     company: "플랜아이",
     contribution: "100%",
     url: "비공개",
-    tag: [{ role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "디자인", className: "badge design" }],
   },
   {
     name: "ICIC 2009 웹사이트 리뉴얼",
@@ -1142,7 +1142,7 @@ export const projects = [
     contribution: "100%",
     url: "https://icic.org",
     tag: [
-      { role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "디자인", className: "badge design" },
       { role: "Flahs", className: "" },
     ],
   },
@@ -1154,7 +1154,7 @@ export const projects = [
     company: "플랜아이",
     contribution: "100%",
     url: "비공개",
-    tag: [{ role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "디자인", className: "badge design" }],
   },
   {
     name: "테크노전략대학원 사이트 제작",
@@ -1164,7 +1164,7 @@ export const projects = [
     company: "플랜아이",
     contribution: "100%",
     url: "비공개",
-    tag: [{ role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
     name: "대전시청 60년",
@@ -1175,8 +1175,8 @@ export const projects = [
     contribution: "100%",
     url: "비공개",
     tag: [
-      { role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "퍼블리싱", className: "pub badge" },
+      { role: "디자인", className: "badge design" },
     ],
   },
   {
@@ -1187,7 +1187,7 @@ export const projects = [
     company: "플랜아이",
     contribution: "100%",
     url: "https://www.knfc.co.kr",
-    tag: [{ role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "디자인", className: "badge design" }],
   },
   {
     name: "대전보건대학 30주년",
@@ -1197,7 +1197,7 @@ export const projects = [
     company: "플랜아이",
     contribution: "100%",
     url: "비공개",
-    tag: [{ role: "Flash", className: "bg-stone-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "Flash", className: "badge flash" }],
   },
   {
     name: "이텍산업 사이트 제작",
@@ -1207,7 +1207,7 @@ export const projects = [
     company: "플랜아이",
     contribution: "100%",
     url: "https://www.retech.kr",
-    tag: [{ role: "Flash", className: "bg-stone-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "Flash", className: "badge flash" }],
   },
   {
     name: "한백전자 키오스크 시스템 디자인",
@@ -1218,8 +1218,8 @@ export const projects = [
     contribution: "100%",
     url: "비공개",
     tag: [
-      { role: "기획", className: "bg-indigo-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "Flex Builder", className: "bg-yellow-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "기획", className: "badge plan" },
+      { role: "Flex Builder", className: "badge flex" },
     ],
   },
   {
@@ -1230,7 +1230,7 @@ export const projects = [
     company: "플랜아이",
     contribution: "100%",
     url: "비공개",
-    tag: [{ role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "디자인", className: "badge design" }],
   },
   {
     name: "기술·시장 정보포털사이트 통합",
@@ -1241,9 +1241,9 @@ export const projects = [
     contribution: "100%",
     url: "https://www.dd.innopolis.or.kr",
     tag: [
-      { role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "기획", className: "bg-indigo-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "퍼블리싱", className: "pub badge" },
+      { role: "기획", className: "badge plan" },
+      { role: "디자인", className: "badge design" },
     ],
   },
   {
@@ -1255,10 +1255,10 @@ export const projects = [
     contribution: "100%",
     url: "https://www.plani.co.kr",
     tag: [
-      { role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "기획", className: "bg-indigo-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "Flash", className: "bg-stone-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "퍼블리싱", className: "pub badge" },
+      { role: "기획", className: "badge plan" },
+      { role: "디자인", className: "badge design" },
+      { role: "Flash", className: "badge flash" },
     ],
   },
   {
@@ -1270,8 +1270,8 @@ export const projects = [
     contribution: "100%",
     url: "비공개",
     tag: [
-      { role: "퍼블리싱", className: "bg-lime-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "퍼블리싱", className: "pub badge" },
+      { role: "디자인", className: "badge design" },
     ],
   },
   {
@@ -1283,8 +1283,8 @@ export const projects = [
     contribution: "100%",
     url: "비공개",
     tag: [
-      { role: "기획", className: "bg-indigo-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "기획", className: "badge plan" },
+      { role: "디자인", className: "badge design" },
       { role: "Flex Builder", className: "" },
     ],
   },
@@ -1296,7 +1296,7 @@ export const projects = [
     company: "플랜아이",
     contribution: "100%",
     url: "비공개",
-    tag: [{ role: "Flash", className: "bg-stone-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "Flash", className: "badge flash" }],
   },
   {
     name: "ICIC 2008 웹사이트 리뉴얼",
@@ -1306,7 +1306,7 @@ export const projects = [
     company: "플랜아이",
     contribution: "100%",
     url: "https://icic.org",
-    tag: [{ role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "디자인", className: "badge design" }],
   },
   {
     name: "익산시 농업기술센터",
@@ -1316,7 +1316,7 @@ export const projects = [
     company: "플랜아이",
     contribution: "100%",
     url: "https://www.iksanfarm.go.kr",
-    tag: [{ role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "디자인", className: "badge design" }],
   },
   {
     name: "대전테크노파크 영문사이트",
@@ -1326,7 +1326,7 @@ export const projects = [
     company: "플랜아이",
     contribution: "100%",
     url: "https://www.daejeontp.or.kr",
-    tag: [{ role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "디자인", className: "badge design" }],
   },
   {
     name: "의료시스템공학학제학부 웹사이트 제작",
@@ -1336,7 +1336,7 @@ export const projects = [
     company: "플랜아이",
     contribution: "100%",
     url: "비공개",
-    tag: [{ role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "디자인", className: "badge design" }],
   },
   {
     name: "나리넷 웹사이트 리뉴얼",
@@ -1346,7 +1346,7 @@ export const projects = [
     company: "플랜아이",
     contribution: "100%",
     url: "비공개",
-    tag: [{ role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "디자인", className: "badge design" }],
   },
   {
     name: "바이오평가센터 웹사이트 리뉴얼",
@@ -1356,7 +1356,7 @@ export const projects = [
     company: "플랜아이",
     contribution: "100%",
     url: "비공개",
-    tag: [{ role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "디자인", className: "badge design" }],
   },
   {
     name: "유비쿼터스 벤처타운 제안 애니메이션",
@@ -1366,7 +1366,7 @@ export const projects = [
     company: "플랜아이",
     contribution: "100%",
     url: "비공개",
-    tag: [{ role: "Flash", className: "bg-stone-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "Flash", className: "badge flash" }],
   },
   {
     name: "X-POP 제품홍보 인트로",
@@ -1376,7 +1376,7 @@ export const projects = [
     company: "플랜아이",
     contribution: "100%",
     url: "비공개",
-    tag: [{ role: "모션그래픽", className: "bg-pink-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "모션그래픽", className: "badge motion" }],
   },
   {
     name: "INT 시스템 디자인",
@@ -1386,7 +1386,7 @@ export const projects = [
     company: "플랜아이",
     contribution: "100%",
     url: "비공개",
-    tag: [{ role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "디자인", className: "badge design" }],
   },
   {
     name: "대덕특구외자유치 리뉴얼",
@@ -1396,7 +1396,7 @@ export const projects = [
     company: "플랜아이",
     contribution: "100%",
     url: "비공개",
-    tag: [{ role: "기획", className: "bg-indigo-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "기획", className: "badge plan" }],
   },
   {
     name: "IT전용벤처타운 웹사이트",
@@ -1406,7 +1406,7 @@ export const projects = [
     company: "플랜아이",
     contribution: "100%",
     url: "비공개",
-    tag: [{ role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "디자인", className: "badge design" }],
   },
   {
     name: "지능로봇사업단 비즈니스협의회 구축",
@@ -1416,7 +1416,7 @@ export const projects = [
     company: "플랜아이",
     contribution: "100%",
     url: "비공개",
-    tag: [{ role: "기획", className: "bg-indigo-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "기획", className: "badge plan" }],
   },
   {
     name: "지질시료동 웹사이트 리뉴얼",
@@ -1426,7 +1426,7 @@ export const projects = [
     company: "플랜아이",
     contribution: "100%",
     url: "비공개",
-    tag: [{ role: "기획", className: "bg-indigo-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "기획", className: "badge plan" }],
   },
   {
     name: "(주)플랜아이 블로그",
@@ -1437,9 +1437,9 @@ export const projects = [
     contribution: "100%",
     url: "비공개",
     tag: [
-      { role: "기획", className: "bg-indigo-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "개발", className: "bg-slate-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "기획", className: "badge plan" },
+      { role: "디자인", className: "badge design" },
+      { role: "개발", className: "badge dev" },
     ],
   },
   {
@@ -1450,7 +1450,7 @@ export const projects = [
     company: "플랜아이",
     contribution: "100%",
     url: "비공개",
-    tag: [{ role: "기획", className: "bg-indigo-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "기획", className: "badge plan" }],
   },
   {
     name: "광주과학기술원대관시스템 구축",
@@ -1460,7 +1460,7 @@ export const projects = [
     company: "플랜아이",
     contribution: "100%",
     url: "비공개",
-    tag: [{ role: "기획", className: "bg-indigo-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "기획", className: "badge plan" }],
   },
   {
     name: "럭키게임 UI디자인",
@@ -1470,7 +1470,7 @@ export const projects = [
     company: "플랜아이",
     contribution: "100%",
     url: "비공개",
-    tag: [{ role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "디자인", className: "badge design" }],
   },
   {
     name: "(주)스튜디오아침 웹사이트 제작",
@@ -1480,7 +1480,7 @@ export const projects = [
     company: "플랜아이",
     contribution: "100%",
     url: "비공개",
-    tag: [{ role: "모션그래픽", className: "bg-pink-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "모션그래픽", className: "badge motion" }],
   },
   {
     name: "지능로봇사업단 웹사이트 리뉴얼",
@@ -1490,7 +1490,7 @@ export const projects = [
     company: "플랜아이",
     contribution: "100%",
     url: "비공개",
-    tag: [{ role: "기획", className: "bg-indigo-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "기획", className: "badge plan" }],
   },
   {
     name: "숲체원 홍보애니메이션",
@@ -1501,8 +1501,8 @@ export const projects = [
     contribution: "100%",
     url: "비공개",
     tag: [
-      { role: "기획", className: "bg-indigo-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "기획", className: "badge plan" },
+      { role: "디자인", className: "badge design" },
     ],
   },
   {
@@ -1513,7 +1513,7 @@ export const projects = [
     company: "플랜아이",
     contribution: "90%",
     url: "비공개",
-    tag: [{ role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "디자인", className: "badge design" }],
   },
   {
     name: "대덕특구외자유치 웹사이트 제작",
@@ -1524,8 +1524,8 @@ export const projects = [
     contribution: "100%",
     url: "비공개",
     tag: [
-      { role: "기획", className: "bg-indigo-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "기획", className: "badge plan" },
+      { role: "디자인", className: "badge design" },
     ],
   },
   {
@@ -1537,9 +1537,9 @@ export const projects = [
     contribution: "100%",
     url: "비공개",
     tag: [
-      { role: "기획", className: "bg-indigo-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "개발", className: "bg-slate-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "기획", className: "badge plan" },
+      { role: "디자인", className: "badge design" },
+      { role: "개발", className: "badge dev" },
     ],
   },
   {
@@ -1551,9 +1551,9 @@ export const projects = [
     contribution: "100%",
     url: "비공개",
     tag: [
-      { role: "기획", className: "bg-indigo-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "개발", className: "bg-slate-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "기획", className: "badge plan" },
+      { role: "디자인", className: "badge design" },
+      { role: "개발", className: "badge dev" },
     ],
   },
   {
@@ -1564,7 +1564,7 @@ export const projects = [
     company: "퍼스트데일리㈜",
     contribution: "100%",
     url: "비공개",
-    tag: [{ role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "디자인", className: "badge design" }],
   },
   {
     name: "KT 플래시 광고디자인",
@@ -1575,8 +1575,8 @@ export const projects = [
     contribution: "100%",
     url: "비공개",
     tag: [
-      { role: "기획", className: "bg-indigo-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "기획", className: "badge plan" },
+      { role: "디자인", className: "badge design" },
     ],
   },
   {
@@ -1588,8 +1588,8 @@ export const projects = [
     contribution: "100%",
     url: "비공개",
     tag: [
-      { role: "기획", className: "bg-indigo-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "기획", className: "badge plan" },
+      { role: "디자인", className: "badge design" },
     ],
   },
   {
@@ -1601,8 +1601,8 @@ export const projects = [
     contribution: "100%",
     url: "비공개",
     tag: [
-      { role: "기획", className: "bg-indigo-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "기획", className: "badge plan" },
+      { role: "디자인", className: "badge design" },
     ],
   },
   {
@@ -1614,8 +1614,8 @@ export const projects = [
     contribution: "100%",
     url: "비공개",
     tag: [
-      { role: "기획", className: "bg-indigo-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "기획", className: "badge plan" },
+      { role: "디자인", className: "badge design" },
     ],
   },
   {
@@ -1627,8 +1627,8 @@ export const projects = [
     contribution: "100%",
     url: "비공개",
     tag: [
-      { role: "기획", className: "bg-indigo-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "기획", className: "badge plan" },
+      { role: "디자인", className: "badge design" },
     ],
   },
   {
@@ -1640,8 +1640,8 @@ export const projects = [
     contribution: "100%",
     url: "비공개",
     tag: [
-      { role: "기획", className: "bg-indigo-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "기획", className: "badge plan" },
+      { role: "디자인", className: "badge design" },
     ],
   },
   {
@@ -1653,8 +1653,8 @@ export const projects = [
     contribution: "100%",
     url: "비공개",
     tag: [
-      { role: "기획", className: "bg-indigo-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "기획", className: "badge plan" },
+      { role: "디자인", className: "badge design" },
     ],
   },
   {
@@ -1666,8 +1666,8 @@ export const projects = [
     contribution: "100%",
     url: "비공개",
     tag: [
-      { role: "기획", className: "bg-indigo-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "기획", className: "badge plan" },
+      { role: "디자인", className: "badge design" },
     ],
   },
   {
@@ -1679,8 +1679,8 @@ export const projects = [
     contribution: "100%",
     url: "비공개",
     tag: [
-      { role: "기획", className: "bg-indigo-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "기획", className: "badge plan" },
+      { role: "디자인", className: "badge design" },
     ],
   },
   {
@@ -1692,8 +1692,8 @@ export const projects = [
     contribution: "100%",
     url: "비공개",
     tag: [
-      { role: "기획", className: "bg-indigo-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "기획", className: "badge plan" },
+      { role: "디자인", className: "badge design" },
     ],
   },
   {
@@ -1705,8 +1705,8 @@ export const projects = [
     contribution: "100%",
     url: "비공개",
     tag: [
-      { role: "기획", className: "bg-indigo-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "기획", className: "badge plan" },
+      { role: "디자인", className: "badge design" },
     ],
   },
   {
@@ -1718,8 +1718,8 @@ export const projects = [
     contribution: "100%",
     url: "비공개",
     tag: [
-      { role: "기획", className: "bg-indigo-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "기획", className: "badge plan" },
+      { role: "디자인", className: "badge design" },
     ],
   },
   {
@@ -1731,8 +1731,8 @@ export const projects = [
     contribution: "100%",
     url: "비공개",
     tag: [
-      { role: "기획", className: "bg-indigo-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "기획", className: "badge plan" },
+      { role: "디자인", className: "badge design" },
     ],
   },
   {
@@ -1744,8 +1744,8 @@ export const projects = [
     contribution: "100%",
     url: "비공개",
     tag: [
-      { role: "기획", className: "bg-indigo-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "기획", className: "badge plan" },
+      { role: "디자인", className: "badge design" },
     ],
   },
   {
@@ -1757,8 +1757,8 @@ export const projects = [
     contribution: "100%",
     url: "비공개",
     tag: [
-      { role: "기획", className: "bg-indigo-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "기획", className: "badge plan" },
+      { role: "디자인", className: "badge design" },
     ],
   },
   {
@@ -1770,8 +1770,8 @@ export const projects = [
     contribution: "100%",
     url: "비공개",
     tag: [
-      { role: "기획", className: "bg-indigo-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "기획", className: "badge plan" },
+      { role: "디자인", className: "badge design" },
     ],
   },
   {
@@ -1783,8 +1783,8 @@ export const projects = [
     contribution: "100%",
     url: "비공개",
     tag: [
-      { role: "기획", className: "bg-indigo-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "기획", className: "badge plan" },
+      { role: "디자인", className: "badge design" },
     ],
   },
   {
@@ -1796,8 +1796,8 @@ export const projects = [
     contribution: "100%",
     url: "비공개",
     tag: [
-      { role: "기획", className: "bg-indigo-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "기획", className: "badge plan" },
+      { role: "디자인", className: "badge design" },
     ],
   },
   {
@@ -1809,8 +1809,8 @@ export const projects = [
     contribution: "100%",
     url: "비공개",
     tag: [
-      { role: "기획", className: "bg-indigo-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "기획", className: "badge plan" },
+      { role: "디자인", className: "badge design" },
     ],
   },
   {
@@ -1822,8 +1822,8 @@ export const projects = [
     contribution: "100%",
     url: "비공개",
     tag: [
-      { role: "기획", className: "bg-indigo-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "기획", className: "badge plan" },
+      { role: "디자인", className: "badge design" },
     ],
   },
   {
@@ -1835,8 +1835,8 @@ export const projects = [
     contribution: "100%",
     url: "비공개",
     tag: [
-      { role: "기획", className: "bg-indigo-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "기획", className: "badge plan" },
+      { role: "디자인", className: "badge design" },
     ],
   },
   {
@@ -1848,8 +1848,8 @@ export const projects = [
     contribution: "100%",
     url: "비공개",
     tag: [
-      { role: "기획", className: "bg-indigo-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "기획", className: "badge plan" },
+      { role: "디자인", className: "badge design" },
     ],
   },
   {
@@ -1861,8 +1861,8 @@ export const projects = [
     contribution: "100%",
     url: "비공개",
     tag: [
-      { role: "기획", className: "bg-indigo-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "기획", className: "badge plan" },
+      { role: "디자인", className: "badge design" },
     ],
   },
   {
@@ -1874,8 +1874,8 @@ export const projects = [
     contribution: "100%",
     url: "비공개",
     tag: [
-      { role: "기획", className: "bg-indigo-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "기획", className: "badge plan" },
+      { role: "디자인", className: "badge design" },
     ],
   },
   {
@@ -1887,8 +1887,8 @@ export const projects = [
     contribution: "100%",
     url: "비공개",
     tag: [
-      { role: "기획", className: "bg-indigo-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "기획", className: "badge plan" },
+      { role: "디자인", className: "badge design" },
     ],
   },
   {
@@ -1899,7 +1899,7 @@ export const projects = [
     company: "퍼스트데일리㈜",
     contribution: "80%",
     url: "비공개",
-    tag: [{ role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "디자인", className: "badge design" }],
   },
   {
     name: "양간지 쇼핑몰 웹사이트",
@@ -1910,8 +1910,8 @@ export const projects = [
     contribution: "100%",
     url: "비공개",
     tag: [
-      { role: "기획", className: "bg-indigo-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "기획", className: "badge plan" },
+      { role: "디자인", className: "badge design" },
     ],
   },
   {
@@ -1922,7 +1922,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "비공개",
-    tag: [{ role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "디자인", className: "badge design" }],
   },
   {
     name: "서원대학교 eTLC 포토샵강좌",
@@ -1933,8 +1933,8 @@ export const projects = [
     contribution: "100%",
     url: "비공개",
     tag: [
-      { role: "기획", className: "bg-indigo-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "기획", className: "badge plan" },
+      { role: "디자인", className: "badge design" },
     ],
   },
   {
@@ -1946,9 +1946,9 @@ export const projects = [
     contribution: "100%",
     url: "비공개",
     tag: [
-      { role: "기획", className: "bg-indigo-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "개발", className: "bg-slate-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "기획", className: "badge plan" },
+      { role: "디자인", className: "badge design" },
+      { role: "개발", className: "badge dev" },
     ],
   },
   {
@@ -1960,9 +1960,9 @@ export const projects = [
     contribution: "100%",
     url: "비공개",
     tag: [
-      { role: "기획", className: "bg-indigo-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "개발", className: "bg-slate-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "기획", className: "badge plan" },
+      { role: "디자인", className: "badge design" },
+      { role: "개발", className: "badge dev" },
     ],
   },
   {
@@ -1973,7 +1973,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "비공개",
-    tag: [{ role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "디자인", className: "badge design" }],
   },
   {
     name: "e-Pharos 웹사이트 디자인",
@@ -1983,7 +1983,7 @@ export const projects = [
     company: "이파로스",
     contribution: "20%",
     url: "비공개",
-    tag: [{ role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "디자인", className: "badge design" }],
   },
   {
     name: "e-Pharos 웹사이트 유지보수 및 솔루션 개발",
@@ -1993,7 +1993,7 @@ export const projects = [
     company: "이파로스",
     contribution: "20%",
     url: "비공개",
-    tag: [{ role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "디자인", className: "badge design" }],
   },
   {
     name: "탄트라 노블레스길드 구축 및 유지보수",
@@ -2004,9 +2004,9 @@ export const projects = [
     contribution: "100%",
     url: "비공개",
     tag: [
-      { role: "기획", className: "bg-indigo-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "개발", className: "bg-slate-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "기획", className: "badge plan" },
+      { role: "디자인", className: "badge design" },
+      { role: "개발", className: "badge dev" },
     ],
   },
   {
@@ -2017,7 +2017,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "비공개",
-    tag: [{ role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "디자인", className: "badge design" }],
   },
   {
     name: "제30회 종합학술대회 웹사이트 제작",
@@ -2027,7 +2027,7 @@ export const projects = [
     company: "의학연구정보센터",
     contribution: "30%",
     url: "비공개",
-    tag: [{ role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "디자인", className: "badge design" }],
   },
   {
     name: "국내의학학술지 초록검색 사이트",
@@ -2037,7 +2037,7 @@ export const projects = [
     company: "의학연구정보센터",
     contribution: "100%",
     url: "https://www.medric.or.kr",
-    tag: [{ role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "디자인", className: "badge design" }],
   },
   {
     name: "한빛정보시스템 웹사이트 리뉴얼",
@@ -2047,7 +2047,7 @@ export const projects = [
     company: "의학연구정보센터",
     contribution: "100%",
     url: "비공개",
-    tag: [{ role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "디자인", className: "badge design" }],
   },
   {
     name: "의학연구정보센터 웹사이트 유지보수",
@@ -2057,7 +2057,7 @@ export const projects = [
     company: "의학연구정보센터",
     contribution: "20%",
     url: "https://www.medric.or.kr",
-    tag: [{ role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "디자인", className: "badge design" }],
   },
   {
     name: "스타크래프트 7TH길드 웹사이트 제작",
@@ -2067,7 +2067,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "비공개",
-    tag: [{ role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "디자인", className: "badge design" }],
   },
   {
     name: "스타크래프트 SG길드 웹사이트 제작",
@@ -2077,7 +2077,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "비공개",
-    tag: [{ role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "디자인", className: "badge design" }],
   },
   {
     name: "Cyber Lecture 웹사이트 제작",
@@ -2087,7 +2087,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "비공개",
-    tag: [{ role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "디자인", className: "badge design" }],
   },
   {
     name: "박진수 쇼핑몰 웹사이트 디자인",
@@ -2097,7 +2097,7 @@ export const projects = [
     company: "프리랜서",
     contribution: "100%",
     url: "비공개",
-    tag: [{ role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" }],
+    tag: [{ role: "디자인", className: "badge design" }],
   },
   {
     name: "디아블로 르네상스길드 웹사이트 제작",
@@ -2108,9 +2108,9 @@ export const projects = [
     contribution: "100%",
     url: "비공개",
     tag: [
-      { role: "기획", className: "bg-indigo-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "개발", className: "bg-slate-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "기획", className: "badge plan" },
+      { role: "디자인", className: "badge design" },
+      { role: "개발", className: "badge dev" },
     ],
   },
   {
@@ -2122,9 +2122,9 @@ export const projects = [
     contribution: "100%",
     url: "https://www.interior.ok.ac.kr",
     tag: [
-      { role: "기획", className: "bg-indigo-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "디자인", className: "bg-green-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
-      { role: "개발", className: "bg-slate-200 rounded-md text-slate-900 px-2 py-[1px] text-xs font-light" },
+      { role: "기획", className: "badge plan" },
+      { role: "디자인", className: "badge design" },
+      { role: "개발", className: "badge dev" },
     ],
   },
 ];
