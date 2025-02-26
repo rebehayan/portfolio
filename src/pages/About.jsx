@@ -1,5 +1,8 @@
 import React, { useEffect } from "react";
 import image from "../assets/visual.jpg";
+import me1 from "../assets/me1.jpg";
+import me2 from "../assets/me2.jpg";
+import me2video from "../assets/me4.mp4";
 import { skills } from "../data/aboutSkill.js";
 import { IconAccessibility, IconCSS, IconFigma, IconGit, IconGithub, IconHTML, IconJS, IconPs, IconReact, IconSCSS, IconSwiper, IconTailwind, IconTS, IconVite, IconVSCode } from "../data/icons.jsx";
 import { SNSList } from "../data/sns.js";
@@ -42,16 +45,16 @@ export default function About() {
         </div>
       </section>
       <section className="grid grid-cols-[2.5fr_1fr_1fr] gap-3 my-20 h-[50rem] grid-rows-2">
-        <div className="col-start-1 col-end-2 row-start-1 row-end-3">
-          <img src={image} className="w-full h-full object-cover" alt="" />
+        <div className="col-start-1 col-end-2 row-start-1 row-end-3 relative after:absolute after:inset-0 after:bg-black after:opacity-0">
+          <video src={me2video} muted autoPlay loop className="w-full h-full object-cover"></video>
         </div>
         <div>
-          <img src={image} className="w-full h-full object-cover" alt="" />
+          <img src={me2} className="w-full h-full object-cover" alt="" />
         </div>
         <div>100+</div>
         <div>We Hepled</div>
         <div>
-          <img src={image} className="w-full h-full object-cover" alt="" />
+          <img src={me1} className="w-full h-full object-cover" alt="" />
         </div>
       </section>
       <section className="area border-t-[1px] border-gray-200">

@@ -7,6 +7,7 @@ import Visual from "../components/main/Visual";
 import Introduce from "../components/main/Introduce";
 import Service from "../components/main/Service";
 import image from "../assets/visual.jpg";
+import me3video from "../assets/me3.mp4";
 import Footer from "../components/Footer";
 import Portfolio from "../components/main/Portfolio";
 import Opentalk from "../components/main/Opentalk";
@@ -306,9 +307,10 @@ function Main() {
         <Visual childrenRef={followRef} ref={visualRef} />
         <Introduce />
         <Service ref={serviceRef} />
-        <div className="area" ref={imageRef}>
+        <div className=" min-h-[400px] h-[50vh] overflow-hidden" ref={imageRef}>
           <div>
-            <img src={image} alt="" className="w-full object-cover aspect-video" />
+            {/* <img src={image} alt="" className="w-full object-cover aspect-video" /> */}
+            <video src={me3video} muted autoPlay loop className="w-full h-full object-cover scale-105 origin-center"></video>
           </div>
         </div>
         <Portfolio ref={portfolioRef} />

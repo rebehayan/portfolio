@@ -30,7 +30,7 @@ const Visual = forwardRef(({ childrenRef }, ref) => {
           </div>
         </div>
         <div className="image col-span-full mobile:mt-10 tablet:-mt-15 -z-10  mobile:h-[30vw] tablet:h-[40rem] overflow-hidden">
-          <img src={visualImage} alt="" className="w-full object-cover" />
+          <img loading="lazy" src={visualImage} alt="" className="w-full object-cover" />
         </div>
       </div>
     </section>

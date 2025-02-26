@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { update, post } from "../utils/supa.js";
 import { getPlaylists } from "../utils/youtube.js";
+import me from "../assets/me1.mp4";
 
 export default function Education() {
   const [playLists, setPlayLists] = useState([]);
@@ -20,8 +21,9 @@ export default function Education() {
   return (
     <>
       {/* <button onClick={handleInsert}>추가하기</button> */}
-      <div className="video min-h-[100vh] h-[1080px] bg-neutral-200 relative">
-        <div className="block absolute left-10 bottom-10 bg-lime-200 w-[550px] rounded-2xl p-5 font-[base]">
+      <div className="video min-h-[100vh] h-[1080px] bg-neutral-200 relative overflow-hidden after:absolute after:inset-0 after:bg-black after:opacity-30">
+        <video src={me} muted autoPlay loop className="w-full h-full object-cover"></video>
+        <div className="block absolute left-10 bottom-10 bg-lime-200 w-[550px] rounded-2xl p-5 font-[base] z-10">
           <h2 className="text-4xl font-bold">
             함께 고민하고
             <br /> 성장하며 실력을 <br />
