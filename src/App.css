@@ -16,6 +16,7 @@
 }
 
 body {
+  overflow-x: hidden;
   &.dark {
     @apply bg-neutral-950;
   }

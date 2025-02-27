@@ -1,5 +1,22 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Pagination from "./Pagination";
+import gsap from "gsap";
+
+const listAnimation = (selector) => {
+  gsap.fromTo(
+    selector.querySelectorAll("li"),
+    {
+      x: 40,
+      opacity: 0,
+    },
+    {
+      x: 0,
+      opacity: 1,
+      stagger: 0.1,
+      ease: "back.inOut",
+    }
+  );
+};
 
 export default function PortfolioList({ projectList, handleGetID }) {
   const [currentPage, setCurrentPage] = useState(1);
@@ -9,9 +26,15 @@ export default function PortfolioList({ projectList, handleGetID }) {
   const indexOfFirstProject = indexOfLastProject - projectPerPage;
   const currentProjects = projectList.slice(indexOfFirstProject, indexOfLastProject);
 
+  const listRef = useRef();
+
+  useEffect(() => {
+    listAnimation(listRef.current);
+  }, [indexOfFirstProject]);
+
   return (
     <div>
-      <ul className="font-[base] font-light">
+      <ul className="font-[base] font-light" ref={listRef}>
         {currentProjects.map(({ id, name, startDate, client, tag }, index) => (
           // <li key={id} className={index === 0 ? "border-t-0" : "border-t-[1px] border-gray-300 hover:scale-[1.02] transition-transform duration-200"}>
           <li key={id} className={index === 0 ? "border-t-0" : "border-t-[1px] border-gray-300"}>

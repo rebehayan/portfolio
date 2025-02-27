@@ -154,7 +154,7 @@ const serviceAnimation = (selector) => {
 };
 const imageAnimation = (selector, target) => {
   gsap.fromTo(
-    selector.querySelector("img"),
+    selector.querySelector("video"),
     {
       opacity: 0,
     },
@@ -245,41 +245,7 @@ const openTalkAnimation = (selector) => {
       }
     );
 };
-const footerAnimation = (selector, target, sns) => {
-  gsap
-    .timeline({
-      scrollTrigger: {
-        trigger: target,
-        start: "90% center",
-        toggleActions: "play none none none",
-        ease: "power2.inOut",
-      },
-    })
-    .fromTo(
-      selector.querySelector("span"),
-      {
-        x: 50,
-        opacity: 0,
-      },
-      {
-        x: 0,
-        opacity: 1,
-      }
-    )
-    .fromTo(
-      sns.querySelectorAll("li"),
-      {
-        x: 50,
-        opacity: 0,
-      },
-      {
-        x: 0,
-        opacity: 1,
-        stagger: 0.2,
-      },
-      "<"
-    );
-};
+
 function Main() {
   const followRef = useRef();
   const visualRef = useRef();
@@ -288,8 +254,6 @@ function Main() {
   const imageRef = useRef();
   const portfolioRef = useRef();
   const opentalkRef = useRef();
-  const footerRef = useRef();
-  const snsRef = useRef();
 
   useEffect(() => {
     heroAnimation(triggerRef.current, followRef.current, visualRef.current);
@@ -297,7 +261,6 @@ function Main() {
     imageAnimation(imageRef.current, serviceRef.current);
     portfolioAnimation(portfolioRef.current);
     openTalkAnimation(opentalkRef.current);
-    footerAnimation(footerRef.current, triggerRef.current, snsRef.current);
   }, []);
 
   useTitleHook();
@@ -316,7 +279,6 @@ function Main() {
         <Portfolio ref={portfolioRef} />
         <Opentalk ref={opentalkRef} />
       </div>
-      <Footer ref={footerRef} childrenRef={snsRef} />
     </>
   );
 }

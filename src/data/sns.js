@@ -48,12 +48,12 @@ export const SNSList = [
     link: "https://github.com/rebehayan",
     title: "Github",
     iconComponent: FaGithub,
-    iconCSS: "group-hover:text-emerald-600",
+    iconCSS: "group-hover:text-black",
   },
   {
     link: "https://codepen.io/rebehayan",
     title: "Codepen",
     iconComponent: FaCodepen,
-    iconCSS: "group-hover:text-emerald-600",
+    iconCSS: "group-hover:text-stone-600",
   },
 ];
