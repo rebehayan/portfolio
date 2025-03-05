@@ -37,10 +37,7 @@ body {
     mobile:after:hidden tablet:after:block
     after:bg-[url(/src/assets/ico_plus.svg)] after:bg-white dark:after:invert-100 after:bg-contain after:bg-no-repeat after:box-border after:p-1.5 after:bg-origin-content;
     &.portfolio-wrap {
-      @apply p-0  transition-all duration-500;
-      &.show {
-        @apply pr-[450px];
-      }
+      @apply p-0;
     }
     footer & {
       @apply mobile:p-5 tablet:p-10;
@@ -50,9 +47,31 @@ body {
     }
   }
   .detail-view {
-    @apply absolute right-0 top-0 bottom-0 bg-white border-l-[0] border-double border-gray-300 w-0 transition-all duration-700 overflow-hidden box-border p-10 opacity-0;
-    &.show {
-      @apply w-[450px] border-l-[3px] opacity-100;
+    transition: 0.4s allow-discrete;
+    opacity: 0;
+    margin-top: 5rem;
+    width: clamp(36rem, 50vw, 40rem);
+    padding: 2rem;
+    border-radius: 1rem;
+
+    &[open] {
+      opacity: 1;
+      margin-top: 0;
+      @starting-style {
+        opacity: 0;
+        margin-top: -5rem;
+        &::backdrop {
+          opacity: 0;
+        }
+      }
+      &::backdrop {
+        opacity: 1;
+      }
+    }
+    &::backdrop {
+      opacity: 0;
+      transition: opacity 0.4s;
+      background-color: rgba(0, 0, 0, 0.5);
     }
   }
   > form {

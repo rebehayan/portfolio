@@ -5,16 +5,25 @@ import me from "../assets/me1.mp4";
 
 export default function Education() {
   const [playLists, setPlayLists] = useState([]);
-  update();
+  const [today, setToday] = useState();
 
+  const date = new Date();
+
+  update();
   useEffect(() => {
     const handleList = async () => {
       const list = await getPlaylists();
       setPlayLists(list);
     };
     handleList();
+    setToday(date.toLocaleDateString());
   }, []);
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const name = e.target.name;
+    console.log(name);
+  };
   // const handleInsert = () => {
   //   post();
   // };
@@ -71,6 +80,34 @@ export default function Education() {
             </div>
           </li>
         </ul>
+      </section>
+      <section className="area" style={{ display: "none" }}>
+        <div>
+          <form onSubmit={handleSubmit}>
+            <fieldset>
+              <legend>교육입력</legend>
+              <ul>
+                <li>
+                  <label htmlFor="title">교육명</label>
+                  <input type="text" id="title" name="title" className="bg-stone-200" />
+                </li>
+                <li>
+                  <label htmlFor="startDay">시작일</label>
+                  <input type="date" id="startDay" name="startDay" min={today} className="bg-stone-200" />
+                </li>
+                <li>
+                  <label htmlFor="endDay">종료일</label>
+                  <input type="date" id="endDay" name="endDay" className="bg-stone-200" />
+                </li>
+                <li>
+                  <label htmlFor="company">고객사</label>
+                  <input type="text" id="company" name="company" className="bg-stone-200" />
+                </li>
+              </ul>
+              <button type="submit">전송</button>
+            </fieldset>
+          </form>
+        </div>
       </section>
       <section className="area">
         <div>

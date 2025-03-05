@@ -23,7 +23,7 @@ export const projects = [
   },
   {
     id: "20242",
-    name: "22세기 유물전",
+    name: "22세기 유물전 MJ KIM x Frosch",
     startDate: "2024.06",
     endDate: "2024.07",
     client: "제이엔비",
@@ -1017,6 +1017,7 @@ export const projects = [
     tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
+    id: "200913",
     name: "철도시설공단 감사시스템",
     startDate: "2009.10",
     endDate: "2009.11",
@@ -1030,6 +1031,7 @@ export const projects = [
     ],
   },
   {
+    id: "200912",
     name: "대덕특구본부 리뉴얼",
     startDate: "2009.09",
     endDate: "2009.10",
@@ -1040,6 +1042,7 @@ export const projects = [
     tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
+    id: "200911",
     name: "(주)두레경영컨설팅 성과관리 시스템",
     startDate: "2009.08",
     endDate: "2009.08",
@@ -1053,6 +1056,7 @@ export const projects = [
     ],
   },
   {
+    id: "200910",
     name: "카이스트 웹접근성 사업",
     startDate: "2009.08",
     endDate: "2009.10",
@@ -1066,6 +1070,7 @@ export const projects = [
     ],
   },
   {
+    id: "200909",
     name: "천안독립기념관 외국어사이트",
     startDate: "2009.07",
     endDate: "2009.09",
@@ -1081,6 +1086,7 @@ export const projects = [
     ],
   },
   {
+    id: "200908",
     name: "한전원자력연료 웹표준화 프로젝트",
     startDate: "2009.05",
     endDate: "2009.06",
@@ -1094,6 +1100,7 @@ export const projects = [
     ],
   },
   {
+    id: "200907",
     name: "녹색사업단 리뉴얼",
     startDate: "2009.04",
     endDate: "2009.06",
@@ -1104,6 +1111,7 @@ export const projects = [
     tag: [{ role: "Flash", className: "badge flash" }],
   },
   {
+    id: "200906",
     name: "원자력국제협력 통합정보시스템",
     startDate: "2009.04",
     endDate: "2009.05",
@@ -1114,6 +1122,7 @@ export const projects = [
     tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
+    id: "200905",
     name: "GIST 학과통합 프로젝트",
     startDate: "2009.05",
     endDate: "2009.05",
@@ -1124,6 +1133,7 @@ export const projects = [
     tag: [{ role: "디자인", className: "badge design" }],
   },
   {
+    id: "200904",
     name: "넷클래스 컴퍼넌트 디자인",
     startDate: "2009.04",
     endDate: "2009.04",
@@ -1134,6 +1144,7 @@ export const projects = [
     tag: [{ role: "디자인", className: "badge design" }],
   },
   {
+    id: "200903",
     name: "ICIC 2009 웹사이트 리뉴얼",
     startDate: "2009.03",
     endDate: "2009.03",
@@ -1147,6 +1158,7 @@ export const projects = [
     ],
   },
   {
+    id: "200902",
     name: "IASP 2010 리뉴얼 제안 시안",
     startDate: "2009.02",
     endDate: "비공개",
@@ -1157,6 +1169,7 @@ export const projects = [
     tag: [{ role: "디자인", className: "badge design" }],
   },
   {
+    id: "200901",
     name: "테크노전략대학원 사이트 제작",
     startDate: "2009.02",
     endDate: "비공개",
@@ -1167,6 +1180,7 @@ export const projects = [
     tag: [{ role: "퍼블리싱", className: "pub badge" }],
   },
   {
+    id: "200821",
     name: "대전시청 60년",
     startDate: "2008.12~09.02",
     endDate: "비공개",
@@ -1180,6 +1194,7 @@ export const projects = [
     ],
   },
   {
+    id: "200820",
     name: "한전원자력원료 사이트 리뉴얼",
     startDate: "2008.12",
     endDate: "비공개",
@@ -1190,6 +1205,7 @@ export const projects = [
     tag: [{ role: "디자인", className: "badge design" }],
   },
   {
+    id: "200819",
     name: "대전보건대학 30주년",
     startDate: "2008.12",
     endDate: "비공개",
@@ -1200,6 +1216,7 @@ export const projects = [
     tag: [{ role: "Flash", className: "badge flash" }],
   },
   {
+    id: "200818",
     name: "이텍산업 사이트 제작",
     startDate: "2008.11~12",
     endDate: "비공개",
@@ -1210,6 +1227,7 @@ export const projects = [
     tag: [{ role: "Flash", className: "badge flash" }],
   },
   {
+    id: "200817",
     name: "한백전자 키오스크 시스템 디자인",
     startDate: "2008.08~11",
     endDate: "비공개",
@@ -1223,6 +1241,7 @@ export const projects = [
     ],
   },
   {
+    id: "200816",
     name: "한국원자력연료 리뉴얼 제안 시안",
     startDate: "2008.10",
     endDate: "비공개",
@@ -1233,6 +1252,7 @@ export const projects = [
     tag: [{ role: "디자인", className: "badge design" }],
   },
   {
+    id: "200815",
     name: "기술·시장 정보포털사이트 통합",
     startDate: "2008.06~10",
     endDate: "비공개",
@@ -1247,6 +1267,7 @@ export const projects = [
     ],
   },
   {
+    id: "200814",
     name: "플랜아이 사이트 구축",
     startDate: "2008.06~07",
     endDate: "비공개",
@@ -1262,6 +1283,7 @@ export const projects = [
     ],
   },
   {
+    id: "200813",
     name: "처분안전해석 웹사이트 제작",
     startDate: "2008.05~06",
     endDate: "비공개",
@@ -1275,6 +1297,7 @@ export const projects = [
     ],
   },
   {
+    id: "200812",
     name: "Youfreesoiva 제작",
     startDate: "2008.06~09.01",
     endDate: "비공개",
@@ -1289,6 +1312,7 @@ export const projects = [
     ],
   },
   {
+    id: "200811",
     name: "BMDL 웹사이트 리뉴얼",
     startDate: "2008.06~08",
     endDate: "비공개",
@@ -1299,6 +1323,7 @@ export const projects = [
     tag: [{ role: "Flash", className: "badge flash" }],
   },
   {
+    id: "200810",
     name: "ICIC 2008 웹사이트 리뉴얼",
     startDate: "2008.05",
     endDate: "비공개",
@@ -1309,6 +1334,7 @@ export const projects = [
     tag: [{ role: "디자인", className: "badge design" }],
   },
   {
+    id: "200809",
     name: "익산시 농업기술센터",
     startDate: "2008.04",
     endDate: "비공개",
@@ -1319,6 +1345,7 @@ export const projects = [
     tag: [{ role: "디자인", className: "badge design" }],
   },
   {
+    id: "200808",
     name: "대전테크노파크 영문사이트",
     startDate: "2008.04",
     endDate: "비공개",
@@ -1329,6 +1356,7 @@ export const projects = [
     tag: [{ role: "디자인", className: "badge design" }],
   },
   {
+    id: "200807",
     name: "의료시스템공학학제학부 웹사이트 제작",
     startDate: "2008.04",
     endDate: "비공개",
@@ -1339,6 +1367,7 @@ export const projects = [
     tag: [{ role: "디자인", className: "badge design" }],
   },
   {
+    id: "200806",
     name: "나리넷 웹사이트 리뉴얼",
     startDate: "2008.03",
     endDate: "비공개",
@@ -1349,6 +1378,7 @@ export const projects = [
     tag: [{ role: "디자인", className: "badge design" }],
   },
   {
+    id: "200805",
     name: "바이오평가센터 웹사이트 리뉴얼",
     startDate: "2008.03",
     endDate: "비공개",
@@ -1359,6 +1389,7 @@ export const projects = [
     tag: [{ role: "디자인", className: "badge design" }],
   },
   {
+    id: "200804",
     name: "유비쿼터스 벤처타운 제안 애니메이션",
     startDate: "2008.02~03",
     endDate: "비공개",
@@ -1369,6 +1400,7 @@ export const projects = [
     tag: [{ role: "Flash", className: "badge flash" }],
   },
   {
+    id: "200803",
     name: "X-POP 제품홍보 인트로",
     startDate: "2008.02",
     endDate: "비공개",
@@ -1379,6 +1411,7 @@ export const projects = [
     tag: [{ role: "모션그래픽", className: "badge motion" }],
   },
   {
+    id: "200802",
     name: "INT 시스템 디자인",
     startDate: "2008.01",
     endDate: "비공개",
@@ -1389,6 +1422,7 @@ export const projects = [
     tag: [{ role: "디자인", className: "badge design" }],
   },
   {
+    id: "200801",
     name: "대덕특구외자유치 리뉴얼",
     startDate: "2008.01~02",
     endDate: "비공개",
@@ -1399,6 +1433,7 @@ export const projects = [
     tag: [{ role: "기획", className: "badge plan" }],
   },
   {
+    id: "200712",
     name: "IT전용벤처타운 웹사이트",
     startDate: "2007.12",
     endDate: "비공개",
@@ -1409,6 +1444,7 @@ export const projects = [
     tag: [{ role: "디자인", className: "badge design" }],
   },
   {
+    id: "200711",
     name: "지능로봇사업단 비즈니스협의회 구축",
     startDate: "2007.12~08.01",
     endDate: "비공개",
@@ -1419,6 +1455,7 @@ export const projects = [
     tag: [{ role: "기획", className: "badge plan" }],
   },
   {
+    id: "200710",
     name: "지질시료동 웹사이트 리뉴얼",
     startDate: "2007.11~12",
     endDate: "비공개",
@@ -1429,6 +1466,7 @@ export const projects = [
     tag: [{ role: "기획", className: "badge plan" }],
   },
   {
+    id: "200709",
     name: "(주)플랜아이 블로그",
     startDate: "2007.10~11",
     endDate: "비공개",
@@ -1443,6 +1481,7 @@ export const projects = [
     ],
   },
   {
+    id: "200708",
     name: "김재룡성형외과 웹사이트 리뉴얼",
     startDate: "2007.10",
     endDate: "비공개",
@@ -1453,6 +1492,7 @@ export const projects = [
     tag: [{ role: "기획", className: "badge plan" }],
   },
   {
+    id: "200707",
     name: "광주과학기술원대관시스템 구축",
     startDate: "2007.09~08.01",
     endDate: "비공개",
@@ -1463,6 +1503,7 @@ export const projects = [
     tag: [{ role: "기획", className: "badge plan" }],
   },
   {
+    id: "200706",
     name: "럭키게임 UI디자인",
     startDate: "2007.08",
     endDate: "비공개",
@@ -1473,6 +1514,7 @@ export const projects = [
     tag: [{ role: "디자인", className: "badge design" }],
   },
   {
+    id: "200705",
     name: "(주)스튜디오아침 웹사이트 제작",
     startDate: "2007.06~07",
     endDate: "비공개",
@@ -1483,6 +1525,7 @@ export const projects = [
     tag: [{ role: "모션그래픽", className: "badge motion" }],
   },
   {
+    id: "200704",
     name: "지능로봇사업단 웹사이트 리뉴얼",
     startDate: "2007.04~06",
     endDate: "비공개",
@@ -1493,6 +1536,7 @@ export const projects = [
     tag: [{ role: "기획", className: "badge plan" }],
   },
   {
+    id: "200703",
     name: "숲체원 홍보애니메이션",
     startDate: "2007.03~04",
     endDate: "비공개",
@@ -1506,6 +1550,7 @@ export const projects = [
     ],
   },
   {
+    id: "200702",
     name: "카이스트 홍보관 제작",
     startDate: "2007.02~03",
     endDate: "비공개",
@@ -1516,6 +1561,7 @@ export const projects = [
     tag: [{ role: "디자인", className: "badge design" }],
   },
   {
+    id: "200701",
     name: "대덕특구외자유치 웹사이트 제작",
     startDate: "2007.01~03",
     endDate: "비공개",
@@ -1529,6 +1575,7 @@ export const projects = [
     ],
   },
   {
+    id: "200629",
     name: "한솥도시락 덕척로타리점 제작",
     startDate: "2006.10",
     endDate: "비공개",
@@ -1543,6 +1590,7 @@ export const projects = [
     ],
   },
   {
+    id: "200628",
     name: "한국영어교과교육학회웹사이트 제작",
     startDate: "2006.09~10",
     endDate: "비공개",
@@ -1557,6 +1605,7 @@ export const projects = [
     ],
   },
   {
+    id: "200627",
     name: "퍼스트데일리(주) 메일링 디자인",
     startDate: "2006.06",
     endDate: "비공개",
@@ -1567,6 +1616,7 @@ export const projects = [
     tag: [{ role: "디자인", className: "badge design" }],
   },
   {
+    id: "200626",
     name: "KT 플래시 광고디자인",
     startDate: "2006.04",
     endDate: "비공개",
@@ -1580,6 +1630,7 @@ export const projects = [
     ],
   },
   {
+    id: "200625",
     name: "퍼스트데일리(주) 광고디자인",
     startDate: "2006.05",
     endDate: "비공개",
@@ -1593,6 +1644,7 @@ export const projects = [
     ],
   },
   {
+    id: "200624",
     name: "퍼스트LED 전광판 광고디자인",
     startDate: "2006.05",
     endDate: "비공개",
@@ -1606,6 +1658,7 @@ export const projects = [
     ],
   },
   {
+    id: "200623",
     name: "오창 쌍둥이빌딩 전광판 영상제작",
     startDate: "2006.05",
     endDate: "비공개",
@@ -1619,6 +1672,7 @@ export const projects = [
     ],
   },
   {
+    id: "200622",
     name: "퍼스트데일리(주) 전광판 광고디자인",
     startDate: "2006.05",
     endDate: "비공개",
@@ -1632,6 +1686,7 @@ export const projects = [
     ],
   },
   {
+    id: "200621",
     name: "퍼스트데일리(주) 외국어사이트",
     startDate: "2006.05~07",
     endDate: "비공개",
@@ -1645,6 +1700,7 @@ export const projects = [
     ],
   },
   {
+    id: "200620",
     name: "농협 친환경유기농산물축제 광고 디자인",
     startDate: "2006.05",
     endDate: "비공개",
@@ -1658,6 +1714,7 @@ export const projects = [
     ],
   },
   {
+    id: "200619",
     name: "퍼스트LED 잡지광고디자인",
     startDate: "2006.04",
     endDate: "비공개",
@@ -1671,6 +1728,7 @@ export const projects = [
     ],
   },
   {
+    id: "200618",
     name: "AG부동산중개(주) 광고디자인",
     startDate: "2006.04",
     endDate: "비공개",
@@ -1684,6 +1742,7 @@ export const projects = [
     ],
   },
   {
+    id: "200617",
     name: "박효순 회계사사무소 잡지광고디자인",
     startDate: "2006.03",
     endDate: "비공개",
@@ -1697,6 +1756,7 @@ export const projects = [
     ],
   },
   {
+    id: "200616",
     name: "퍼스트데일리(주) 고객센터 제작",
     startDate: "2006.03~05",
     endDate: "비공개",
@@ -1710,6 +1770,7 @@ export const projects = [
     ],
   },
   {
+    id: "200615",
     name: "국민은행 오창점 광고디자인",
     startDate: "2006.02",
     endDate: "비공개",
@@ -1723,6 +1784,7 @@ export const projects = [
     ],
   },
   {
+    id: "200614",
     name: "가로건축사사무소 광고디자인",
     startDate: "2006.02",
     endDate: "비공개",
@@ -1736,6 +1798,7 @@ export const projects = [
     ],
   },
   {
+    id: "200613",
     name: "이종원성형외과 광고디자인",
     startDate: "2006.02",
     endDate: "비공개",
@@ -1749,6 +1812,7 @@ export const projects = [
     ],
   },
   {
+    id: "200612",
     name: "국민은행 플래시 광고디자인",
     startDate: "2006.03",
     endDate: "비공개",
@@ -1762,6 +1826,7 @@ export const projects = [
     ],
   },
   {
+    id: "200611",
     name: "INS 플래시 광고디자인",
     startDate: "2006.03",
     endDate: "비공개",
@@ -1775,6 +1840,7 @@ export const projects = [
     ],
   },
   {
+    id: "200610",
     name: "(주)제이비컴 플래시 광고디자인",
     startDate: "2006.03",
     endDate: "비공개",
@@ -1788,6 +1854,7 @@ export const projects = [
     ],
   },
   {
+    id: "200609",
     name: "이종원성형외과 플래시 광고디자인",
     startDate: "2006.01",
     endDate: "비공개",
@@ -1801,6 +1868,7 @@ export const projects = [
     ],
   },
   {
+    id: "200608",
     name: "이종원성형외과 광고디자인",
     startDate: "2006.02",
     endDate: "비공개",
@@ -1814,6 +1882,7 @@ export const projects = [
     ],
   },
   {
+    id: "200607",
     name: "국민은행 플래시 광고디자인",
     startDate: "2006.03",
     endDate: "비공개",
@@ -1827,6 +1896,7 @@ export const projects = [
     ],
   },
   {
+    id: "200606",
     name: "INS 플래시 광고디자인",
     startDate: "2006.03",
     endDate: "비공개",
@@ -1840,6 +1910,7 @@ export const projects = [
     ],
   },
   {
+    id: "200605",
     name: "(주)제이비컴 플래시 광고디자인",
     startDate: "2006.03",
     endDate: "비공개",
@@ -1853,6 +1924,7 @@ export const projects = [
     ],
   },
   {
+    id: "200604",
     name: "이종원성형외과 플래시 광고디자인",
     startDate: "2006.01",
     endDate: "비공개",
@@ -1866,6 +1938,7 @@ export const projects = [
     ],
   },
   {
+    id: "200603",
     name: "가로건축사사무소 플래시 광고디자인",
     startDate: "2006.01",
     endDate: "비공개",
@@ -1879,6 +1952,7 @@ export const projects = [
     ],
   },
   {
+    id: "200602",
     name: "엔젤클럽(주) 플래시 광고디자인",
     startDate: "2006.01",
     endDate: "비공개",
@@ -1892,6 +1966,7 @@ export const projects = [
     ],
   },
   {
+    id: "200601",
     name: "퍼스트데일리(주) 웹사이트 리뉴얼",
     startDate: "2006.01~02",
     endDate: "비공개",
@@ -1902,6 +1977,7 @@ export const projects = [
     tag: [{ role: "디자인", className: "badge design" }],
   },
   {
+    id: "200503",
     name: "양간지 쇼핑몰 웹사이트",
     startDate: "2005.08~11",
     endDate: "비공개",
@@ -1915,6 +1991,7 @@ export const projects = [
     ],
   },
   {
+    id: "200502",
     name: "서원대학교 eTLC 웹사이트 관리",
     startDate: "2005.07~12",
     endDate: "비공개",
@@ -1925,6 +2002,7 @@ export const projects = [
     tag: [{ role: "디자인", className: "badge design" }],
   },
   {
+    id: "200501",
     name: "서원대학교 eTLC 포토샵강좌",
     startDate: "2005.07~12",
     endDate: "비공개",
@@ -1938,6 +2016,7 @@ export const projects = [
     ],
   },
   {
+    id: "200401",
     name: "아마게돈 게임장 웹사이트 제작",
     startDate: "2004.08",
     endDate: "비공개",
@@ -1952,6 +2031,7 @@ export const projects = [
     ],
   },
   {
+    id: "200303",
     name: "37사단 110연대 3대대 웹사이트 제작 및 유지보수",
     startDate: "2003.07~04.07",
     endDate: "비공개",
@@ -1966,6 +2046,7 @@ export const projects = [
     ],
   },
   {
+    id: "200302",
     name: "StreamDivx 웹사이트 제안",
     startDate: "2003.12",
     endDate: "비공개",
@@ -1976,6 +2057,7 @@ export const projects = [
     tag: [{ role: "디자인", className: "badge design" }],
   },
   {
+    id: "200301",
     name: "e-Pharos 웹사이트 디자인",
     startDate: "2003.07~09",
     endDate: "비공개",
@@ -1986,6 +2068,7 @@ export const projects = [
     tag: [{ role: "디자인", className: "badge design" }],
   },
   {
+    id: "200206",
     name: "e-Pharos 웹사이트 유지보수 및 솔루션 개발",
     startDate: "2002.09 ~ 03.09",
     endDate: "비공개",
@@ -1996,6 +2079,7 @@ export const projects = [
     tag: [{ role: "디자인", className: "badge design" }],
   },
   {
+    id: "200205",
     name: "탄트라 노블레스길드 구축 및 유지보수",
     startDate: "2002.11~05.07",
     endDate: "비공개",
@@ -2010,6 +2094,7 @@ export const projects = [
     ],
   },
   {
+    id: "200204",
     name: "Goodmorning Solution 디자인",
     startDate: "2002.08~09",
     endDate: "비공개",
@@ -2020,6 +2105,7 @@ export const projects = [
     tag: [{ role: "디자인", className: "badge design" }],
   },
   {
+    id: "200203",
     name: "제30회 종합학술대회 웹사이트 제작",
     startDate: "2002.01~03",
     endDate: "비공개",
@@ -2030,6 +2116,7 @@ export const projects = [
     tag: [{ role: "디자인", className: "badge design" }],
   },
   {
+    id: "200202",
     name: "국내의학학술지 초록검색 사이트",
     startDate: "2002.01~02",
     endDate: "비공개",
@@ -2040,6 +2127,7 @@ export const projects = [
     tag: [{ role: "디자인", className: "badge design" }],
   },
   {
+    id: "200201",
     name: "한빛정보시스템 웹사이트 리뉴얼",
     startDate: "2002.04~07",
     endDate: "비공개",
@@ -2050,6 +2138,7 @@ export const projects = [
     tag: [{ role: "디자인", className: "badge design" }],
   },
   {
+    id: "200104",
     name: "의학연구정보센터 웹사이트 유지보수",
     startDate: "2001.03~02.05",
     endDate: "비공개",
@@ -2060,6 +2149,7 @@ export const projects = [
     tag: [{ role: "디자인", className: "badge design" }],
   },
   {
+    id: "200103",
     name: "스타크래프트 7TH길드 웹사이트 제작",
     startDate: "2001.09~12",
     endDate: "비공개",
@@ -2070,6 +2160,7 @@ export const projects = [
     tag: [{ role: "디자인", className: "badge design" }],
   },
   {
+    id: "200102",
     name: "스타크래프트 SG길드 웹사이트 제작",
     startDate: "2001.05~07",
     endDate: "비공개",
@@ -2080,6 +2171,7 @@ export const projects = [
     tag: [{ role: "디자인", className: "badge design" }],
   },
   {
+    id: "200101",
     name: "Cyber Lecture 웹사이트 제작",
     startDate: "2001.11",
     endDate: "비공개",
@@ -2090,6 +2182,7 @@ export const projects = [
     tag: [{ role: "디자인", className: "badge design" }],
   },
   {
+    id: "200003",
     name: "박진수 쇼핑몰 웹사이트 디자인",
     startDate: "2000.08~09",
     endDate: "비공개",
@@ -2100,6 +2193,7 @@ export const projects = [
     tag: [{ role: "디자인", className: "badge design" }],
   },
   {
+    id: "200002",
     name: "디아블로 르네상스길드 웹사이트 제작",
     startDate: "2000.01~01.05",
     endDate: "비공개",
@@ -2114,6 +2208,7 @@ export const projects = [
     ],
   },
   {
+    id: "200001",
     name: "충청대학 실내건축과웹사이트 리뉴얼",
     startDate: "2000.04~6",
     endDate: "비공개",

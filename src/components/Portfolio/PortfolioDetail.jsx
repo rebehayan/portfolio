@@ -1,36 +1,55 @@
-import React from "react";
+import React, { forwardRef } from "react";
+import { IoCloseOutline } from "react-icons/io5";
 
-export default function PortfolioDetail({ toggle, projectInfo, onClose }) {
+const PortfolioDetail = forwardRef(({ projectInfo }, ref) => {
   return (
-    <div className={`detail-view ${toggle ? "show" : ""}`}>
-      <h2 className="text-lg font-semibold">{projectInfo.name}</h2>
-      <p>
-        <strong>기간:</strong> {projectInfo.startDate} ~ {projectInfo.endDate}
-      </p>
-      <p>
-        <strong>클라이언트:</strong> {projectInfo.client}
-      </p>
-      <p>
-        <strong>회사:</strong> {projectInfo.company}
-      </p>
-      <p>
-        <strong>기여도:</strong> {projectInfo.contribution}
-      </p>
-      {projectInfo.url.includes("https") ? (
-        <p>
-          <strong>URL : </strong>
-          <a href={projectInfo.url} target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">
-            {projectInfo.url}
-          </a>
-        </p>
-      ) : (
-        <p>
-          <strong>URL : </strong>비공개 또는 서비스 종료된 사이트입니다.
-        </p>
-      )}
-      <button type="button" className="absolute right-5 top-5 cursor-pointer" onClick={onClose}>
-        Close
-      </button>
-    </div>
+    <dialog ref={ref} className="detail-view top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] fixed">
+      <header className="flex items-end justify-between">
+        <h2 className="text-3xl font-semibold">{projectInfo?.name}</h2>
+        <form method="dialog" className="text-[0px]">
+          <button type="submit" className="cursor-pointer">
+            <IoCloseOutline className="w-7 h-7" />
+          </button>
+        </form>
+      </header>
+      <div className="mt-5">
+        <ul className="grid gap-2">
+          <li className="grid grid-cols-[6rem_1fr] gap-2 items-center">
+            <strong className="px-2 py-0.5 bg-neutral-100 rounded-md text-sm">기간</strong>
+            <div>
+              {projectInfo?.startDate} ~ {projectInfo?.endDate}
+            </div>
+          </li>
+          <li className="grid grid-cols-[6rem_1fr] gap-2  items-center">
+            <strong className="px-2 py-0.5 bg-neutral-100 rounded-md text-sm">클라이언트</strong>
+            <div>{projectInfo?.client}</div>
+          </li>
+          <li className="grid grid-cols-[6rem_1fr] gap-2  items-center">
+            <strong className="px-2 py-0.5 bg-neutral-100 rounded-md text-sm">회사</strong>
+            <div>{projectInfo?.company}</div>
+          </li>
+          <li className="grid grid-cols-[6rem_1fr] gap-2  items-center">
+            <strong className="px-2 py-0.5 bg-neutral-100 rounded-md text-sm">기여도</strong>
+            <div>{projectInfo?.contribution}</div>
+          </li>
+          {projectInfo?.url.includes("https") ? (
+            <li className="grid grid-cols-[6rem_1fr] gap-2  items-center">
+              <strong className="px-2 py-0.5 bg-neutral-100 rounded-md text-sm">URL</strong>
+              <div>
+                <a href={projectInfo?.url} target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">
+                  {projectInfo?.url}
+                </a>
+              </div>
+            </li>
+          ) : (
+            <li className="grid grid-cols-[6rem_1fr] gap-2  items-center">
+              <strong className="px-2 py-0.5 bg-neutral-100 rounded-md text-sm">URL</strong>
+              <div>비공개 또는 서비스 종료된 사이트입니다.</div>
+            </li>
+          )}
+        </ul>
+      </div>
+    </dialog>
   );
-}
+});
+export default PortfolioDetail;

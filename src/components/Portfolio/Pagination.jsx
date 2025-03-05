@@ -1,4 +1,5 @@
 import React from "react";
+import { GoArrowLeft, GoArrowRight, GoMoveToEnd, GoMoveToStart } from "react-icons/go";
 
 export default function Pagination({ totalPages, currentPage, onPageChange }) {
   const pagesPerGroup = 5;
@@ -14,19 +15,21 @@ export default function Pagination({ totalPages, currentPage, onPageChange }) {
     <nav className="paging border-t-[1px] border-gray-300 py-10 flex justify-center gap-4">
       <button
         type="button"
-        className="cursor-pointer px-3 py-1 rounded bg-gray-200 hover:bg-gray-400 disabled:opacity-50 disabled:cursor-not-allowed"
+        className="w-10 h-10 rounded-full cursor-pointer font-[base] text-md bg-whtie border-[1px] border-neutral-200 flex justify-center items-center disabled:opacity-50 disabled:cursor-not-allowed"
         onClick={() => handlePageChange(1)}
         disabled={currentPage === 1}
+        aria-label="첫페이지"
       >
-        첫페이지
+        <GoMoveToStart />
       </button>
       <button
         type="button"
-        className="cursor-pointer px-3 py-1 rounded bg-gray-200 hover:bg-gray-400 disabled:opacity-50 disabled:cursor-not-allowed"
+        className="w-10 h-10 rounded-full cursor-pointer font-[base] text-md bg-whtie border-[1px] border-neutral-200 flex justify-center items-center disabled:opacity-50 disabled:cursor-not-allowed"
         onClick={() => handlePageChange(currentPage - 1)}
         disabled={currentPage === 1}
+        aria-label="이전페이지"
       >
-        이전페이지
+        <GoArrowLeft />
       </button>
       <ol className="flex justify-center gap-4">
         {Array.from({ length: endPage - startPage + 1 }, (_, i) => startPage + i).map((page) => (
@@ -34,7 +37,7 @@ export default function Pagination({ totalPages, currentPage, onPageChange }) {
             <button
               type="button"
               onClick={() => handlePageChange(page)}
-              className={`px-3 py-1 rounded cursor-pointer ${currentPage === page ? "bg-cyan-600 text-white" : "bg-gray-200 hover:bg-gray-400"}`}
+              className={`w-10 h-10 rounded-full cursor-pointer font-[base] text-md bg-whtie border-[1px] border-neutral-200 ${currentPage === page ? "bg-neutral-900 text-white" : ""}`}
             >
               {page}
             </button>
@@ -43,20 +46,22 @@ export default function Pagination({ totalPages, currentPage, onPageChange }) {
       </ol>
       <button
         type="button"
-        className="cursor-pointer px-3 py-1 rounded bg-gray-200 hover:bg-gray-400 disabled:opacity-50 disabled:cursor-not-allowed"
+        className="w-10 h-10 rounded-full cursor-pointer font-[base] text-md bg-whtie border-[1px] border-neutral-200 flex justify-center items-center disabled:opacity-50 disabled:cursor-not-allowed"
         onClick={() => handlePageChange(currentPage + 1)}
         disabled={currentPage === totalPages}
+        aria-label="다음페이지"
       >
-        다음페이지
+        <GoArrowRight />
       </button>
 
       <button
         type="button"
-        className="cursor-pointer px-3 py-1 rounded bg-gray-200 hover:bg-gray-400 disabled:opacity-50 disabled:cursor-not-allowed"
+        className="w-10 h-10 rounded-full cursor-pointer font-[base] text-md bg-whtie border-[1px] border-neutral-200 flex justify-center items-center disabled:opacity-50 disabled:cursor-not-allowed"
         onClick={() => handlePageChange(totalPages)}
         disabled={currentPage === totalPages}
+        aria-label="마지막페이지"
       >
-        마지막페이지
+        <GoMoveToEnd />
       </button>
     </nav>
   );

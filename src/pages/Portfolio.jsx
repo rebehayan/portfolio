@@ -1,19 +1,22 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { projects } from "../data/portfolio";
 import { useTitleHook } from "../utils/useTitleHook";
 import PortfolioDetail from "../components/Portfolio/PortfolioDetail";
 import PortfolioList from "../components/Portfolio/PortfolioList";
 import PortfolioSearch from "../components/Portfolio/PortfolioSearch";
+import { HiArrowLongRight } from "react-icons/hi2";
+import { Link } from "react-router-dom";
 
 export default function Portfolio() {
   const [detailID, setDetailID] = useState();
   const [toggleList, setToggleList] = useState(false);
   const [filterDataList, setFilterDataList] = useState(projects);
   const [isKeyword, setIsKeyword] = useState("");
+  const dialog = useRef();
 
   const handleGetID = (id) => {
     setDetailID((prevID) => (prevID === id ? prevID : id));
-    setToggleList((prev) => (prev === id ? !prev : true));
+    dialog.current.showModal();
   };
 
   const handleSearch = (event) => {
@@ -43,13 +46,25 @@ export default function Portfolio() {
     <>
       <div className="portfolio dark:bg-neutral-950 z-10 relative">
         <div className="area  dark:bg-white">
-          <div></div>
+          <div className="flex justify-between items-end">
+            <h2 className="font-[teko] mobile:text-4xl tablet:text-7xl font-extrabold text-pretty mobile:w-full tablet:w-96 uppercase leading-[0.8]">Project Portfolio</h2>
+            <div className="font-[base] w-100 break-keep justify-self-end text">
+              점점 발전하는 코드로 전문성을 강화하며,
+              <br /> 프로젝트 규모와 관계없이 일관된 퍼포먼스를 제공합니다.
+              <div className="mt-5">
+                <Link to="/contact" className="btn-goto">
+                  <span data-text="프로젝트 의뢰하기">프로젝트 의뢰하기</span>
+                  <HiArrowLongRight />
+                </Link>
+              </div>
+            </div>
+          </div>
           <PortfolioSearch handleYear={(year) => handleYear(year)} handleSearch={handleSearch} />
         </div>
         <div className="area">
-          <div className={`portfolio-wrap ${toggleList ? "show" : ""}`}>
+          <div className={`portfolio-wrap`}>
             <PortfolioList projectList={filterDataList} handleGetID={(id) => handleGetID(id)} />
-            {selectedProject && <PortfolioDetail toggle={toggleList} projectInfo={selectedProject} onClose={() => setToggleList(false)} />}
+            <PortfolioDetail projectInfo={selectedProject} ref={dialog} />
           </div>
         </div>
       </div>
