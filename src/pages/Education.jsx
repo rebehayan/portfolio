@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { update, post } from "../utils/supa.js";
+import { update } from "../utils/supa.js";
 import { getPlaylists } from "../utils/youtube.js";
 import me from "../assets/me1.mp4";
 
@@ -8,8 +8,8 @@ export default function Education() {
   const [today, setToday] = useState();
 
   const date = new Date();
-
   update();
+
   useEffect(() => {
     const handleList = async () => {
       const list = await getPlaylists();
