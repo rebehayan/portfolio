@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { update } from "../utils/supa.js";
+
 import { getPlaylists } from "../utils/youtube.js";
 import me from "../assets/me1.mp4";
 import gsap from "gsap";
@@ -153,7 +153,6 @@ export default function Education() {
   const youtubeRef = useRef();
 
   const date = new Date();
-  update();
   useTitleHook();
 
   useEffect(() => {

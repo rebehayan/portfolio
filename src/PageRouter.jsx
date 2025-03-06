@@ -6,6 +6,7 @@ import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import Education from "./pages/Education";
 import Service from "./pages/Service";
+import Update from "./pages/Update";
 
 export default function PageRouter() {
   const location = useLocation();
@@ -28,6 +29,7 @@ export default function PageRouter() {
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/education" element={<Education />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/update" element={<Update />} />
       </Routes>
     </>
   );

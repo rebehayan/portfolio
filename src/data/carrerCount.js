@@ -1,3 +1,4 @@
+import { update } from "../utils/supa.js";
 import { getVideoCount } from "../utils/youtube.js";
 import { projects } from "./portfolio.js";
 
@@ -7,6 +8,7 @@ const career = year.toString().slice(2, 4);
 
 export const carrerCountData = async () => {
   const videoCount = await getVideoCount();
+  const eduCount = await update();
   return [
     {
       number: career,
@@ -14,9 +16,9 @@ export const carrerCountData = async () => {
       kor: "년의 경력",
     },
     {
-      number: 25000,
-      title: "happy customers",
-      kor: "명과 협업",
+      number: eduCount.length || 0,
+      title: "Lectures",
+      kor: "강의 횟수",
     },
     {
       number: projectLength,
