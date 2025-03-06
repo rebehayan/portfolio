@@ -12,6 +12,8 @@ export const useTitleHook = () => {
       "/about": `About ${ID}`,
       "/portfolio": `Portfolio ${ID}`,
       "/contact": `Contact ${ID}`,
+      "/education": `Education ${ID}`,
+      "/service": `Product ${ID}`,
     };
 
     document.title = titleMap[location.pathname] || ID;

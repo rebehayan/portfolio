@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import snippet from "../assets/img_snippet.png";
 import movie from "../assets/img_movie.png";
 import gsap from "gsap";
+import { useTitleHook } from "../utils/useTitleHook";
 
 const aniGsap = (selector) => {
   gsap
@@ -34,6 +35,7 @@ const aniGsap = (selector) => {
 
 export default function Service() {
   const appRef = useRef();
+  useTitleHook();
   useEffect(() => {
     aniGsap(appRef.current);
   }, []);

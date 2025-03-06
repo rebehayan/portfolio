@@ -4,6 +4,7 @@ import { getPlaylists } from "../utils/youtube.js";
 import me from "../assets/me1.mp4";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useTitleHook } from "../utils/useTitleHook.js";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -153,6 +154,7 @@ export default function Education() {
 
   const date = new Date();
   update();
+  useTitleHook();
 
   useEffect(() => {
     const handleList = async () => {
