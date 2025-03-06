@@ -148,7 +148,7 @@ const skillAnimation = (selector) => {
         ease: "bounce.inOut",
         stagger: {
           each: 0.2,
-          from: "random",
+          // from: "random",
         },
       }
     );

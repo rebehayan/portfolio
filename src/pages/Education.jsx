@@ -1,11 +1,155 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { update } from "../utils/supa.js";
 import { getPlaylists } from "../utils/youtube.js";
 import me from "../assets/me1.mp4";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
+const headerGsap = (selector) => {
+  const heroAni = gsap
+    .timeline()
+    .fromTo(
+      selector.querySelector("video"),
+      {
+        width: 0,
+      },
+      {
+        width: "100%",
+        duration: 2,
+        ease: "power3.inOut",
+      }
+    )
+    .fromTo(
+      selector.querySelector(".video-copy"),
+      {
+        x: -40,
+        opacity: 0,
+      },
+      {
+        x: 0,
+        opacity: 1,
+        ease: "power3.inOut",
+      }
+    )
+    .fromTo(
+      selector.querySelector(".video-copy h2"),
+      {
+        x: -40,
+        opacity: 0,
+      },
+      {
+        x: 0,
+        opacity: 1,
+        ease: "power3.inOut",
+      },
+      "-=0.2"
+    )
+    .fromTo(
+      selector.querySelector(".video-copy p"),
+      {
+        x: -40,
+        opacity: 0,
+      },
+      {
+        x: 0,
+        opacity: 1,
+        ease: "power3.inOut",
+      },
+      "-=0.2"
+    );
+
+  ScrollTrigger.create({
+    trigger: selector,
+    start: "top center",
+    toggleActions: "play none none none",
+    duration: 1,
+    animation: heroAni,
+  });
+};
+const stepGsap = (selector) => {
+  const stepAni = gsap
+    .timeline()
+    .fromTo(
+      selector.querySelector("h2"),
+      {
+        y: 100,
+        opacity: 0,
+      },
+      {
+        y: 0,
+        opacity: 1,
+        ease: "power3.inOut",
+      }
+    )
+    .fromTo(
+      selector.querySelectorAll("li"),
+      {
+        x: -100,
+        opacity: 0,
+      },
+      {
+        x: 0,
+        opacity: 1,
+        ease: "power3.inOut",
+        duration: 1,
+        stagger: 0.3,
+      }
+    );
+
+  ScrollTrigger.create({
+    trigger: selector,
+    start: "20% center",
+    toggleActions: "play none none none",
+    duration: 1,
+    animation: stepAni,
+  });
+};
+const youtubeGsap = (selector) => {
+  const youtubeAni = gsap
+    .timeline()
+    .fromTo(
+      selector.querySelector("h2"),
+      {
+        y: 100,
+        opacity: 0,
+      },
+      {
+        y: 0,
+        opacity: 1,
+        ease: "power3.inOut",
+      }
+    )
+    .fromTo(
+      selector.querySelectorAll("li"),
+      {
+        y: 50,
+        opacity: 0,
+      },
+      {
+        y: 0,
+        opacity: 1,
+        ease: "power3.inOut",
+        duration: 1,
+        stagger: 0.1,
+      }
+    );
+
+  ScrollTrigger.create({
+    trigger: selector,
+    start: "top center",
+    toggleActions: "play none none none",
+    animation: youtubeAni,
+  });
+};
 
 export default function Education() {
   const [playLists, setPlayLists] = useState([]);
   const [today, setToday] = useState();
+  const videoRef = useRef();
+  const stepRef = useRef();
+  const youtubeRef = useRef();
 
   const date = new Date();
   update();
@@ -14,25 +158,23 @@ export default function Education() {
     const handleList = async () => {
       const list = await getPlaylists();
       setPlayLists(list);
+      youtubeGsap(youtubeRef.current);
     };
     handleList();
+    headerGsap(videoRef.current);
+    stepGsap(stepRef.current);
     setToday(date.toLocaleDateString());
   }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     const name = e.target.name;
-    console.log(name);
   };
-  // const handleInsert = () => {
-  //   post();
-  // };
   return (
-    <>
-      {/* <button onClick={handleInsert}>추가하기</button> */}
-      <div className="video min-h-[calc(100vh-113px)] h-[calc(1080px-113px)] bg-neutral-200 relative overflow-hidden after:absolute after:inset-0 after:bg-black after:opacity-30">
-        <video src={me} muted autoPlay loop className="w-full h-full object-cover"></video>
-        <div className="block absolute left-10 bottom-10 bg-lime-200 w-[550px] rounded-2xl p-5 font-[base] z-10">
+    <div>
+      <div ref={videoRef} className="video min-h-[calc(100vh-113px)] h-[calc(1080px-113px)] bg-neutral-200 relative overflow-hidden after:absolute after:inset-0 after:bg-black after:opacity-30">
+        <video src={me} muted autoPlay loop className="w-full h-full object-cover origin-center"></video>
+        <div className="block absolute left-10 bottom-10 bg-lime-200 w-[550px] rounded-2xl p-5 font-[base] z-10 video-copy">
           <h2 className="text-4xl font-bold">
             함께 고민하고
             <br /> 성장하며 실력을 <br />
@@ -44,7 +186,7 @@ export default function Education() {
           </p>
         </div>
       </div>
-      <section className="h-[1500px] text-center flex items-center justify-center font-[base] relative">
+      <section ref={stepRef} className="h-[1500px] text-center flex items-center justify-center font-[base] relative">
         <h2 className="text-9xl font-[teko] font-extrabold leading-[1] ">
           Learning <br />
           step by step
@@ -109,7 +251,7 @@ export default function Education() {
           </form>
         </div>
       </section>
-      <section className="area">
+      <section className="area" ref={youtubeRef}>
         <div>
           <h2 className="font-[base] font-bold text-4xl">Youtube 채널 재생목록</h2>
           <p className="h-10"></p>
@@ -131,6 +273,6 @@ export default function Education() {
           </ul>
         </div>
       </section>
-    </>
+    </div>
   );
 }

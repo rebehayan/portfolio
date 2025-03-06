@@ -1,20 +1,48 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import snippet from "../assets/img_snippet.png";
 import movie from "../assets/img_movie.png";
+import gsap from "gsap";
+
+const aniGsap = (selector) => {
+  gsap
+    .timeline()
+    .fromTo(
+      selector.querySelector("h2"),
+      {
+        x: -20,
+        opacity: 0,
+      },
+      {
+        x: 0,
+        opacity: 1,
+      }
+    )
+    .fromTo(
+      selector.querySelectorAll("li a > *"),
+      {
+        y: 20,
+        opacity: 0,
+      },
+      {
+        y: 0,
+        opacity: 1,
+        stagger: 0.2,
+      },
+      "<"
+    );
+};
 
 export default function Service() {
+  const appRef = useRef();
+  useEffect(() => {
+    aniGsap(appRef.current);
+  }, []);
+
   return (
-    <section className="area">
+    <section className="area" ref={appRef}>
       <div>
         <h2 className="font-[base] text-3xl font-bold">현재 제공하고 있는 어플리케이션</h2>
         <ul className="grid grid-cols-[repeat(auto-fill,minmax(25rem,1fr))] gap-7 mt-5">
-          {/* <li>
-          <a href="">
-            <img src="" alt="" />
-            <strong></strong>
-            <p></p>
-          </a>
-        </li> */}
           <li>
             <a href="https://movie-js-nine.vercel.app/" target="_blank" className="grid gap-2">
               <img src={movie} alt="" className="w-full" />

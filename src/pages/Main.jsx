@@ -1,14 +1,11 @@
 import { useEffect, useRef } from "react";
 import "../App.css";
-import Header from "../components/Header";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Visual from "../components/main/Visual";
 import Introduce from "../components/main/Introduce";
 import Service from "../components/main/Service";
-import image from "../assets/visual.jpg";
 import me3video from "../assets/me3.mp4";
-import Footer from "../components/Footer";
 import Portfolio from "../components/main/Portfolio";
 import Opentalk from "../components/main/Opentalk";
 import { useTitleHook } from "../utils/useTitleHook";

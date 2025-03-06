@@ -6,13 +6,68 @@ import PortfolioList from "../components/Portfolio/PortfolioList";
 import PortfolioSearch from "../components/Portfolio/PortfolioSearch";
 import { HiArrowLongRight } from "react-icons/hi2";
 import { Link } from "react-router-dom";
+import gsap from "gsap";
+
+const gsapTimeline = (selector) => {
+  gsap
+    .timeline()
+    .fromTo(
+      selector.querySelector(".header h2"),
+      {
+        x: -20,
+        opacity: 0,
+      },
+      {
+        x: 0,
+        opacity: 1,
+        ease: "back.inOut",
+      }
+    )
+    .fromTo(
+      selector.querySelector(".header div"),
+      {
+        x: 20,
+        opacity: 0,
+      },
+      {
+        x: 0,
+        opacity: 1,
+        ease: "back.inOut",
+      },
+      "-=0.2"
+    )
+    .fromTo(
+      selector.querySelector(".portfolio__search"),
+      {
+        y: 20,
+        opacity: 0,
+      },
+      {
+        y: 0,
+        opacity: 1,
+      },
+      "-=0.2"
+    )
+    .fromTo(
+      selector.querySelector(".portfolio__list"),
+      {
+        y: 20,
+        opacity: 0,
+      },
+      {
+        y: 0,
+        opacity: 1,
+      },
+      "-=0.2"
+    );
+};
 
 export default function Portfolio() {
   const [detailID, setDetailID] = useState();
-  const [toggleList, setToggleList] = useState(false);
   const [filterDataList, setFilterDataList] = useState(projects);
   const [isKeyword, setIsKeyword] = useState("");
   const dialog = useRef();
+  const wrapRef = useRef();
 
   const handleGetID = (id) => {
     setDetailID((prevID) => (prevID === id ? prevID : id));
@@ -40,13 +95,14 @@ export default function Portfolio() {
 
   useEffect(() => {
     handleYear();
+    gsapTimeline(wrapRef.current);
   }, [isKeyword]);
 
   return (
     <>
-      <div className="portfolio dark:bg-neutral-950 z-10 relative">
+      <div className="portfolio dark:bg-neutral-950 z-10 relative" ref={wrapRef}>
         <div className="area  dark:bg-white">
-          <div className="flex justify-between items-end">
+          <div className="flex justify-between items-end header">
             <h2 className="font-[teko] mobile:text-4xl tablet:text-7xl font-extrabold text-pretty mobile:w-full tablet:w-96 uppercase leading-[0.8]">Project Portfolio</h2>
             <div className="font-[base] w-100 break-keep justify-self-end text">
               점점 발전하는 코드로 전문성을 강화하며,
@@ -59,9 +115,11 @@ export default function Portfolio() {
               </div>
             </div>
           </div>
-          <PortfolioSearch handleYear={(year) => handleYear(year)} handleSearch={handleSearch} />
+          <div className="portfolio__search">
+            <PortfolioSearch handleYear={(year) => handleYear(year)} handleSearch={handleSearch} />
+          </div>
         </div>
-        <div className="area">
+        <div className="area portfolio__list">
           <div className={`portfolio-wrap`}>
             <PortfolioList projectList={filterDataList} handleGetID={(id) => handleGetID(id)} />
             <PortfolioDetail projectInfo={selectedProject} ref={dialog} />

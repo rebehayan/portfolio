@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Email } from "../components/Email";
 import { useTitleHook } from "../utils/useTitleHook";
 import liveVideo from "../assets/contact.mp4";
@@ -6,16 +6,179 @@ import myFav1 from "../assets/myfav1.jpg";
 import myFav2 from "../assets/myfav2.png";
 import myFav3 from "../assets/myfav3.png";
 import myFav4 from "../assets/myfav4.jpg";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
+const heroAni = (selector) => {
+  const ani = gsap
+    .timeline()
+    .fromTo(
+      selector.querySelector("h2"),
+      {
+        y: 40,
+        opacity: 0,
+      },
+      {
+        y: 0,
+        opacity: 1,
+      }
+    )
+    .fromTo(
+      selector.querySelectorAll(".list div"),
+      {
+        height: 0,
+        opacity: 0,
+      },
+      {
+        height: "auto",
+        opacity: 1,
+        stagger: 0.4,
+        duration: 1,
+      }
+    )
+    .fromTo(
+      selector.querySelectorAll(".list img"),
+      {
+        opacity: 0,
+      },
+      {
+        opacity: 1,
+        stagger: 0.2,
+        duration: 1,
+      }
+    );
+
+  ScrollTrigger.create({
+    trigger: selector,
+    start: "top center",
+    animation: ani,
+  });
+};
+const videoAni = (selector) => {
+  const ani = gsap
+    .timeline()
+    .fromTo(
+      selector.querySelector(".contact-video"),
+      {
+        width: 0,
+      },
+      {
+        width: "100%",
+        duration: 2,
+        ease: "power2.inOut",
+      }
+    )
+    .fromTo(
+      selector.querySelector(".contact-video video"),
+      {
+        height: 0,
+        opacity: 0,
+      },
+      {
+        height: "100%",
+        opacity: 1,
+        duration: 1,
+        ease: "power2.inOut",
+      },
+      "-=1"
+    );
+
+  ScrollTrigger.create({
+    trigger: selector,
+    start: "center 80%",
+    animation: ani,
+  });
+};
+const contactAni = (selector) => {
+  const ani = gsap
+    .timeline()
+    .fromTo(
+      selector.querySelector(".contact-form h2"),
+      {
+        x: -30,
+        opacity: 0,
+      },
+      {
+        x: 0,
+        opacity: 1,
+        duration: 1,
+        ease: "power2.inOut",
+      }
+    )
+    .fromTo(
+      selector.querySelector(".contact-form ul"),
+      {
+        width: 0,
+      },
+      {
+        width: "auto",
+        duration: 1,
+        ease: "power2.inOut",
+      },
+      "-=0.5"
+    )
+    .fromTo(
+      selector.querySelectorAll(".contact-form li"),
+      {
+        x: -30,
+        opacity: 0,
+      },
+      {
+        x: 0,
+        opacity: 1,
+        duration: 1,
+        ease: "power2.inOut",
+        stagger: 0.2,
+      },
+      "-=0.5"
+    )
+    .fromTo(
+      selector.querySelectorAll(".contact-form-area"),
+      {
+        x: 30,
+        opacity: 0,
+      },
+      {
+        x: 0,
+        opacity: 1,
+        duration: 1,
+        ease: "power2.inOut",
+        stagger: 0.2,
+      },
+      "-=1"
+    );
+
+  ScrollTrigger.create({
+    trigger: selector,
+    start: "70% center",
+    animation: ani,
+  });
+};
+
+const aniGsap = (selector) => {
+  heroAni(selector.querySelector(".contact-hero"));
+  videoAni(selector);
+  contactAni(selector);
+};
 
 export default function Contact() {
+  const wrapRef = useRef();
+
+  useEffect(() => {
+    aniGsap(wrapRef.current);
+  }, []);
+
   useTitleHook();
+
   return (
-    <div className="mt-[-113px]">
-      <section className="pt-40 pb-5 grid grid-cols-2 gap-20 h-dvh">
+    <div className="mt-[-113px]" ref={wrapRef}>
+      <section className="pt-40 pb-5 grid grid-cols-2 gap-20 h-dvh contact-hero">
         <h2 className="font-[base] text-6xl font-light justify-self-end self-center leading-[1.2]">
           궁금한 점이 있으신가요? <br /> <strong className="font-bold">강의 의뢰</strong>나 <strong className="font-bold">프로젝트 문의</strong>도 <br /> 언제든지 환영합니다. <br /> 편하게 문의하세요!
         </h2>
-        <div className="grid grid-cols-[1fr_2fr] gap-5 grid-rows-4">
+        <div className="grid grid-cols-[1fr_2fr] gap-5 grid-rows-4 list">
           <div className="bg-gray-200 col-start-1 col-end-2 row-start-2 row-end-4">
             <img src={myFav1} alt="" className="w-full h-full object-cover" />
           </div>
@@ -30,10 +193,10 @@ export default function Contact() {
           </div>
         </div>
       </section>
-      <div className="h-[50vh] flex items-center relative bg-slate-100 overflow-hidden after:absolute after:inset-0 after:bg-black after:opacity-60 after:z-20">
+      <div className="h-[50vh] flex items-center relative bg-slate-100 overflow-hidden after:absolute after:inset-0 after:bg-black after:opacity-60 after:z-20 contact-video">
         <video src={liveVideo} loop autoPlay muted className="w-full object-cover"></video>
       </div>
-      <section className="area">
+      <section className="area contact-form">
         <div className="grid grid-cols-2">
           <div className="font-[base] font-light">
             <h2>
@@ -90,7 +253,9 @@ export default function Contact() {
               </li>
             </ul>
           </div>
-          <Email />
+          <div className="contact-form-area">
+            <Email />
+          </div>
         </div>
       </section>
     </div>

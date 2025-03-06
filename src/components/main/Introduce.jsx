@@ -8,8 +8,6 @@ import video from "../../assets/educate.mp4";
 import { HiArrowLongRight } from "react-icons/hi2";
 
 gsap.registerPlugin(ScrollTrigger);
-const year = new Date().getFullYear();
-const career = year.toString().slice(2, 4);
 
 const Introduce = () => {
   const introRef = useRef();
