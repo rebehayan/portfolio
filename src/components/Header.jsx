@@ -3,6 +3,7 @@ import { CiMenuFries } from "react-icons/ci";
 import GNB from "./GNB";
 import gsap from "gsap";
 import { Link } from "react-router-dom";
+import logo from "../assets/logo.svg";
 
 const Header = forwardRef((_, ref) => {
   const h1Ref = useRef();
@@ -43,7 +44,7 @@ const Header = forwardRef((_, ref) => {
         <div className=" flex justify-between  box-border">
           <h1 ref={h1Ref}>
             <Link to="/">
-              <img src="/logo.svg" alt="Rebehayan" className="w-17" />
+              <img src={logo} alt="Rebehayan" className="w-17" />
             </Link>
           </h1>
           <GNB ref={gnbRef} />

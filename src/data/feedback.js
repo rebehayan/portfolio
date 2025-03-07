@@ -1,4 +1,3 @@
-import logo from "/public/logo.svg";
 import girl1 from "../assets/girl1.png";
 import girl2 from "../assets/girl2.png";
 import girl3 from "../assets/girl3.png";
