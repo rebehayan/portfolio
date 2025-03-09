@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import me1 from "../assets/me3.jpg";
 import me2 from "../assets/me2.jpg";
 import me2video from "../assets/me4.mp4";
@@ -10,6 +10,7 @@ import { useTitleHook } from "../utils/useTitleHook.js";
 import { projects } from "../data/portfolio.js";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { update } from "../utils/supa.js";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -154,16 +155,23 @@ const skillAnimation = (selector) => {
     );
 };
 
+const eduCount = async () => {
+  const count = await update();
+  return count.length;
+};
+
 export default function About() {
   useTitleHook();
   const section1Ref = useRef();
   const section2Ref = useRef();
   const section3Ref = useRef();
   const skillRef = useRef();
+  const [getCount, setGetCount] = useState(0);
 
   useEffect(() => {
     section1Animation(section1Ref.current, section2Ref.current, section3Ref.current);
     skillAnimation(skillRef.current);
+    eduCount().then((count) => setGetCount(count));
   }, []);
 
   return (
@@ -202,11 +210,11 @@ export default function About() {
         </div>
         <div className="bg-neutral-100 relative p-10 item">
           <div className="font-[base] text-lg font-light">
-            현재까지 156회
+            현재까지 {getCount}회
             <br />
             강의를 진행 했습니다.
           </div>
-          <div className="absolute left-10 bottom-10 text-8xl font-bold font-[base]">156+</div>
+          <div className="absolute left-10 bottom-10 text-8xl font-bold font-[base]">{getCount}+</div>
         </div>
         <div className="bg-neutral-800 text-white p-10 relative item">
           <div className="font-[base] text-lg font-light">

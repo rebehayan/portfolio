@@ -7,6 +7,7 @@ const options = () => {
   });
   return [...new Set(result)].sort((a, b) => b - a);
 };
+
 export default function PortfolioSearch({ handleYear, handleSearch }) {
   const optionList = options();
   const [selectedYear, setSelectedYear] = useState("전체보기");

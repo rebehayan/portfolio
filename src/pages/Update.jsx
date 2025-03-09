@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { post, update } from "../utils/supa.js";
 
+const today = new Date().toISOString().split("T")[0];
+
 export default function Update() {
   const [getList, setGetList] = useState([]);
   const [dataObj, setDataObj] = useState({
@@ -15,13 +17,25 @@ export default function Update() {
   const handleList = async () => {
     const list = await update();
 
-    setGetList(list);
+    // 최신순 정렬
+    const sortedList = list.sort((a, b) => new Date(b.start) - new Date(a.start));
+
+    setGetList(sortedList);
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    await post(dataObj);
+    // 입력값 공백 제거
+    const cleanedData = Object.fromEntries(Object.entries(dataObj).map(([key, value]) => [key, value.trim()]));
+
+    // 날짜 유효성 검사
+    if (new Date(cleanedData.start) > new Date(cleanedData.end)) {
+      alert("시작일은 종료일보다 이후일 수 없습니다.");
+      return;
+    }
+
+    await post(cleanedData);
     await handleList();
 
     setDataObj({
@@ -37,10 +51,7 @@ export default function Update() {
   const handleChange = (e) => {
     const { name, value } = e.target;
 
-    // 종료일이 시작일보다 작으면안됨
-    // 시작일이 종료일보다 크면안됨
     // 핵심기술 checkbox로 표기
-    //trim 해야함
 
     setDataObj((prev) => ({ ...prev, [name]: value }));
   };
@@ -55,13 +66,14 @@ export default function Update() {
         <h2 className="">Update</h2>
         <form className="post-education" onSubmit={handleSubmit}>
           <input type="text" name="title" required placeholder="강좌명" value={dataObj.title} onChange={handleChange} />
-          <input type="date" name="start" required placeholder="시작일" value={dataObj.start} onChange={handleChange} />
-          <input type="date" name="end" required placeholder="종료일" value={dataObj.end} onChange={handleChange} />
+          <input type="date" name="start" required placeholder="시작일" value={dataObj.start || today} onChange={handleChange} />
+          <input type="date" name="end" required placeholder="종료일" value={dataObj.end || today} onChange={handleChange} />
           <input type="text" name="client" required placeholder="고객사" value={dataObj.client} onChange={handleChange} />
           <input type="text" name="company" required placeholder="소속사" value={dataObj.company} onChange={handleChange} />
           <input type="text" name="role" required placeholder="역할" value={dataObj.role} onChange={handleChange} />
           <button type="submit">등록</button>
         </form>
+        <p className="text-right mt-10 mb-3">2024년까지의 개강,종강일(day)는 정확하지 않습니다.</p>
         <table className="table-type1">
           <caption></caption>
           <colgroup>
