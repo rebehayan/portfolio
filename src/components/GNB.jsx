@@ -16,13 +16,18 @@ const GNB = forwardRef(({ className, ...props }, ref) => {
   const { open, setGNB } = useGNB();
 
   const linkClass = (path) => `uppercase text-2xl font-[teko] ${location.pathname === path ? "text-cyan-700" : ""}`;
+  const handleMobileGNB = () => {
+    if (window.innerWidth < 1024) {
+      setGNB(!open);
+    }
+  };
 
   return (
     <nav ref={ref} className={className} {...props}>
       <ul className="mobile:grid tablet:flex gap-5">
         {links.map(({ to, label }) => (
           <li key={to}>
-            <Link to={to} className={linkClass(to)} onClick={() => setGNB(!open)}>
+            <Link to={to} className={linkClass(to)} onClick={handleMobileGNB}>
               {label}
             </Link>
           </li>
