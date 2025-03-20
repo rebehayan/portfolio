@@ -174,36 +174,36 @@ export default function Contact() {
 
   return (
     <div className="mt-[-113px]" ref={wrapRef}>
-      <section className="pt-40 pb-5 grid grid-cols-2 gap-20 h-dvh contact-hero">
-        <h2 className="font-[base] text-6xl font-light justify-self-end self-center leading-[1.2]">
+      <section className="pt-40 pb-5 grid mobile:grid-cols-1 tablet:grid-cols-2 gap-20 tablet:h-dvh contact-hero">
+        <h2 className="font-[base] mobile:text-2xl tablet:text-6xl font-light mobile:px-3 tablet:px-0 mobile:justify-self-start tablet:justify-self-end self-center leading-[1.2]">
           궁금한 점이 있으신가요? <br /> <strong className="font-bold">강의 의뢰</strong>나 <strong className="font-bold">프로젝트 문의</strong>도 <br /> 언제든지 환영합니다. <br /> 편하게 문의하세요!
         </h2>
-        <div className="grid grid-cols-[1fr_2fr] gap-5 grid-rows-4 list">
-          <div className="bg-gray-200 col-start-1 col-end-2 row-start-2 row-end-4">
+        <div className=" tablet:grid grid-cols-[1fr_2fr] gap-5 grid-rows-4 list">
+          <div className="mobile:hidden tablet:block bg-gray-200 col-start-1 col-end-2 row-start-2 row-end-4">
             <img src={myFav1} alt="" className="w-full h-full object-cover" />
           </div>
-          <div className="bg-gray-200 col-start-1 col-end-2 row-start-4 row-end-5">
+          <div className="mobile:hidden tablet:block bg-gray-200 col-start-1 col-end-2 row-start-4 row-end-5">
             <img src={myFav4} alt="" className="w-full h-full object-cover" />
           </div>
           <div className="bg-gray-200 col-start-2 col-end-3 row-start-1 row-end-3">
             <img src={myFav3} alt="" className="w-full h-full object-cover" />
           </div>
-          <div className="bg-gray-200 col-start-2 col-end-3 row-start-3 row-end-5">
+          <div className="mobile:hidden tablet:block bg-gray-200 col-start-2 col-end-3 row-start-3 row-end-5">
             <img src={myFav2} alt="" className="w-full h-full object-cover" />
           </div>
         </div>
       </section>
-      <div className="h-[50vh] flex items-center relative bg-slate-100 overflow-hidden after:absolute after:inset-0 after:bg-black after:opacity-60 after:z-20 contact-video">
+      <div className="h-[50vh] mobile:hidden tablet:flex items-center relative bg-slate-100 overflow-hidden after:absolute after:inset-0 after:bg-black after:opacity-60 after:z-20 contact-video">
         <video src={liveVideo} loop autoPlay muted className="w-full object-cover"></video>
       </div>
       <section className="area contact-form">
-        <div className="grid grid-cols-2">
+        <div className="grid mobile:grid-cols-1 tablet:grid-cols-2">
           <div className="font-[base] font-light">
             <h2>
               무엇이 필요하신가요?
               <br /> 언제든 편하게 문의해주세요!
             </h2>
-            <ul className="mt-6 inline-grid gap-6 border-t-[1px] border-gray-300 pt-6 text-sm">
+            <ul className="mt-6 mobile:grid tablet:inline-grid gap-6 border-t-[1px] border-gray-300 pt-6 text-sm">
               <li>
                 <a href="" className="flex items-center gap-3">
                   <svg xmlns="http://www.w3.org/2000/svg" className="w-8" viewBox="0 0 24 24" fill="#FEE500">
@@ -253,7 +253,7 @@ export default function Contact() {
               </li>
             </ul>
           </div>
-          <div className="contact-form-area">
+          <div className="contact-form-area mobile:mt-7 tablet:mt-0">
             <Email />
           </div>
         </div>

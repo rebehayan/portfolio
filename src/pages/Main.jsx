@@ -267,9 +267,8 @@ function Main() {
         <Visual childrenRef={followRef} ref={visualRef} />
         <Introduce />
         <Service ref={serviceRef} />
-        <div className=" min-h-[400px] h-[50vh] overflow-hidden" ref={imageRef}>
+        <div className=" tablet:min-h-[400px] tablet:h-[50vh] overflow-hidden" ref={imageRef}>
           <div>
-            {/* <img src={image} alt="" className="w-full object-cover aspect-video" /> */}
             <video src={me3video} muted autoPlay loop className="w-full h-full object-cover scale-105 origin-center"></video>
           </div>
         </div>

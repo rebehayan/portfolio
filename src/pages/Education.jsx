@@ -193,28 +193,28 @@ export default function Education() {
           step by step
         </h2>
         <ul>
-          <li className="absolute left-[15%] top-[10%] bg-lime-200 w-[550px] rounded-2xl p-10 font-[base] text-left">
+          <li className="absolute mobile:left-5 mobile:right-5 tablet:right-auto tablet:left-[15%] top-[10%] bg-lime-200 mobile:w-auto tablet:w-[550px] rounded-2xl p-10 font-[base] text-left">
             <h3 className="text-3xl">오프라인강의</h3>
             <div className="pt-5 text-neutral-800 font-light">
               매주 토요일 8시간씩 진행되는 오프라인 강의를 운영 중입니다. 모집은 유튜브를 통해 진행되며, 개강일 약 1개월 전부터 모집이 시작됩니다. 강의는 HTML, CSS 기초부터 시작해 React까지 체계적으로
               구성되었으며, 각 과목은 연간 1~2회만 개설됩니다. 실무 중심의 커리큘럼으로 여러분의 성장을 돕겠습니다. 지금 바로 신청하세요!
             </div>
           </li>
-          <li className="absolute left-[55%] top-[35%] bg-lime-200 w-[550px] rounded-2xl p-10 font-[base] text-left">
+          <li className="absolute mobile:left-5 mobile:right-5 tablet:right-auto tablet:left-[55%] top-[35%] bg-lime-200 mobile:w-auto tablet:w-[550px] rounded-2xl p-10 font-[base] text-left">
             <h3 className="text-3xl">온라인강의</h3>
             <div className="pt-5 text-neutral-800 font-light">
               다양한 플랫폼을 통해 온라인 강의를 판매 중입니다. 강의 판매 후에도 끝이 아닌, 새로운 스펙과 트렌드가 나올 때마다 주기적으로 콘텐츠를 업데이트하여 최신 정보를 제공합니다. 현재는 HTML과
               CSS 강의를 중심으로 운영 중이며, 앞으로 점차 다양한 언어와 기술로 강의를 확대해 나갈 계획입니다. 지속적인 업데이트와 함께 여러분의 성장을 지원하겠습니다.
             </div>
           </li>
-          <li className="absolute left-[10%] top-[60%] bg-lime-200 w-[550px] rounded-2xl p-10 font-[base] text-left">
+          <li className="absolute mobile:left-5 mobile:right-5 tablet:right-auto tablet:left-[10%] top-[60%] bg-lime-200 mobile:w-auto tablet:w-[550px] rounded-2xl p-10 font-[base] text-left">
             <h3 className="text-3xl">유튜브강의</h3>
             <div className="pt-5 text-neutral-800 font-light">
               무료로 공개 중인 유튜브 강의에서는 최신 스펙 정보와 실험적인 UI를 다루며, 온·오프라인 강의의 연장선에서 복습할 수 있는 클론코딩 콘텐츠를 제공합니다. 또한, 웹 접근성과 웹 퍼블리셔 및
               프론트엔드 개발자에게 중요한 다양한 이슈를 깊이 있게 다룹니다. 지속적인 학습과 성장을 위한 유익한 콘텐츠로 여러분을 지원합니다.
             </div>
           </li>
-          <li className="absolute left-[48%] top-[82%] bg-lime-200 w-[550px] rounded-2xl p-10 font-[base] text-left">
+          <li className="absolute mobile:left-5 mobile:right-5 tablet:right-auto tablet:left-[48%] top-[82%] bg-lime-200 mobile:w-auto tablet:w-[550px] rounded-2xl p-10 font-[base] text-left">
             <h3 className="text-3xl">KDT & NCS</h3>
             <div className="pt-5 text-neutral-800 font-light">
               국비지원 과정인 KDT와 NCS 과정에 참여하며, 취업을 목표로 하시는 분들을 위해 A부터 Z까지 꼼꼼하게 가이드하고 있습니다. 긴 시간 동안 체계적인 교육과 함께, 복습 자료 및 영상을 제공하여
@@ -256,7 +256,7 @@ export default function Education() {
         <div>
           <h2 className="font-[base] font-bold text-4xl">Youtube 채널 재생목록</h2>
           <p className="h-10"></p>
-          <ul className="grid grid-cols-4 gap-x-7 gap-y-10">
+          <ul className="grid grid-cols-[repeat(auto-fill,minmax(15rem,1fr))] gap-x-7 gap-y-10">
             {playLists.map((playlist) => (
               <li key={playlist.id}>
                 <a href={playlist.url} target="_blank" rel="noopener noreferrer" className="flex flex-col gap-1">

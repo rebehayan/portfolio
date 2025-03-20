@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import SlideMenu from "./components/SlideMenu";
 
 gsap.registerPlugin(ScrollTrigger);
 const headerAnimation = (selector, trigger, respon) => {
@@ -20,6 +21,12 @@ const headerAnimation = (selector, trigger, respon) => {
         start: "800px center",
         end: "bottom center",
         toggleActions: "play none none reverse",
+      },
+      onComplete() {
+        if (respon < 1024) selector.classList.add("shadow-md");
+      },
+      onReverseComplete() {
+        if (respon < 1024) selector.classList.remove("shadow-md");
       },
     }
   );
@@ -78,6 +85,7 @@ export default function App() {
         <PageRouter />
       </main>
       <Footer ref={footerRef} childrenRef={snsRef} />
+      <SlideMenu />
     </>
   );
 }

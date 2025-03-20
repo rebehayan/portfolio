@@ -36,7 +36,6 @@ export default function PortfolioList({ projectList, handleGetID }) {
     <div>
       <ul className="font-[base] font-light" ref={listRef}>
         {currentProjects.map(({ id, name, startDate, client, tag }, index) => (
-          // <li key={id} className={index === 0 ? "border-t-0" : "border-t-[1px] border-gray-300 hover:scale-[1.02] transition-transform duration-200"}>
           <li key={id} className={index === 0 ? "border-t-0" : "border-t-[1px] border-gray-300"}>
             <a
               href=""
@@ -45,11 +44,13 @@ export default function PortfolioList({ projectList, handleGetID }) {
                 handleGetID(id);
               }}
               role="button"
-              className="grid grid-cols-[50px_3fr_2fr_1fr_1fr] gap-4 items-center py-10 px-5"
+              className="grid tablet:grid-cols-[50px_3fr_2fr_1fr_1fr] gap-4 items-center py-10 px-5"
             >
               <div className="text-neutral-500 dark:text-stone-400 font-light font-[base] text-lg">{projectList.length - index - indexOfFirstProject}</div>
-              <div className="text-neutral-800 dark:text-white font-[base] text-3xl font-normal whitespace-nowrap">{name}</div>
-              <div className="mt-[1px] flex gap-1">
+              <div className="text-neutral-800 dark:text-white font-[base] text-3xl font-normal whitespace-nowrap mobile:row-start-2 mobile:row-end-3 mobile:col-start-1 mobile:col-end-3 tablet:col-auto tablet:row-auto">
+                {name}
+              </div>
+              <div className="mt-[1px] flex gap-1 mobile:col-start-2 mobile:col-end-3 tablet:col-auto mobile:justify-end tablet:justify-center">
                 {tag.map(({ role, className, language }, index) => (
                   <React.Fragment key={index}>
                     {role && <span className={className}>{role}</span>}
@@ -58,7 +59,7 @@ export default function PortfolioList({ projectList, handleGetID }) {
                 ))}
               </div>
               <div className="dark:text-stone-400 text-stone-600 text-sm">{startDate}</div>
-              <div className="dark:text-stone-400 text-stone-600 text-sm whitespace-nowrap">{client}</div>
+              <div className="dark:text-stone-400 text-stone-600 text-sm whitespace-nowrap mobile:col-start-2 mobile:col-end-3 tablet:col-auto mobile:justify-end tablet:justify-center">{client}</div>
             </a>
           </li>
         ))}

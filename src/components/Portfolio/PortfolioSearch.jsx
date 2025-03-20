@@ -19,14 +19,14 @@ export default function PortfolioSearch({ handleYear, handleSearch }) {
 
   return (
     <form onSubmit={handleSearch}>
-      <fieldset className="grid grid-cols-[min-content_min-content_1fr] gap-2 items-center">
+      <fieldset className="grid mobile:grid-cols-1 tablet:grid-cols-[min-content_min-content_1fr] gap-2 items-center">
         <legend className="hidden">포트폴리오 검색</legend>
         <input type="search" name="search" className="outline-0 transition-all duration-500 px-3 w-70 self-stretch h-full text-xl" placeholder="Search" title="포트폴리오 검색" />
-        <div className="grid grid-cols-10 gap-x-1 gap-y-1 w-[50rem]">
+        <div className="grid mobile:grid-cols-[repeat(auto-fill,minmax(5rem,1fr))] tablet:grid-cols-10 gap-x-1 gap-y-1 w-[50rem]">
           <button
             type="button"
             onClick={(e) => handleClick("전체보기")}
-            className={`cursor-pointer whitespace-nowrap row-start-1 row-end-4 border-[1px] border-zinc-700  ${selectedYear === "전체보기" ? "bg-zinc-700 text-white" : ""}`}
+            className={`cursor-pointer whitespace-nowrap row-start-1 mobile:row-end-auto tablet:row-end-4 border-[1px] border-zinc-700  ${selectedYear === "전체보기" ? "bg-zinc-700 text-white" : ""}`}
           >
             전체보기
           </button>

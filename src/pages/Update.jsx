@@ -61,9 +61,9 @@ export default function Update() {
   }, []);
 
   return (
-    <div className="area">
+    <div className="area education-list">
       <div>
-        <h2 className="">Update</h2>
+        <h2 className="">강의 내역</h2>
         <form className="post-education" onSubmit={handleSubmit}>
           <input type="text" name="title" required placeholder="강좌명" value={dataObj.title} onChange={handleChange} />
           <input type="date" name="start" required placeholder="시작일" value={dataObj.start || today} onChange={handleChange} />

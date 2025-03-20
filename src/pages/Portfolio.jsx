@@ -102,9 +102,9 @@ export default function Portfolio() {
     <>
       <div className="portfolio dark:bg-neutral-950 z-10 relative" ref={wrapRef}>
         <div className="area  dark:bg-white">
-          <div className="flex justify-between items-end header">
+          <div className="mobile:block tablet:flex justify-between items-end header">
             <h2 className="font-[teko] mobile:text-4xl tablet:text-7xl font-extrabold text-pretty mobile:w-full tablet:w-96 uppercase leading-[0.8]">Project Portfolio</h2>
-            <div className="font-[base] w-100 break-keep justify-self-end text">
+            <div className="font-[base] mobile:w-full tablet:w-100 break-keep justify-self-end text">
               점점 발전하는 코드로 전문성을 강화하며,
               <br /> 프로젝트 규모와 관계없이 일관된 퍼포먼스를 제공합니다.
               <div className="mt-5">
