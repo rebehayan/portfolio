@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import snippet from "../assets/img_snippet.png";
 import movie from "../assets/img_movie.png";
+import svg from "../assets/img_svg.png";
 import gsap from "gsap";
 import { useTitleHook } from "../utils/useTitleHook";
 
@@ -61,6 +62,13 @@ export default function Service() {
               <p className="font-[base] font-light text-sm text-stone-600">
                 VSCode에서 사용할 JSON 스니펫을 쉽게 생성하는 도구입니다. 자동 완성 기능을 활용하여 빠르게 코드를 작성하고 생산성을 높이세요!
               </p>
+            </a>
+          </li>
+          <li>
+            <a href="https://svgtocss.vercel.app/" target="_blank" className="grid gap-2">
+              <img src={svg} alt="" className="w-full" />
+              <strong className="font-[teko] text-3xl font-light">SVG to CSS Generator</strong>
+              <p className="font-[base] font-light text-sm text-stone-600">CSS에서 사용할 수 있는 SVG코드를 생성하세요.</p>
             </a>
           </li>
         </ul>
