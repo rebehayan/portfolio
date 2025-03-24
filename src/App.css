@@ -339,7 +339,8 @@ body:has(.education-list) {
   animation: wave2 infinite 5s alternate;
   .wavy {
     display: grid;
-    grid-template-columns: repeat(10, 200px);
+    width: 120%;
+    grid-template-columns: repeat(10, 1fr);
     translate: 0-100%;
     overflow: hidden;
     span {
@@ -353,7 +354,7 @@ body:has(.education-list) {
 
 @keyframes wave {
   100% {
-    translate: -150%;
+    translate: -120%;
   }
 }
 @keyframes wave2 {
