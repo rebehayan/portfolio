@@ -47,7 +47,7 @@ export default function Service() {
         <h2 className="font-[base] text-3xl font-bold">현재 제공하고 있는 어플리케이션</h2>
         <ul className="grid grid-cols-[repeat(auto-fill,minmax(25rem,1fr))] gap-7 mt-5">
           <li>
-            <a href="https://movie-js-nine.vercel.app/" target="_blank" className="grid gap-2">
+            <a href="https://rebehayan-movie-js.vercel.app/" target="_blank" className="grid gap-2">
               <img src={movie} alt="" className="w-full" />
               <strong className="font-[teko] text-3xl font-light">Search Movies</strong>
               <p className="font-[base] font-light text-sm text-stone-600">
